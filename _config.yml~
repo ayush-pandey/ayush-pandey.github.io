@@ -33,7 +33,7 @@ author: "Ayush Pandey"
 title: "{ Ayush Pandey }"
 description: "Blog and website of Ayush Pandey, blogging mainly for tech. Opinions expressed are mine."
 keywords: "Pandey, Ayush, personal"
-# favicon: "/img/favicon.ico"
+favicon: "/img/favicon.ico"
 
 ################
 # Header layout #
