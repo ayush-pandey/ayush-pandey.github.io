@@ -3,19 +3,22 @@ layout: null
 section-type: about
 title: Research
 ---
-## About
-Technical Reports
 
+## Research
+
+<b>Technical Reports</b>
+<p align="left">
 1. Ayush Pandey and Victoria Kostina "Information-Performance Tradeoffs in Control". In: Undergraduate Research California Institute of Technology. arXiv:1611.01827
 Presented at Electrical Engineering Department, Caltech.
 
 2. Ayush Pandey, Christopher Wipf, Rana Adhikari and Jameson Rollins "Quantization Noise Analysis in Advanced LIGO Digital Control System". In: Technical Note : LIGO Scientific Collaboration, 2015. LIGO DCC Link
 Presented at LIGO Livingston Laboratory, Louisiana, USA
-
-Conference Proceedings
-
+</p>
+<b>Conference Proceedings</b>
+<p align="left">
 1. Ayush Pandey, Siddharth Jha and Debashish Chakravarty "Modeling and Control of an Autonomous Three Wheeled Mobile Robot with Front Steer''. In: IEEE International Conference on Robotic Computing (IRC 2017) IEEE Xplore, arXiv:1612.01476
 Presented at IRC 2017, Taichung, Taiwan
   
 2. Ayush Pandey, Subhamoy Mahajan, Dhananjay Yadav et al. "Low Cost Autonomous Navigation and Control of a Mechanically Balanced Bicycle with Dual Locomotion Mode". In: Transportation Electrification Conference (ITEC), IEEE International and SAE India (2015). IEEE Xplore, Extended version - arXiv:1611.00331
 Presented at ITEC 2015, Chennai, India
+</p>
