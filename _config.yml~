@@ -29,9 +29,9 @@ force-https: True
 
 lang: "en"
 author: "Ayush Pandey"
-title: "{ Ayush Pandey }"
-description: "Blog and website of Ayush Pandey, blogging mainly for tech. Opinions expressed are mine."
-keywords: "Pandey, Ayush, personal"
+title: "Ayush Pandey"
+description: "Blog and website of Ayush Pandey. IIT Kharagpur alum. Graduate student at Caltech."
+keywords: "Pandey, Ayush, personal, blog, IIT Kharagpur, California, Institute, of, Technology, Caltech, Control, theory, robotics"
 # favicon: "/img/favicon.ico"
 
 ################
@@ -40,7 +40,7 @@ keywords: "Pandey, Ayush, personal"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/combo-caltech-iitkgp.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -52,10 +52,11 @@ loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
-delete-delay: 5000
+delete-delay: 4000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "Where's your will to be weird?"
+  - text: "The more you empathize, the better you become."
+  - text: "Be non-linear."
 
 # me-img: "/img/jetpacktocat.png"
 
@@ -65,7 +66,7 @@ lines: # You can add HTML Tags in the Text
 # in the end of the url just before '&type' is your user id.
 # Note: fbid is not the same as user id and user id only contains numbers
 
-# me-img: "https://graph.facebook.com/100006495252414/picture?type=large&width=500&height=500"
+me-img: "https://graph.facebook.com/100006495252414/picture?type=large&width=500&height=500"
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -129,17 +130,17 @@ syntax-highlight: True
 # Timeline #
 ############
 
-events:
-  - image: "/img/timeline/spidertocat.png"
-    date: "June 2017 - Today"
-    description: "Saving the neighborhood!"
-  - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
-    description: "Started the webpage"
+#events:
+#  - image: "/img/timeline/spidertocat.png"
+#    date: "June 2017 - Today"
+#    description: "Saving the neighborhood!"
+#  - image: "/img/timeline/baracktocat.jpg"
+#    date: "June 2017"
+#    description: "Started this webpage"
 
 # First image of the Timeline
 
-timeline-img: "/img/timeline/default.png"
+# timeline-img: "/img/timeline/default.png"
 
 ###########
 # Contact #
@@ -192,8 +193,9 @@ err-404-img: "/img/labtocat.png"
 
 pages_list:
   About: 'about'
+  Research: 'research'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+#  Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
