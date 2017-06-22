@@ -83,7 +83,7 @@ me-img: "https://graph.facebook.com/100006495252414/picture?type=large&width=500
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#ffffff"
+color-browser: "#000000"
 apple-status-bar-style: "black"
 
 ################

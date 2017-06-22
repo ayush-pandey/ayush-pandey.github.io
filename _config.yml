@@ -38,7 +38,7 @@ keywords: "Pandey, Ayush, personal, blog, IIT Kharagpur, California, Institute, 
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+# black-favicon: "/img/black-lab-glass.ico"
 
 background-img: "../img/combo-caltech-iitkgp.png"
 
