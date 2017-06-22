@@ -5,7 +5,11 @@ title: Research
 ---
 
 ## Research
-
+<style>
+ol {
+  text-align: left;
+}
+</style>
 <b>Technical Reports</b>
 <p align="left">
 <ol>
