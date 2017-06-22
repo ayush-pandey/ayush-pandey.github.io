@@ -15,7 +15,7 @@ $header-background-color: $primary-color;
 $intro-text-color: $secondary-color;
 $navbar-color: $font-color;
 $navbar-lg-collapse-background-color: $header-background-color;
-$navbar-lg-background: transparent;
+$navbar-lg-background: $header-background-color;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;
 
 $social-buttons-color: $secondary-color;
