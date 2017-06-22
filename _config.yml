@@ -46,7 +46,7 @@ background-img: "../img/combo-caltech-iitkgp.png"
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
@@ -54,9 +54,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 4000
 lines: # You can add HTML Tags in the Text
-#  - text: "Where's your will to be weird?"
-#  - text: "The more you empathize, the better you become."
-#  - text: "Be non-linear!"
+  - text: "Where's your will to be weird?"
+  - text: "The more you empathize, the better you become."
+  - text: "Be non-linear!"
 
 # me-img: "/img/jetpacktocat.png"
 
