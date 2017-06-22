@@ -40,7 +40,7 @@ keywords: "Pandey, Ayush, personal, blog, IIT Kharagpur, California, Institute, 
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/combo-caltech-iitkgp.jpg"
+background-img: "../img/combo-caltech-iitkgp.png"
 
 ##############################
 # Dynamic Text on the Header #
@@ -83,7 +83,7 @@ me-img: "https://graph.facebook.com/100006495252414/picture?type=large&width=500
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#000000"
+color-browser: "#ffffff"
 apple-status-bar-style: "black"
 
 ################
