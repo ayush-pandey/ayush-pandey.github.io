@@ -56,7 +56,7 @@ delete-delay: 4000
 lines: # You can add HTML Tags in the Text
   - text: "Where's your will to be weird?"
   - text: "The more you empathize, the better you become."
-  - text: "Be non-linear."
+  - text: "Be non-linear!"
 
 # me-img: "/img/jetpacktocat.png"
 
