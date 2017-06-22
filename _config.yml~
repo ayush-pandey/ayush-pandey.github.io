@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://ayush-pandey.github.io"
+url: "https://panossakkos.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,11 +12,11 @@ url: "https://ayush-pandey.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-# baseurl: /personal-jekyll-theme
+baseurl: /personal-jekyll-theme
 
 # Google tracking id
 
-google-tracking-id: "UA-101477274-1"
+google-tracking-id: ""
 
 # Forces https everywhere in your website, except when you serve it locally
 # If you are not hosted on Github Pages, and your host doesn't support https
@@ -29,11 +29,11 @@ force-https: True
 #############
 
 lang: "en"
-author: "Ayush Pandey"
-title: "{ Ayush Pandey }"
-description: "Blog and website of Ayush Pandey, blogging mainly for tech. Opinions expressed are mine."
-keywords: "Pandey, Ayush, personal"
-# favicon: "/img/favicon.ico"
+author: "John Smith"
+title: "{ John Smith }"
+description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+keywords: "smith, jones, personal, jekyll, theme"
+favicon: "/img/favicon.ico"
 
 ################
 # Header layout #
@@ -58,7 +58,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
-# me-img: "/img/jetpacktocat.png"
+me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -66,7 +66,7 @@ lines: # You can add HTML Tags in the Text
 # in the end of the url just before '&type' is your user id.
 # Note: fbid is not the same as user id and user id only contains numbers
 
-me-img: "https://graph.facebook.com/100006495252414/picture?type=large&width=500&height=500"
+# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
@@ -122,7 +122,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-#disqus-shortname: "panossakkos"
+disqus-shortname: "panossakkos"
 
 syntax-highlight: True
 
@@ -132,11 +132,11 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "June 2017 - Today"
+    date: "September 2013 - Today"
     description: "Saving the neighborhood!"
   - image: "/img/timeline/baracktocat.jpg"
     date: "September 2007 - August 2013"
-    description: "Started the webpage"
+    description: "Started coding"
 
 # First image of the Timeline
 
@@ -146,7 +146,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "apandey@caltech.edu"
+email: "your@email.here"
 
 ################
 # Author Blurb #
@@ -156,8 +156,8 @@ email: "apandey@caltech.edu"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-# author_blurb: "Ayush Pandey"
-# author_blurb_image: "/img/author.png"
+author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb_image: "/img/author.png"
 
 ##################
 # Social Buttons #
@@ -165,11 +165,15 @@ email: "apandey@caltech.edu"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/altainacative"
+    url: "https://facebook.com/"
   - title: "twitter"
-    url: "https://twitter.com/ayush9pandey"
+    url: "https://twitter.com/"
   - title: "github"
-    url: "https://github.com/ayush9pandey"
+    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+  - title: "bitcoin"
+    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  - title: "rss"
+    url: "/feed.xml"
 
 ############
 # 404 page #
@@ -181,9 +185,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-# keybase-username: johnsmith
-# keybase-in-social: True
-# keybase-in-footer: True
+keybase-username: johnsmith
+keybase-in-social: True
+keybase-in-footer: True
 
 ################################################################################
 
