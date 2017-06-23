@@ -90,7 +90,7 @@ apple-status-bar-style: "black"
 # Web app mode #
 ################
 
-web-app-mode: False
+web-app-mode: True
 
 # Icons for Web App mode
 
