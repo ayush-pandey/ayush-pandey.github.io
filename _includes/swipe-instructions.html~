@@ -2,7 +2,7 @@
 <!-- Swipe Instructions Start -->
 
 <div id="swipe-instruction">
-  <div>
+  <div style="background-color:#c0ffee">
     <p><br><br><br></p>
     <i id="hand-swipe" class="fa fa-hand-o-up"></i>
     <p style="color:#fff"><strong>
