@@ -5,7 +5,7 @@
   <div>
     <p><br><br><br></p>
     <i id="hand-swipe" class="fa fa-hand-o-up"></i>
-    <p><strong>
+    <p style="color:#fff"><strong>
     {% if page.section-type == "blog" %}
       Did you know that you can navigate the archive pages by swiping left and right?
     {% elsif page.section-type == "post" %}
