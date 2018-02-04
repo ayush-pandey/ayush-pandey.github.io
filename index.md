@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="Ayush.jpg">
+<img class="profile-picture" src="Ayush.JPG">
 
 Hi! I am a visiting researcher in Pittsburgh working with Professor George Stetten [(VIA Lab)](http://www.vialab.org/main/Home/People.html) at University of Pittsburgh, Bioengineering department / Carnegie Mellon University (CMU), Robotics Institute. I am also collaborating on a project at University of Pittsburgh Medical College (UPMC) with Professor Howard Aizenstein and Minjie Wu. Earlier, I graduated with a bachelors degree from the Department of Electrical Engineering, IIT Kharagpur in 2016.
 
