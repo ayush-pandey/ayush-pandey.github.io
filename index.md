@@ -8,7 +8,7 @@ layout: default
 
 I am a graduate student at California Institute of Technology. I am working with Prof. Victoria Kostina and Prof. John Doyle on control of networked systems. 
 
-Previously, I graduated with a bachelors and a masters degree from the Indian Institute of Technoloy (IIT) Kharagpur, India 
+Earlier, I graduated with a bachelors and a masters degree from the Indian Institute of Technoloy (IIT) Kharagpur, India 
 in 2017. My Bachelor of Technology (Hons.) degree is in instrumentation engineering and Master of Technology in 
 Control System Engineering from the Electrical Engineering department. 
 
