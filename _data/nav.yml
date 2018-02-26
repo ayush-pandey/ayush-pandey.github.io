@@ -5,7 +5,7 @@
   link: "publication"
   
   - name: "Blog"
-   url: "https://ayushpandeyblog.wordpress.com"
+  link: "blog"
 
 - name: "Resume"
   link: "resume.pdf"
