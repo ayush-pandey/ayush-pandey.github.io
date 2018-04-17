@@ -1,5 +1,8 @@
 - name: "Contact"
   link: "contact"
+  
+- name : "Projects"
+  link: "projects"
 
 - name: "Publications"
   link: "publication"
