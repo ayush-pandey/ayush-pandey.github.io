@@ -11,10 +11,10 @@
 		3. BioSIMI - [Github](https://github.com/MiroGasparek/BioSIMI)
 		4. SimBiology - MATLAB [toolbox](https://www.mathworks.com/products/simbiology.html)
 		5. SBML 
-		 	- [Webpage](http://sbml.org)
-		 	- [A simple example in SBML - Michaelis Menten](http://sbml.org/More_Detailed_Summary_of_SBML)
-		 	- [Specifications and Packages](http://sbml.org/Documents/Specifications)
- 	- Some good beginner's resources for people with non-biology background :
- 		- Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. [PDF](http://www.cds.caltech.edu/~murray/talks/murray_buildacell-pasadena_24Jul17.pdf)
+			- 	[Webpage](http://sbml.org)
+			-  [A simple example in SBML - Michaelis Menten](http://sbml.org/More_Detailed_Summary_of_SBML)
+			-  [Specifications and Packages](http://sbml.org/Documents/Specifications)
+	-    Some good beginner's resources for people with non-biology background :
+		- Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. [PDF](http://www.cds.caltech.edu/~murray/talks/murray_buildacell-pasadena_24Jul17.pdf)
 		- CS + Biology - Prof. Richard Murray, Caltech. [YouTube](https://youtu.be/dPcObYcFU_I) 
 
