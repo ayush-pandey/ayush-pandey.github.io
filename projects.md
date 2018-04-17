@@ -15,7 +15,7 @@
 			-  [A simple example in SBML - Michaelis Menten](http://sbml.org/More_Detailed_Summary_of_SBML)
 			-  [Specifications and Packages](http://sbml.org/Documents/Specifications)
 	- Some good beginner's resources for people with non-biology background
-	   1. Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. [PDF](http://www.cds.caltech.edu/~murray/talks/murray_buildacell-pasadena_24Jul17.pdf)
+	   1. Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. [PDF](http://www.cds.caltech.edu/~murray/wiki/images/2/23/Dod16-vbff.pdf)
 		2. CS + Biology - Prof. Richard Murray, Caltech. [YouTube](https://youtu.be/dPcObYcFU_I) 
 
 
