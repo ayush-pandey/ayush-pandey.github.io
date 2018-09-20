@@ -29,7 +29,7 @@
 
 	
 	
-## Past projects 
+# Past projects 
 
 * Study of fundamental limits and tradeoffs in active and passive systems 
 	- Jan - Apr 2018
