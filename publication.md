@@ -6,5 +6,5 @@ Visit my [Google Scholar](https://scholar.google.com/citations?user=dl98f5UAAAAJ
 
 # Technical Reports
 * Pandey, Ayush, Chirstopher Wipf, et al. (2015). “Quantization Noise Anlysis in Advanced LIGO Digital Control System”. In: LIGO DCC, Presented at LIGO Livingston Laboratory, Louisiana, USA. [LIGO DCC](https://dcc.ligo.org/LIGO-T1500351/public)
-* Pandey, Ayush and Victoria Kostina (2016). “Information Performance Tradeoffs in Control”. In: arXiv preprint arXiv:1611.01827. [arXiv](https://arxiv.org/abs/1611.01827)
+* Pandey, Ayush (2016). “Information Performance Tradeoffs in Control”. In: arXiv preprint arXiv:1611.01827. [arXiv](https://arxiv.org/abs/1611.01827)
 
