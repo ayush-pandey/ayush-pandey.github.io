@@ -1,7 +1,8 @@
-# Projects
+# Current Projects
 
-* Cell-free simulation toolbox in Python (Spring 2017-18) - [Github](https://github.com/BuildACell/txtlsim-python)
-	- Important links 
+* Sub-SBML : A Subsystem Interaction Modeling Toolbox for SBML Models - [Github, subsbml](https://github.com/BuildACell/subsbml/)
+	- [Wiki](https://github.com/BuildACell/subsbml/wiki)
+	- Other Important links 
 		1. bioscrape  
 		   - Wiki/Documentation - [Github](https://github.com/ananswam/bioscrape/wiki), [Paper](https://www.biorxiv.org/content/early/2017/03/27/121152)
 		   - Download - [link](https://omictools.com/bio-circuit-stochastic-single-cell-reaction-analysis-and-parameter-estimation-tool)
@@ -18,6 +19,28 @@
 	   1. Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. [PDF](http://www.cds.caltech.edu/~murray/wiki/images/2/23/Dod16-vbff.pdf)
 		2. CS + Biology - Prof. Richard Murray, Caltech. [YouTube](https://youtu.be/dPcObYcFU_I) 
 		3. Del Vecchio, Domitilla, and Richard M. Murray. Biomolecular feedback systems. Princeton, NJ: Princeton University Press, 2015. [Link](http://www.cds.caltech.edu/~murray/BFSwiki/index.php?title=Main_Page)
+		
+	- April 2018 - Current
+
+* Cell-free simulation toolbox in Python - [Github, txtlsim-python](https://github.com/BuildACell/txtlsim-python)
+	- [Wiki](https://github.com/BuildACell/txtlsim-python/wiki)
+	- [Design document](https://github.com/BuildACell/txtlsim-python/wiki/txtl-module-design-document)
+	- Aug 2018 - Current
+
+	
+	
+## Past projects 
+
+* Study of fundamental limits and tradeoffs in active and passive systems 
+	- Jan - Apr 2018
+
+* i-Bike, IIT Kharagpur
+	
+* Autonomous Ground Vehicle, IIT Kharagpur
+
+* State-space averaging of switched dynamical systems
+
+* Robust controller design using H-$\infty$ loop-shaping approach
 
 
 
