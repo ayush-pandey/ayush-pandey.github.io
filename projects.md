@@ -30,10 +30,10 @@ My current progress is available at [my fork](https://github.com/ayush9pandey/Bi
 	
 All code and these examples are available [here](https://github.com/BuildACell/subsbml/tree/master/examples)
 
-* Sub-SBML : A Subsystem Interaction Modeling Toolbox for SBML Models - [Github, subsbml](https://github.com/BuildACell/subsbml/)
+* [Sub-SBML](#subsbml) : A Subsystem Interaction Modeling Toolbox for SBML Models - [Github, subsbml](https://github.com/BuildACell/subsbml/)
 	- I gave a talk about this toolbox at Combine 2018 conference at Boston, the abstract for the talk is here - 
 	
-## Sub-SBML : A Subsystem Interaction Modeling Toolbox for SBML Models
+## <a name = "subsbml">Sub-SBML</a> : A Subsystem Interaction Modeling Toolbox for SBML Models
 *Ayush Pandey and Richard Murray*
 
 We present Sub-SBML, a Python based toolbox to create, edit, combine, and model interactions among multiple SBML models. Sub-SBML works with a “subsystem” architecture of modeling where a single SBML model can be contained within a subsystem. Three major functionalities are developed in Sub-SBML that take advantage of this subsystem framework of modeling – creating subsystems, combining multiple subsystems, and modeling interactions such as transport of molecules and input-output relationships among multiple subsystems.
