@@ -71,7 +71,7 @@ We consider an example of IPTG transport across synthetic vesicles when α-hemol
 	- Won various accolades for our student project of an autonomous bicycle with dual mode of locomotion. 
 		- Won $8000 for first position in national competition organized by KPIT where more than 10k students from all over India participated
 		- Indian patent filed (pending application number 201631025904)
-		- In the media - [Washington Post](https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/),[Economic Times](http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms), [AutoCar Professional](http://www.autocarpro.in/news-national/iit-kharagpur-wins-gold-kpit-sparkle-2016-10525)
+		- In the media - [Washington Post](https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/), [Economic Times](http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms), [AutoCar Professional](http://www.autocarpro.in/news-national/iit-kharagpur-wins-gold-kpit-sparkle-2016-10525)
 	
 * Autonomous Ground Vehicle ([AGV](http://www.agv.iitkgp.ac.in/publications), IIT Kharagpur 
 	- Team leader for two consecutive years leading the 40 student member team to Intelligent Ground Vehicle Competition [IGVC](http://www.igvc.org/objective.htm). AGV won the 2nd prize among teams from all around the world in 2018.
