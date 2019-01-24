@@ -1,7 +1,7 @@
 Visit my [Google Scholar](https://scholar.google.com/citations?user=dl98f5UAAAAJ&hl=en) profile here.
 
 # Conference Publication and Talks
-* Pandey, Ayush and Richard Murray (2018). "Sub-SBML : A Subsystem Interaction Modeling Toolbox for SBML Models". In: "Computational Modeling in Biology" Network (COMBINE), Boston, MA [Abstract](https://ayush-pandey.github.io/projects#subsbml).
+* Pandey, Ayush and Richard Murray (2018). "Sub-SBML : A Subsystem Interaction Modeling Toolbox for SBML Models". In: "Computational Modeling in Biology" Network (COMBINE), Boston, MA. [Abstract](https://ayush-pandey.github.io/projects#subsbml).
 * Pandey, Ayush, Subhamoy Mahajan, et al. (2015). “Low cost autonomous navigation and control of a mechanically balanced bicycle with dual locomotion mode”. In: Transportation Electrification Conference (ITEC), 2015 IEEE International. [IEEE Xplore](http://ieeexplore.ieee.org/document/7386938/)
 * Pandey, Ayush, Siddharth Jha, and Debashish Chakravarty (2017). “Modeling and Control of an Autonomous Three Wheeled Mobile Robot with Front Steer”. In: Robotic Computing (IRC), IEEE International Conference on. [IEEE Xplore](http://ieeexplore.ieee.org/document/7926529/)   
 
