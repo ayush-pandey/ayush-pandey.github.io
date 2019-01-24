@@ -81,7 +81,7 @@ We consider an example of IPTG transport across synthetic vesicles when α-hemol
 	- Masters thesis project at IIT Kharagpur
 	- Advisor : Prof. Siddhartha Mukhopadhyay
 
-* Robust controller design using H-$\infty$ loop-shaping approach
+* Robust controller design using H-infinity loop-shaping approach
 	- Bachelors thesis project at IIT Kharagpur
 	- Advisor : Prof. Sourav Patra
 	- Awarded best thesis project award in 2016
