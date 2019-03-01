@@ -92,9 +92,11 @@ with-just-an-sms/)
 
 39. [Fusion WeRIndia](https://fusion.werindia.com/innovation/bicycle-reaches-sms)
 
-40. [Silicon India](http://m.siliconindia.com/news/technology/-Forget-Google-India-Delivers-Prototype-Model-of-an-Autonomous-Vehicle-
-nid-192652-cid-2.html)
+40. [Silicon India](http://m.siliconindia.com/news/technology/-Forget-Google-India-Delivers-Prototype-Model-of-an-Autonomous-Vehicle-nid-192652-cid-2.html)
+
 41. [__Inshorts__](https://www.inshorts.com/en/news/iit-kgp-students-develop-driverless-bicycle-1456992977600)
+
 42. [TechGig](http://m.techgig.com/tech-news/editors-pick/Forget-Google-India-Delivers-Prototype-Model-of-an-Autonomous-Vehicle-42603)
+
 43. [The Millennium Post](http://www.millenniumpost.in/NewsContent.aspx?NID=238303)
 
