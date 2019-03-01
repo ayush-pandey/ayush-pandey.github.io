@@ -8,7 +8,6 @@
 
 ## i-Bike : In the media
 
-
 1. [__Washington Post__](https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/)
 
 2. [__New Indian Express__](http://www.newindianexpress.com/education/edex/This-Bike-Will-Ride-Itself-to-Your-Side/2016/03/14/article3320564.ece1)
@@ -22,6 +21,7 @@
 6. [__The Telegraph__](http://www.telegraphindia.com/external/display.jsp?mode=details&id=47119#.Vq-z4_krLIU)
 
 Other media stories :
+
 7. [The Business Wire](http://businesswireindia.com/news/news-details/kpit-announces-winners-kpit-sparkle-2016-all-india-science-engineering-students-contest/47119)
 
 8. [IBN Live](http://www.ibnlive.com/news/india/news-digest-snapdeal-employees-stalker-to-pen-his-love-story-1204838.html)
