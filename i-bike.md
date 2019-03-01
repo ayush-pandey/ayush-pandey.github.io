@@ -8,12 +8,17 @@
 
 ## i-Bike : In the media
 
-1. [Washington Post](https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/)
-2. [New Indian Express](http://www.newindianexpress.com/education/edex/This-Bike-Will-Ride-Itself-to-Your-Side/2016/03/14/article3320564.ece1)
-3. [Economic Times](http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms)
-4. [Gadgets NDTV](https://gadgets.ndtv.com/others/features/there-may-soon-be-a-self-driving-vehicle-on-the-road-and-its-made-in-india-815648?site=classic)
-5. [KPIT.com](http://www.kpit.com/company/newsroom/press-release/2016/sparkle-2016-announce-winners)
-6. [The Telegraph](http://www.telegraphindia.com/external/display.jsp?mode=details&id=47119#.Vq-z4_krLIU)
+1. [__Washington Post__](https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/)
+
+2. [__New Indian Express__](http://www.newindianexpress.com/education/edex/This-Bike-Will-Ride-Itself-to-Your-Side/2016/03/14/article3320564.ece1)
+
+3. [__Economic Times__](http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms)
+
+4. [__Gadgets NDTV__](https://gadgets.ndtv.com/others/features/there-may-soon-be-a-self-driving-vehicle-on-the-road-and-its-made-in-india-815648?site=classic)
+
+5. [__KPIT.com__](http://www.kpit.com/company/newsroom/press-release/2016/sparkle-2016-announce-winners)
+
+6. [__The Telegraph__](http://www.telegraphindia.com/external/display.jsp?mode=details&id=47119#.Vq-z4_krLIU)
 
 Other media stories :
 7. [The Business Wire](http://businesswireindia.com/news/news-details/kpit-announces-winners-kpit-sparkle-2016-all-india-science-engineering-students-contest/47119)
@@ -59,9 +64,9 @@ Other media stories :
 
 26. [IITKGP.org](https://iitkgp.org/content/kgp-team-wins-gold-prize-autonomous-bicycle-model)
 
-27. [_News X_](http://www.newsx.com/tech/21225-iit-kgp-students-design-differently-abled-friendly-bike)
+27. [__News X__](http://www.newsx.com/tech/21225-iit-kgp-students-design-differently-abled-friendly-bike)
 
-28. [_Deccan Herald : Metrolife_](http://www.deccanherald.com/content/530441/students-invent-self-driving-cycle.html)
+28. [__Deccan Herald : Metrolife__](http://www.deccanherald.com/content/530441/students-invent-self-driving-cycle.html)
 
 29. [Jagran News]
 
@@ -73,7 +78,7 @@ Other media stories :
 
 33. [Thinking Highways](http://thinkinghighways.com/indian-students-unveil-driverless-bicycle-the-ibike/)
 
-34. [_The Viral India Diary_](http://www.viralindiandiary.com/ibike-driver-less-bicycle-iit-kharagpur/)
+34. [__The Viral India Diary__](http://www.viralindiandiary.com/ibike-driver-less-bicycle-iit-kharagpur/)
 
 35. [Hyderabad City Online](http://www.hyderabadcityonline.in/iit-kharagpur-students-develop-a-driverless-bicycle-that-can-reach-you-
 with-just-an-sms/)
@@ -88,7 +93,7 @@ with-just-an-sms/)
 
 40. [Silicon India](http://m.siliconindia.com/news/technology/-Forget-Google-India-Delivers-Prototype-Model-of-an-Autonomous-Vehicle-
 nid-192652-cid-2.html)
-41. [_Inshorts_](https://www.inshorts.com/en/news/iit-kgp-students-develop-driverless-bicycle-1456992977600)
+41. [__Inshorts__](https://www.inshorts.com/en/news/iit-kgp-students-develop-driverless-bicycle-1456992977600)
 42. [TechGig](http://m.techgig.com/tech-news/editors-pick/Forget-Google-India-Delivers-Prototype-Model-of-an-Autonomous-Vehicle-42603)
 43. [The Millennium Post](http://www.millenniumpost.in/NewsContent.aspx?NID=238303)
 
