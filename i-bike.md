@@ -81,8 +81,7 @@ Other media stories :
 
 34. [__The Viral India Diary__](http://www.viralindiandiary.com/ibike-driver-less-bicycle-iit-kharagpur/)
 
-35. [Hyderabad City Online](http://www.hyderabadcityonline.in/iit-kharagpur-students-develop-a-driverless-bicycle-that-can-reach-you-
-with-just-an-sms/)
+35. [Hyderabad City Online](http://www.hyderabadcityonline.in/iit-kharagpur-students-develop-a-driverless-bicycle-that-can-reach-you-with-just-an-sms/)
 
 36. [Fantoosy.com](http://fantoosy.com/driverless-bicycle-disabled-iit-kharagpur-students/)
 
