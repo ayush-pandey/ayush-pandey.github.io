@@ -16,11 +16,6 @@
 
 4. [__Gadgets NDTV__](https://gadgets.ndtv.com/others/features/there-may-soon-be-a-self-driving-vehicle-on-the-road-and-its-made-in-india-815648?site=classic)
 
-5. [__KPIT.com__](http://www.kpit.com/company/newsroom/press-release/2016/sparkle-2016-announce-winners)
-
-6. [__The Telegraph__](http://www.telegraphindia.com/external/display.jsp?mode=details&id=47119#.Vq-z4_krLIU)
-
-
 
 Other media stories :
 
