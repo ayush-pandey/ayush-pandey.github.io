@@ -1,4 +1,4 @@
-## <a name = "i-Bike Timeline">i-Bike Timeline</a>
+## <a name = "int1">i-Bike Timeline</a>
 
 1. Hardware Modelling - Intra-Hostel Innovation Competition : Gold
 2. ITEC India 2015 - IEEE and SAE Conference. 
@@ -101,3 +101,5 @@ Other media stories :
 
 43. [The Millennium Post](http://www.millenniumpost.in/NewsContent.aspx?NID=238303)
 
+
+Go back [up](#int1)
