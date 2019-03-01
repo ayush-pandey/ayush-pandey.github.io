@@ -20,6 +20,8 @@
 
 6. [__The Telegraph__](http://www.telegraphindia.com/external/display.jsp?mode=details&id=47119#.Vq-z4_krLIU)
 
+
+
 Other media stories :
 
 7. [The Business Wire](http://businesswireindia.com/news/news-details/kpit-announces-winners-kpit-sparkle-2016-all-india-science-engineering-students-contest/47119)
@@ -69,7 +71,7 @@ Other media stories :
 
 28. [__Deccan Herald : Metrolife__](http://www.deccanherald.com/content/530441/students-invent-self-driving-cycle.html)
 
-29. [Jagran News]
+29. Jagran News
 
 30. [Kerela News](http://www.newkerala.com/news/2016/fullnews-23824.html)
 
