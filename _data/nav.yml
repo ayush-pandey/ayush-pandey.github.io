@@ -15,3 +15,6 @@
 
 - name: "About"
   link: "/"
+
+- name: ""
+  link: "/toggle_switch/"

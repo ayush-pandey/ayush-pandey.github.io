@@ -24,7 +24,7 @@ Leaky expression is a common phenomenon observed in synthetic biological circuit
 ![iss_model](leaky_expression.PNG)
 
 ### Convergence under disturbances
-For bounded disturbances in the ODEs above, we can derive conditions for the norm of the state vector and its convergence rate. 
+For bounded disturbances in the ODEs above, we can derive conditions for the norm of the state vector and its convergence rate. Here, P is the matrix obtained in Lyapunov function, refer to the technical report (linked below) for the proof.
 ![convergence](iss_math.png)
 
 ### Discussion 
