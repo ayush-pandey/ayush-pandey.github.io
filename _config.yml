@@ -1,0 +1,11 @@
+title: Ayush Pandey
+url: "https://ayush-pandey.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+tracking_id: #
+
+sass:
+    style: compressed
+    sass_dir: _sass
