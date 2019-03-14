@@ -10,7 +10,7 @@ Using this analysis, I give an estimate of the domain of attraction of a stable 
 I also show that the toggle switch system is input to state stable and give appropriate bounds and convergence rates for it. 
 
 ### Toggle switch dynamics -
-Two proteins - LacI and TetR repress each other. The regulation is on a transcriptional level, that is each protein binds to the gene of the other protein to prevent that gene from transcribing to mRNA (which in turn forms the protein) --- hence effectively regulating (preventing) the expression of the other protein. The mathematical dynamics given make this mechanism clear. For more details about how to derive such a mathematical model for this system, refer to Chapter 2 in <sup>2</sup>. 
+Two proteins - LacI and TetR repress each other. The regulation is on a transcriptional level, that is each protein binds to the gene of the other protein to prevent that gene from transcribing to mRNA (which in turn forms the protein) --- hence effectively regulating (preventing) the expression of the other protein. The mathematical dynamics given make this mechanism clear. For more details about how to derive such a mathematical model for this system, refer to Chapter 2 in this book<sup>2</sup>. 
 ![toggle-switch](model_pic.PNG)
 
 #### Domain of attraction
