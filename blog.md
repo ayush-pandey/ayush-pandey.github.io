@@ -11,6 +11,10 @@ i-Bike is a bike that a user can hail like a taxi using their mobile phone app -
 
 We enjoyed a lot of success with the i-Bike as a student project - winning multiple engineering design competitions, collaborating with major industry players in the automotive industry, and plenty of media attention at the time. Subsequently, we filed an Indian patent for the tech. 
 
+## Future blog posts
+    * Getting started with SBML and Python-libSBML (and making the most out of it)
+    * Software tools for synthetic biology (and the need to have less _tools_ but more tools)
+
 ### All other micro-blogs available on [Twitter](https://twitter.com/Ayush9Pandey)
 
 
