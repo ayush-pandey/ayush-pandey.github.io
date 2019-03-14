@@ -15,6 +15,3 @@
 
 - name: "About"
   link: "/"
-
-- name: ""
-  link: "/toggle_switch/toggle_blog.md"
