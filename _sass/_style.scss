@@ -12,7 +12,8 @@ html {
 body {
     margin: 0;
     font-family: "quicksand";
-    height: 200%;
+    height: 100%;
+    font-size: 30px;
 }
 a {
     text-decoration: none;
@@ -74,14 +75,14 @@ hr {
 
 /* Mobile */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .container {
         max-width: $med-width;
         transition: 0.3s ease all;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .container {
         max-width: 83%;
     }
