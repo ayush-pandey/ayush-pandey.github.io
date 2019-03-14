@@ -10,13 +10,13 @@ Using this analysis, I give an estimate of the domain of attraction of a stable 
 I also show that the toggle switch system is input to state stable and give appropriate bounds and convergence rates for it. 
 
 ### Toggle switch dynamics - 
-![toggle-switch](model_pic.png)
+![toggle-switch](model_pic.PNG)
 
 #### Domain of attraction
-![math1](nullcline_math.png)
+![math1](nullcline_math.PNG)
 
 ### Input to state stability
-![iss_model](leaky_expression.png)
+![iss_model](leaky_expression.PNG)
 
 ### Convergence under disturbances
 ![convergence](iss_math.png)
