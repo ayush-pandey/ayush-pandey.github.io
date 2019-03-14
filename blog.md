@@ -1,4 +1,4 @@
-* [Nonlinear Analysis of Toggle Switch](https://github.com/ayush-pandey/ayush-pandey.github.io/toggle_blog.md/)
+* [Nonlinear Analysis of Toggle Switch](https://github.com/ayush-pandey/ayush-pandey.github.io/toggle_blog/)
 
 What's the domain of attraction of a two protein synthetic toggle switch equilibrium point? How stable is a toggle switch with disturbances and leaky expression? Answers for these and similar other questions in this blog post. 
 
