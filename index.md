@@ -24,4 +24,7 @@ Control System Engineering from the Electrical Engineering department.
 <hr>
 
 
-<h2 color:red> I have moved my webpage to Caltech domain, so this will not be updated anymore. For the latest version, visit this [link](http://www.its.caltech.edu/~apandey/)</h2>
+<h2 style = "color:red"> 
+I have moved my webpage to Caltech domain, so this will not be updated anymore. For the latest version, visit this 
+ [link](http://www.its.caltech.edu/~apandey/)
+</h2>
