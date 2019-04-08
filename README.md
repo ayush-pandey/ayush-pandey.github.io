@@ -1,2 +1,2 @@
 # Personal webpage : Ayush Pandey
-## [URL](ayush-pandey.github.io)
+## [URL](http://www.its.caltech.edu/~apandey/)
