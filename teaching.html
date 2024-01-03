@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="archive, accent, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" /> -->
+    <link rel="stylesheet" href="/~apandey/css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
+            YOUTUBE_VIDEO_MARGIN=5;
+        }
+        $('iframe').each(function(index,item) {
+            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+            var w=$(item).attr('width');
+            var h=$(item).attr('height');
+            var ar = h/w*100;
+            ar=ar.toFixed(2);
+            //Style iframe    
+            $(item).css('position','absolute');
+            $(item).css('top','0');
+            $(item).css('left','0');    
+            $(item).css('width','100%');
+            $(item).css('height','100%');
+            $(item).css('float','right');
+            $(item).css('margin-left','2px');
+            $(item).css('max-width',w+'px');
+            $(item).css('max-height', h+'px');        
+            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
+            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
+            }
+        });
+        });
+    </script>
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/~apandey/teaching.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="/~apandey/teaching.html">
+    
+        <meta name="twitter:image" content="">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/~apandey/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/contact.html">Contact</a>
+                    
+                    
+                        </li>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/teaching.html">Teaching & Mentoring</a>
+                    
+                    
+                        /
+                    
+                        </li>
+ 
+<!--                     
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li> -->
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/blog.html">Blog</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/~apande/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        <!-- <div style ="height:1px align:right"> -->
+            <!-- width="630" height="323" -->
+        <!-- <div class = "video-wrapper"> -->
+        
+            
+        <div class="container content">
+                <div>
+                    <iframe style="float: left;margin-right: 20px;display: inline-block;" height="323" width="523" src="https://www.youtube.com/embed/1TKk8oGM_Zw" title="A Simple Introduction to Step Response (with Python computation)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe style="float: left;margin-right: 20px;display: inline-block"height="323" width="523" src="https://www.youtube.com/embed/A54IK57p2cw" title="Introduction to Bayesian Inference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div>
+                <h2 id="teaching">Teaching</h2>
+                    <h3>Introduction to Biological System Design: <a href = "/~apandey/E164.html">Course Webpage</a></h3>
+                    <ul>
+                    <li>September 2021: Organized a worshop at the 2021 International Bio-Design Automation (IWBDA) conference on modeling biological systems. The recorded lectures are available on YouTube <a href = "https://www.youtube.com/watch?v=YT847E9_Dqs&list=PLCz_DtgdrrHWFNegmA72p3thDrl0oMrkb&index=8">here</a>.</li>
+                    <li>October 2020: Organized a Chemical Reaction Network (CRN) modeling tutorial series for Build-A-Cell members. The recorded lectures are available on YouTube <a href = "https://www.youtube.com/playlist?list=PLb2LmjoxZO-g2vbTr3HBcnvVZur8JFiqf">here</a>.</li> I gave four lectures on - compiling biological models using <a href = "https://github.com/BuildACell/subsbml">Sub-SBML</a> and on parameter inference using <a href = "https://github.com/biocircuits/bioscrape/">Bioscrape</a>.
+                    <li>Spring 2020:
+                    Instructor for the <a href = "https://murray.cds.caltech.edu/BE_240,_Spring_2020">BE 240</a> course at Caltech. Gave 3 lectures of 1.5 hour each to graduate and undergraduate students of Caltech. 
+                    </li>
+                    <li>Fall 2019: Teaching assistant for the Linear Systems course at Caltech (for 32 graduate students). Gave 4 lectures in addition to the regular office hours and grading work. </li>
+                    <li>Spring 2017: Teaching assistant for the Nonlinear Controls course at IIT Kharagpur.</li>
+                    <li>Spring 2017: Teaching assistant for the Measurements and Instrumentatin Lab at IIT Kharagpur. </li>
+                    <li>Fall 2016: Teaching assistant for the Control Systems Lab at IIT Kharagpur.</li>
+                    </ul>
+                </div>
+                <div>
+                <iframe  style="float: left;" height = "323" width = "500" src="https://www.youtube.com/embed/YT847E9_Dqs?list=PLCz_DtgdrrHWFNegmA72p3thDrl0oMrkb" title="IWBDA Workshop on Model Reduction and Parameter Inference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style = "float:right" width="500" height="323" src="https://www.youtube.com/embed/pgjU0GBAlWk?list=PLb2LmjoxZO-g2vbTr3HBcnvVZur8JFiqf" title="Modeling Tutorial Series for Build-A-Cell" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="container content">
+                <h2 id="teaching">Mentoring</h2>
+            </div>
+            <div>
+            <ul>
+            <li>Undergraduate Thesis:
+                <ol>
+                    <li>Makena Rodriguez (Caltech, BBE, 2022-23): Model-guided biological circuit design. Manuscript published in ACS Synthetic Biology: <a href="https://doi.org/10.1021/acssynbio.2c00534">DOI:10.1021/acssynbio.2c00534</a></li>
+                    <li>Spencer Uyematsu (Pomona College, Molecular Biology, 2022-2023): Stem-cell differentiation modeling</li>
+                </ol>
+            </li>
+            <li>2022:
+            <ol>
+                <li>Anthony Chiang (SURF, Cell-free modeling)</li>
+                <li>Robert Hansen Jagrelius (SURF, Metabolic modeling)</li>
+                <li>Trenton Weasley (Harvey Mudd College, Stochastic cell-fate simulations)</li>
+                <li>Spencer Uyematsu (Pomona College, Tumor growth modeling and effects of drugs)</li>
+            </ol>
+            <li>Summer 2021:
+            <ol>
+                <li>Bridget Yang (SURF, Synthetic Cell project)</li>
+                <li>Pranay Satya (SURF, Synthetic Cell project)</li>
+                <li>Halle Holzbauer (SURF, Synthetic Cell project)</li>
+            </ol>
+            </li>
+            <li>Summer 2020:
+            <ol>
+                <li>Katherine Pan (SURF)</li>
+                <li>Ankita Roychudhary (SURF + Senior Thesis)</li>
+                <li>Liana Merk (Senior Thesis)</li>
+                <li>Nazmus Sadaat (SURF)</li>
+                <li>Agrima Deedwania (SURF)</li>
+                <li>Hope Arnett (FSRI program)</li>
+            </ol>
+            </li>
+            <li>Winter 2013: Mentored an IEEE sponsored robotics workshop for freshman students at IIT Kharagpur. Hands-on tutorial for robotics and ~20 lectures on electronic circuit design for mobile robots.</li>
+            </ul>
+      </div> 
+    </div>
+    
+</body>

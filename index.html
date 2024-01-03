@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<title>About Me</title>-->
+	<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
+            YOUTUBE_VIDEO_MARGIN=5;
+        }
+        $('iframe').each(function(index,item) {
+            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+            var w=$(item).attr('width');
+            var h=$(item).attr('height');
+            var ar = h/w*100;
+            ar=ar.toFixed(2);
+            //Style iframe    
+            $(item).css('position','absolute');
+            $(item).css('top','0');
+            $(item).css('left','0');    
+            $(item).css('width','100%');
+            $(item).css('height','100%');
+            $(item).css('float','right');
+            $(item).css('margin-left','2px');
+            $(item).css('max-width',w+'px');
+            $(item).css('max-height', h+'px');        
+            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
+            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
+            }
+        });
+        });
+    </script>
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/~apandey/css/main.css">
+    
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/~apandey/index.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://twitter.com/ayush9pandey">
+    
+        <meta name="twitter:image" content="">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/~apandey/index.html">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/contact.html">Contact</a>
+                    
+                    
+                        </li>
+                
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/teaching.html">Teaching & Mentoring</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                    
+                        <!-- <li class="alignable pull-right nav-list"><a href="/~apandey/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li> -->
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/blog.html">Blog</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/~apandey/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/index.html">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content">
+                <h2 id="about-me">About Me</h2>
+
+<p><img class="profile-picture" src="Ayush1.jpg" /></p>
+
+<p>I am starting as a new faculty member in the School of Engineering at the University of California, Merced. I am excited to help build a new Electrical Engineering department at UC Merced! My research interest is in the mathematical and computational modeling of physical systems to formally design large-scale engineered systems. A flip side of this research that I am excited to explore is the development of scalable (and free!) educational technologies that make classroom learning more interactive and engaging. If any of this sounds interesting to you / if you would like to work with me, please do not hesitate to reach out! </p>
+<br>
+<p>Earlier this year, I finished my PhD in Control and Dynamical Systems from California Institute of Technology in June 2023. My thesis explores the modeling and analysis of synthetic biological circuits towards modular and scalable design. I worked with <a href="http://www.cds.caltech.edu/~murray/wiki/index.php?title=Main_Page">Richard Murray</a> in the <a href="https://www.cds.caltech.edu/biocircuits/index.php/Main_Page">Biocircuits Lab</a>. For more information on my research, please refer to the <a href="/~apandey/publication.html">Publications</a> page. I occasionally write informal technical posts on the <a href = "/~apandey/blog.html">Blog</a> page.<br><br>
+    <!-- I am working as an Adjunct Professor for Spring 2021-2022 semester at the Harvey Mudd College. I am teaching a course that I have designed on <a href = "https://pages.hmc.edu/pandey/">Introduction to Biological System Design</a>. </p> -->
+
+<p>In 2019, I graduated with a masters in Electrical Engineering at Caltech. Before that, in 2017, I graduated with a bachelors and a masters degree from the Indian Institute of Technoloy (IIT) Kharagpur, India. My Bachelor of Technology degree is in instrumentation engineering and Master of Technology in control systems engineering from the Electrical Engineering department.</p>
+
+<h2 id="research-interests">Research Interests</h2>
+
+<ul>
+  <li>Control theory</li>
+  <li>Computational modeling</li>
+  <li>Interactive engineering educational tools</li>
+  <li>Data science applications</li>
+  <li>Artificial intelligence methods for systems modeling</li>
+</ul>
+
+<hr />
+<hr />
+
+<h2 id="news">Milestones </h2>
+                <ul>
+                    <li>Jul 2023: Started as a new faculty member at the University of California, Merced!</li>
+                    <li>Jun 2023: Successfully defended my Ph.D. at Caltech! Look at me: <a href="https://twitter.com/Ayush9Pandey/status/1671801744710574080">on Twitter</a>.</li>
+                    <li>Feb 2023: <a href="https://github.com/biocircuits/bioscrape/">Bioscrape</a> paper accepted for publication in the Journal of Open Source Software (JOSS)! Here is the public <a href="https://github.com/openjournals/joss-reviews/issues/5057">review</a> and the <a href="https://raw.githubusercontent.com/openjournals/joss-papers/joss.05057/joss.05057/10.21105.joss.05057.pdf">paper</a>.</li>
+                    <li>Jan 2023: Our paper on the characterization of integrase and excisionase dynamics in cell-free using a novel modeling and analysis pipeline was accepted for publication in ACS Synthetic Biology. <a href="https://pubs.acs.org/doi/10.1021/acssynbio.2c00534">DOI: 10.1021/acssynbio.2c00534</a></li>
+                    <li>Oct 2022: Workshop on modeling and analysis tools at IWBDA 2022 and at iGEM Grand Jamboree on "Learning Parameters from Experimental Data using Bayesian Inference and Model Reduction". Computational notebook on model reduction with AutoReduce is <a href="http://tiny.cc/iwbda-autoreduce">available here </a> and the computational notebook on parameter inference with Biosrape is <a href="http://tiny.cc/iwbda-bioscrape">available here</a>.</li>
+                    <li>Oct 2022: Co-organizing a special issue on bio-design automation for ACS Synthetic Biology. More details <a href="iwbdaconf.org/2022/acssynbio/">here</a>.</li>
+                    <li>Oct 2022: Served as the publication chair at the IWBDA 2022!</li>
+                    <li>Aug 2022: Two papers (one on <a href="https://www.biorxiv.org/content/10.1101/2022.04.08.487709v1">contract-based design</a> for synthetic biology and the other on a <a href="https://www.biorxiv.org/content/10.1101/2022.10.05.511053v1">modeling and analysis pipeline</a>) accepted at the 14th International Workshop on Bio-Design Automation (IWBDA) 2022. To be organized in Paris, France together with iGEM Grand Jamboree, 2022. Both papers were accepted as talks.</li>
+                    <li>April 2022: Last lecture at Harvey Mudd! It was a pleasure teaching the class on <a href = "https://biosysdesign.github.io/E164/">Introduction to Biological System Design</a> at the Harvey Mudd College. Here's a snapshot of the class review lecture at the end: <img src = "/~apandey/documents/e164_board.png"></li>
+                    <li>April 2022: New preprint! We posted a new bioRxiv preprint on our recent work: "From Specification to Implementation: Assume-Guarantee Contracts for Synthetic Biology". PDF on <a href = "https://www.biorxiv.org/content/10.1101/2022.04.08.487709v1">bioRxiv</a>. You can use the implementation of our paper on <a href = "https://colab.research.google.com/drive/1Hznt1QWCpxeU6wGiv-ozG6tn5869eq5C?usp=sharing">Google Colab</a> to convert your own biological system specification into simple mathematical models!</li>
+                    <li>March 2022: Presented a poster at the 8th Build-A-Cell workshop on "Full-Stack Modeling of Biological Circuits: From Specifications to Implementation using Python. <a href="/~apandey/documents/poster_buildacell.pdf">PDF</a>.</li>
+                    <li>February 2022: Our paper on "BioCRNpyler: Compiling Chemical Reaction Networks from Biomolecular Parts in Diverse Contexts" was accepted (in February) and published (in April) in <a href = "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009987">PLoS Computational Biology</a>.</li>
+                    <li>Access the archive of update posts <a href="/~apandey/archive_updates.html">here</a>.</li>
+                </ul>
+                <hr/>
+                Last updated: August 23, 2023. All original material on this website is free-to-use and can be shared with proper attribution. You can view the <a href="/~apandey/LICENSE.txt">LICENSE</a> here.
+            </div>
+<hr />
+<hr /> 
+
+    </div>
+    
+</body>

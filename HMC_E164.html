@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html class = "client-js" lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+    <meta name="keywords" content="archive, accent, Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" /> -->
+    <link rel="stylesheet" href="/~apandey/css/main.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
+            YOUTUBE_VIDEO_MARGIN=5;
+        }
+        $('iframe').each(function(index,item) {
+            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
+            var w=$(item).attr('width');
+            var h=$(item).attr('height');
+            var ar = h/w*100;
+            ar=ar.toFixed(2);
+            //Style iframe    
+            $(item).css('position','absolute');
+            $(item).css('top','0');
+            $(item).css('left','0');    
+            $(item).css('width','100%');
+            $(item).css('height','100%');
+            $(item).css('float','right');
+            $(item).css('margin-left','2px');
+            $(item).css('max-width',w+'px');
+            $(item).css('max-height', h+'px');        
+            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
+            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
+            }
+        });
+        });
+    </script>
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/~apandey/teaching.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="/~apandey/teaching.html">
+    <meta name="twitter:image" content="">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/~apandey/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/contact.html">Contact</a>
+                    
+                    
+                        </li>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/teaching.html">Teaching & Mentoring</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/blog.html">Blog</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/~apande/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+
+    <div class="container content">
+<h3 lang="en">ENGR 164: Introduction to Biological System Design. Spring 2021-22 at Harvey Mudd College</h1>
+
+<tbody><tr>
+<td colspan="2" align="center">
+<!-- <p><font color="blue" size="+2">Introduction to Biological System Design</font> -->
+<!-- </p> -->
+</td></tr>
+<tr valign="top">
+<td width="50%">
+<p><b>Instructor</b>
+</p>
+<ul><li>Ayush Pandey, aypandey@hmc.edu</li>
+<li>Lectures: Tuesday and Thursday, 2.45-4 pm, location: on Zoom until 31st Jan. Then, at Shanahan 2407.</li>
+<li>Office hours: Thursday 4-5 pm Location TBD. Schedule any other office hour as you may need by sending me an email.</li></ul>
+<li>Piazza: We will use Piazza for all class related discussion, homework Q&A, and general announcements. Ask Ayush to be added.</li>
+<li></li>
+</td></tr></tbody></table>
+<p>This is the course homepage for ENGR 164, listed as Introduction to Biomedical Engineering in the Engineering course catalog at Harvey Mudd College for Spring 2021-22 semester. The actual course title is Introduction to Biological System Design. This course is intended for juniors and seniors interested in the design of natural and engineered biological systems. After completion of the course, students will be able to:
+    <ol><li> understand the basics of biological systems design </li>
+        <li> develop mathematical models for biological circuits</li>
+        <li> use numerical approaches to analyze biological data </li></ol>
+</p>
+<h3><span class="mw-headline" id="Catalog_Description">Course Description</span></h3>
+<p><b>E164. Introduction to Biological System Design.</b> Spring Term at HMC. 3 credits (2.5 hour lecture, 0 hour lab, 6 hour homework). Prerequisites: Basic familiarity with Python. Course Topics: Introduction to the broad fields of systems and synthetic biology by describing the basic biological processes, mechanisms, and components of biological designs. Particular topics include: gene regulatory networks, transcriptional and translational regulation, common motifs in biological circuit designs, chemical reaction network modeling for biological systems, mathematical analyses using differential equations, calculus, and algebra for biological models, and two case studies of biological systems. The course will be taught in Python language &mdash; so for everything that we will study we would like to use programming in Python to numerically or analytically understand the topics.</p>
+<h3><span class="mw-headline" id="Lecture_Schedule">Lecture Schedule</span></h3>
+<table class = "course-table" width="100%" border="1" cellpadding="5">
+    <colgroup>
+       <col span="1" style="width: 10%;">
+       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 20%;">
+       <col span="1" style="width: 30%;">
+    </colgroup>
+<tbody><tr>
+<td><b>Date</b>
+</td>
+<td><b>Topic</b>
+</td>
+<td><b>Homework</b>
+</td>
+<td><b>Reading</b>
+</td></tr>
+<tr valign="top">
+<td>Week 1<br />
+<p>18 Jan <br/>  20 Jan 
+</p>
+</td>
+<td>Introduction:
+<ul><li>Course logistics</li>
+<li>Overview: Biological Systems Design</li>
+<li>Introduction to Python</li></ul>
+</td>
+<td><a href="~/apandey/HMC_E164/HW1.pdf" title="~/apandey/HMC_E164/HW1.pdf">HW #1</a> <br />
+<p>Out: 18 Jan <br />
+Due: 25 Jan <br />
+</p>
+</td>
+<td>python intro notebook<br> intro to bio paper</td>
+</tr>
+<tr valign="top">
+<td>Week 2<br />
+<p>25 Jan <br />  27 Jan
+</p>
+</td>
+<td>
+<ul><li>Biological Circuit Design</li>
+    <li>Introduction to Systems and Synthetic Biology</li>
+    <li>Biological Experiments and Data</li>
+</ul>
+</td>
+<td>
+<a href="~/apandey/HMC_E164/HW2.pdf" title="~/apandey/HMC_E164/HW2.pdf">HW #2</a> <br />
+<p>Out: 25 Jan <br />
+Due: 1 Feb <br />
+</p>
+</td>
+<td>
+    BFS Ch1 <br> Intro paper/tutorial type
+</td></tr>
+<tr valign="top">
+<td>Week 3<br />
+<p>1 Feb <br />3 Feb
+</p>
+</td>
+<td>Core Biological Processes - I
+<ul><li>Transcription and Translation</li>
+<li>Modeling Biological Processes</li></ul>
+</td>
+
+<td><a href="~/apandey/HMC_E164/HW3.pdf" title="~/apandey/HMC_E164/HW3.pdf">HW #3</a> <br />
+<p>Out: 1 Feb <br />
+Due: 8 Feb <br />
+</p>
+</td><td>
+BFS Ch2., Alon Ch. X
+</td></tr>
+<tr valign="top">
+<td>Week 4<br />
+<p>8 Feb <br />  10 Feb
+</p>
+</td>
+<td>Core Biological Processes - II
+<ul><li>Gene Regulation</li>
+    <li>Introduction to Feedback Systems</li></ul></td>
+<td><a href="~/apandey/HMC_E164/HW4.pdf" title="~/apandey/HMC_E164/HW4.pdf">HW #4</a> <br />
+<p>Out: 8 Feb <br />
+Due: 15 Feb <br />
+</p>
+</td>
+<td>
+    Alon Ch. X, BFS Ch. Xs
+</td>
+</tr>
+<tr valign="top">
+<td>Week 5<br />
+<p>15 Feb <br />  17 Feb
+</p>
+</td>
+<td>From Processes to Circuits - I
+<ul><li>Simple Biological Circuits</li>
+    <li>Analysis of Biological Circuits</li></ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW5.pdf" title="~/apandey/HMC_E164/HW5.pdf">HW #5</a> <br />
+<p>Out: 15 Feb <br />
+Due: 22 Feb <br />
+</p>
+</td>
+<td>
+    Alon Ch. X, BFS Ch. X
+</td></tr>
+<tr valign="top">
+<td>Week 6<br />
+<p>22 Feb <br />  24 Feb
+</p>
+</td>
+<td>From Processes to Circuits - II
+<ul><li>Transcription and Translation Circuits</li>
+    <li>Gene Regulatory Networks</li></ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW6.pdf" title="~/apandey/HMC_E164/HW6.pdf">HW #6</a> <br />
+<p>Out: 22 Feb <br />
+Due: 1 Mar <br />
+</p>
+</td>
+<td>
+    Alon Ch X, BFS Ch. X
+</td></tr>
+<tr valign="top">
+<td>Week 7<br />
+<p>1 Mar <br />  3 Mar 
+</p>
+</td>
+<td>Dynamical System Tools for Biological Circuits
+<ul><li>Steady State Analysis</li>
+    <li>Deterministic System Modeling</li></ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW7.pdf" title="~/apandey/HMC_E164/HW7.pdf">HW #7</a> <br />
+<p>Out: 1 Mar <br />
+Due: 8 Mar <br />
+</p>
+</td>
+<td>
+    BFS Ch. X, ODE.x
+</td></tr>
+<tr valign="top">
+<td>Week 8<br />
+<p>8 Mar <br /> 10 Mar
+</p>
+</td>
+<td>Biological Circuit Motifs
+<ul><li>Feedback Loops</li>
+    <li>Feedforward Loops</li>
+</ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW8.pdf" title="~/apandey/HMC_E164/HW8.pdf">HW #8</a> <br />
+<p>Out: 8 Mar <br />
+Due: 15 Mar <br />
+</p>
+</td>
+<td>
+    Alon Ch. X, Paper.X
+</td></tr>
+<tr valign="top">
+<td colspan = 4 style="text-align:center">Week 9: Spring Break</td>
+</tr>
+<tr valign="top">
+<td>Week 10<br />
+<p>22 Mar <br />  24 Mar
+</p>
+</td>
+<td>Modeling Biological Circuits
+    <ul><li>Review: Ordinary Differential Equations (ODEs)</li>
+    <li>Review: Chemical Reaction Networks (CRNs)</li>
+    <li>ODEs for CRNs</li>
+    </ul></td>
+<td>
+    <a href="~/apandey/HMC_E164/HW9.pdf" title="~/apandey/HMC_E164/HW9.pdf">HW #9</a> <br />
+<p>Out: 22 Mar <br />
+Due: 29 Mar <br />
+</p>
+</td>
+<td>
+    BFS Ch. X
+</td></tr>
+<tr valign="top">
+<td>Week 11<br />
+<p>29 Mar <br /> 31 Mar
+</p>
+</td>
+<td>CRN Models for Biological Processes
+<ul><li>Transcription and Translation</li>
+    <li>Gene Regulation</li>
+</ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW10.pdf" title="~/apandey/HMC_E164/HW10.pdf">HW #10</a> <br />
+<p>Out: 29 Mar <br />
+Due: 5 Apr <br />
+</p>
+</td>
+<td>
+    BFS Ch.X, Paper.X
+</td></tr>
+<tr valign="top">
+<td>Week 12<br />
+<p>5 Apr <br /> 7 Apr
+</p>
+</td>
+<td>Modeling and Analysis of Biological Motifs
+<ul><li>Logic Gates With Feedforward Loops</li>
+    <li>Robustness and Sensitivity Analysis</li>
+</ul></td>
+<td>
+<a href="~/apandey/HMC_E164/HW11.pdf" title="~/apandey/HMC_E164/HW11.pdf">HW #11</a> <br />
+<p>Out: 5 Apr <br />
+Due: 12 Apr <br />
+</p>
+</td>
+<td>
+    BFS Ch.X, Paper.X
+</td></tr>
+
+<tr valign="top">
+<td>Week 13<br />
+<p>12 Apr <br /> 14 Apr
+</p>
+</td>
+<td>Case Study 1
+    <ul><li>Feedback Loops</li>
+    <li>Feedforward Loops</li>
+</ul>
+</td>
+<td>
+    Project Discussions #1
+</td>
+<td>
+</td></tr>
+<tr valign="top">
+<td>Week 14<br />
+<p>19 Apr <br /> 21 Apr
+</p>
+</td>
+<td>Case Study 2
+    <ul><li>Feedback Loops</li>
+    <li>Feedforward Loops</li>
+</ul>
+</td>
+<td>
+Project Discussions #2
+</td>
+<td>
+</td></tr>
+
+<tr valign="top">
+<td>Week 15<br />
+<p>26 Apr <br /> 28 Apr
+</p>
+</td>
+<td>Summary:<ul><li>Class Review</li>
+        <li>Final Project Presentations</li></ul>
+</td>
+<td colspan = 2 style="text-align:center;"> Final Project Reports Due</td>
+</tbody></table>
+<h3><span class="mw-headline" id="Grading">Grading</span></h3>
+<p>The final grade will be based on homework sets and a final project: 
+</p>
+<ul><li><b>Homework (70%):</b> The homework sets every week will comprise of one theory/short-essay/analysis problem and a few programming problems in Python. Each week the problem set will be out before the Tuesday lecture and will be due the next week on Tuesday before class. You can email your solutions in an ipython notebook format to me. Collaboration on homework problems is encouraged, please cite all sources in your submission (inlcuding any code snippets used from the Internet, research papers, or discussions with classmates). All homework submissions must be completed by each student individually that reflects your understanding of the material. <br><br>The best 10 scores out of the 11 homework sets will be used to compute the final score for every student.</li></ul> 
+<ul><li><b>Project (30%):</b>  For the final evaluation, each student must work on a project of their choice for the second half of the course. The project will be evaluated on a final report for the project and a short 10 minute presentation during the last week of classes.</li></ul>
+
+<h3><span class="mw-headline">Course Resources</span></h3>
+<p>The primary resources are the following two textbooks:
+</p>
+<ul><li>[BFS] Domitilla Del Vecchio and Richard M. Murray, "Biomolecular Feedback Systems", 2021. <a rel="nofollow" href="https://fbswiki.org/wiki/index.php/Biomolecular_Feedback_Systems">Available Online</a>.</li>
+<li>[Alon] Uri Alon, "An Introduction to Systems Biology: Design Principles of Biological Circuits", 2019. 
+    <!-- <a rel = "nofollow" href = "https://sysbio.mx/wp-content/uploads/2021/02/Uri-Alon-An-Introduction-to-Systems-Biology_-Design-Principles-of-Biological-Circuits-CRC-Press-2020.pdf">Available Online</a>.</li></ul> -->
+<p> Additional References:
+</p>
+<!-- <ul></ul> -->
+
+<!-- 
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0.001},"limitreport":{"cputime":"0.021","walltime":"0.033","ppvisitednodes":{"value":116,"limit":1000000},"postexpandincludesize":{"value":792,"limit":2097152},"templateargumentsize":{"value":192,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    6.163      1 -total"," 91.18%    5.620     10 Template:Cds112_wi2021_pdf"]},"cachereport":{"timestamp":"20211218034243","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":93});});</script> -->
+
+</body></html>

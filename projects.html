@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<title>Current Projects</title>-->
+	<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    
+    
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/~apandey/css/main.css">
+    
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/~apandey/projects.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="/~apandey/projects.html">
+    
+        <meta name="twitter:image" content="">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/~apandey/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/contact.html">Contact</a>
+                    
+                    
+                        </li>
+                
+<!--                     
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                 -->
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/blog.html">Blog</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/~apandey/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/~apandey/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content">
+                <h1 id="current-projects">Current Projects</h1>
+<ul>
+  <li>Control theory and synthetic biology - Working on applications of three primary tools from control theory to synthetic biology.
+    <ul>
+      <li>Model reduction</li>
+      <li>Parameter identification</li>
+      <li>Nonlinear analysis</li>
+    </ul>
+  </li>
+  <li>Other current projects that I am working on are described in the following section</li>
+</ul>
+
+<h2 id="software-tools-for-synthetic-biology">Software Tools for Synthetic Biology</h2>
+<ul>
+  <li>
+    <p>sbmlsense - Python toolbox for sensitivity analysis of biomolecular systems. There are plenty of tools available for sensitivity analysis of biological systems such as <a href="http://copasi.org/">COPASI</a>, <a href="https://sites.google.com/site/amigo2toolbox/features">AMIGO</a> and many more. However, there are a few important features that we aim to develop in sbmlsense such as having capability to do sensitivity analysis and inform the parameter identification algorithms that follow. Apart from the identifiability analysis, we envision sbmlsense to be used as a standalone tool for sensitivity analysis for multiple types of data (and possibly also together) such as multiple time series data together, distributional data etc.</p>
+  </li>
+  <li>bioscrape - Serving as an extension to <a href="https://github.com/ananswam/bioscrape">bioscrape</a>, biosysid is the parameter identification toolbox for biological systems.
+    <ul>
+      <li>Deterministic parameter estimation</li>
+      <li>Stochastic parameter estimation using MCMC bayesian inference algorithm (using <a href="http://dfm.io/emcee/current/">emcee</a></li>
+    </ul>
+  </li>
+  <li>bioCRNpyler - Python toolbox to create CRN models in SBML for biomolecular mechanisms.
+A subset of functionalities in bioCRNpyler would enable the following modeling and simulation features
+    <ul>
+      <li>User friendly and customizable Python based software</li>
+      <li>SBML models of cell-free experiments.</li>
+      <li>Running simulations for some of the most common transcription-translation experiments</li>
+      <li>Default support for <a href="https://github.com/ananswam/bioscrape">bioscrape</a>, <a href="http://sys-bio.github.io/roadrunner/python_docs/using_roadrunner.html#running-simulations">roadrunner</a> for fast stochastic and deterministic simulations</li>
+      <li>Easily add new mechanisms, and components to extend modeling features.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>My current progress is available at <a href="https://github.com/ayush9pandey/BioCRNPyler">my fork</a> for the <a href="https://github.com/WilliamIX/BioCRNPyler">original repository</a></p>
+
+<h1 id="completed-projects">Completed projects</h1>
+<ul>
+  <li>Intracellular transport and model composition using Sub-SBML
+    <ul>
+      <li>Modeling of IPTG transport circuit (IPTG molecules transport over vesicle membrane pores created by a protein in the cell-free experiment, the transported molecule generate fluorescence)</li>
+      <li>Modeling of logic gates that involve multiple biocircuits working together to create a logic function</li>
+    </ul>
+  </li>
+</ul>
+
+<p>All code and these examples are available <a href="https://github.com/BuildACell/subsbml/tree/master/examples">here</a></p>
+
+<ul>
+  <li><a href="#subsbml">Sub-SBML</a> : A Subsystem Interaction Modeling Toolbox for SBML Models - <a href="https://github.com/BuildACell/subsbml/">Github, subsbml</a>
+    <ul>
+      <li>I gave a talk about this toolbox at Combine 2018 conference at Boston, the abstract for the talk is here -</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="sub-sbml--a-subsystem-interaction-modeling-toolbox-for-sbml-models"><a name="subsbml">Sub-SBML</a> : A Subsystem Interaction Modeling Toolbox for SBML Models</h2>
+<p><em>Ayush Pandey and Richard Murray</em></p>
+
+<p>We present Sub-SBML, a Python based toolbox to create, edit, combine, and model interactions among multiple SBML models. Sub-SBML works with a “subsystem” architecture of modeling where a single SBML model can be contained within a subsystem. Three major functionalities are developed in Sub-SBML that take advantage of this subsystem framework of modeling – creating subsystems, combining multiple subsystems, and modeling interactions such as transport of molecules and input-output relationships among multiple subsystems.
+Sub-SBML provides functions to create subsystems for SBML models in order to use various utility functions to edit the model (such as renaming different lists of model components, creating multiple components at once, integrations for different simulator options, simulating variable species amount in a model etc). It is often desired in modeling of compounded biomolecular systems to combine multiple smaller models for different modules. The primary features of Sub-SBML allow for modeling of such systems by creating subsystems for different models and then combining these subsystems as desired, while also modeling the interactions among the models. A list of subsystems may be combined by specifying a list of species which would be shared in the final combined model. The toolbox also provides functions to model the cases when it is desired that all species that have the same name be a single combined species in the final model.</p>
+
+<p>Sub-SBML can also be used to model compartments in SBML for modeling the transport of species between different models. A subsystem object in Sub-SBML consists of an SBML model that can have one compartment to hold all the species of that model. Multiple subsystems may be placed inside a “system”. A system object in Sub-SBML acts as a container for subsystems. Subsystems may be defined to be internal to a system, external to a system, or as membranes to a system. Hence, an SBML model of a system would consist of two compartments – internal and external. The membrane subsystem will also have these two compartments and reactions modeling the transport of species across it. A system model can be generated that would give a combined model of all subsystems that are internal, external and set as membrane to this system, hence modeling the transport across this system container. Similarly, multiple system objects can be modeled and interactions across multiple systems may be modeled as well.</p>
+
+<p>We consider an example of IPTG transport across synthetic vesicles when α-hemolysin is expressed inside the vesicle, which creates pores in the membrane to allow transport of IPTG molecules from the environment to inside the vesicle. We demonstrate the use of Sub-SBML to model this system in SBML. We also consider other synthetic biological circuits to demonstrate input-output species interactions among subsystems and to obtain combined SBML models.</p>
+
+<p><a href="https://github.com/BuildACell/subsbml/wiki">Wiki</a></p>
+
+<ul>
+  <li>Other Important links 
+      1. bioscrape<br />
+         - Wiki/Documentation - <a href="https://github.com/ananswam/bioscrape/wiki">Github</a>, <a href="https://www.biorxiv.org/content/early/2017/03/27/121152">Paper</a>
+         - Download - <a href="https://omictools.com/bio-circuit-stochastic-single-cell-reaction-analysis-and-parameter-estimation-tool">link</a>
+      2. BioSIMI - <a href="https://github.com/MiroGasparek/BioSIMI">Github</a>
+      3. SimBiology - MATLAB <a href="https://www.mathworks.com/products/simbiology.html">toolbox</a>
+      4. SBML 
+          - <a href="http://sbml.org">Webpage</a>
+          -  <a href="http://sbml.org/More_Detailed_Summary_of_SBML">A simple example in SBML</a>
+          -  <a href="http://sbml.org/Documents/Specifications">Specifications and Packages</a>
+    <ul>
+      <li>Some good beginner’s resources for people with non-biology background
+        <ol>
+          <li>Towards Genetically-Programmed Synthetic Cells and Multi-Cellular Machines. <a href="http://www.cds.caltech.edu/~murray/wiki/images/2/23/Dod16-vbff.pdf">PDF</a></li>
+          <li>CS + Biology - Prof. Richard Murray, Caltech. <a href="https://youtu.be/dPcObYcFU_I">YouTube</a></li>
+          <li>Del Vecchio, Domitilla, and Richard M. Murray. Biomolecular feedback systems. Princeton, NJ: Princeton University Press, 2015. <a href="http://www.cds.caltech.edu/~murray/BFSwiki/index.php?title=Main_Page">Link</a></li>
+        </ol>
+      </li>
+      <li>April 2018 - Sept 2018</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="past-projects">Past projects</h1>
+
+<ul>
+  <li>Study of fundamental limits and tradeoffs in active and passive systems
+    <ul>
+      <li>Jan - Apr 2018</li>
+    </ul>
+  </li>
+  <li>i-Bike, IIT Kharagpur
+    <ul>
+      <li>Won various accolades for our student project of an autonomous bicycle with dual mode of locomotion.
+        <ul>
+          <li>Won $8000 for first position in national competition organized by KPIT where more than 10k students from all over India participated</li>
+          <li>Indian patent filed (pending application number 201631025904)</li>
+          <li>In the media - <a href="https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/">Washington Post</a>, <a href="http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms">Economic Times</a>, <a href="http://www.autocarpro.in/news-national/iit-kharagpur-wins-gold-kpit-sparkle-2016-10525">AutoCar Professional</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>More details <a href="/~apandey/i-bike.html">here</a></p>
+  </li>
+  <li>Autonomous Ground Vehicle (<a href="http://www.agv.iitkgp.ac.in/publications">AGV</a>, IIT Kharagpur)
+    <ul>
+      <li>Team leader for two consecutive years leading the 40 student member team to Intelligent Ground Vehicle Competition <a href="http://www.igvc.org/objective.htm">IGVC</a>. AGV won the 2nd prize among teams from all around the world in 2018.</li>
+    </ul>
+  </li>
+  <li>State-space averaging of switched dynamical systems
+    <ul>
+      <li>Masters thesis project at IIT Kharagpur</li>
+      <li>Advisor : Prof. Siddhartha Mukhopadhyay</li>
+    </ul>
+  </li>
+  <li>Robust controller design using H-infinity loop-shaping approach
+    <ul>
+      <li>Bachelors thesis project at IIT Kharagpur</li>
+      <li>Advisor : Prof. Sourav Patra</li>
+      <li>Awarded best thesis project award in 2016</li>
+    </ul>
+  </li>
+</ul>
+
+            </div>
+        
+    </div>
+    
+</body>
