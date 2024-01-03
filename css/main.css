@@ -1,0 +1,36 @@
+html{height:100%;width:100%;margin:0;padding:0;overflow-x:hidden !important}
+body{margin:0;font-family:"quicksand";height:100%;font-size:20px}
+a{text-decoration:none;color:#004fff}
+a:hover{text-decoration:underline}
+hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)}
+#author-name{font-size:45px;color:#0b0404;display:inline-block}
+.navbar{padding:40px 0 0 0}
+.navbar-ul{display:inline-block;margin:0;padding:0px 0 0px 0;margin-left:15px}
+.nav-list{list-style-type:none;margin:0 5px 0 10px}
+.alignable,.pull-left,.pull-right{display:inline-block}
+.pull-left{float:left}
+.pull-right{float:right}
+.container{max-width:1000px;margin:auto}
+.wrapper{min-height:100%}
+@media (max-width: 900px){.container{max-width:600px;transition:0.3s ease all}}
+@media (max-width: 750px){.container{max-width:83%}.navbar-ul{margin-top:5px}}
+@media (max-width: 580px){#author-name{display:inline-block}}
+.content a:hover{text-decoration:underline}
+.content ol{counter-reset:list}
+.content ol>li{list-style-position:none;position:relative;list-style:none;margin-top:5px;margin-bottom:5px}
+.content ul>li{margin:5px 0 5px 0}
+.content ul{padding:0 20px 0 20px}
+.content ol{padding:0 30px 0 30px}
+.content ol>li:before{content:"[" counter(list,decimal) "] ";counter-increment:list;position:absolute;left:-30px}
+.content blockquote{border-left:5px solid #333333;margin:20px 0 20px 0;padding:2px 8px 2px 8px;font-style:italic}
+.content .profile-picture{height:282px;width:214px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:0%}
+p .content .profile-picture{padding:0;margin:0}
+@media (max-width: 480px){.content .profile-picture img{margin-top:-5px}}
+.content img{text-align:center;width:100%}
+table{margin:15px 0;border-collapse:collapse;width:100%;padding:0;}
+table tr{border-top:1px solid #fdfcc6;background-color:rgb(255, 255, 255);margin:0;padding:0}
+table tr:nth-child(2n){background-color:#fafaf3}
+table tr th{font-weight:bold;border:1px solid #ffffff;text-align:left;margin:0;padding:6px 13px}
+table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:scroll;}
+table tr th :first-child,table tr td :first-child{margin:0}
+table tr th :last-child,table tr td :last-child{margin:0}
