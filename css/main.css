@@ -10,6 +10,10 @@ hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px soli
 .alignable,.pull-left,.pull-right{display:inline-block}
 .pull-left{float:left}
 .pull-right{float:right}
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
 .container{max-width:1000px;margin:auto}
 .wrapper{min-height:100%}
 @media (max-width: 900px){.container{max-width:600px;transition:0.3s ease all}}
