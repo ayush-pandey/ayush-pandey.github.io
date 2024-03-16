@@ -44,7 +44,7 @@ jobs:
       #         decrypted_file.write(decrypted_data)
   
       - name: Upload Decrypted Data as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: decrypted-comments
           path: documents/decrypted_comments.json
