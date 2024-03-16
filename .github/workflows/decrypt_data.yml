@@ -20,6 +20,7 @@ jobs:
             ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
         run: |
             python -c "import base64
+            import os
             from cryptography.fernet import Fernet
             encryption_key = os.getenv('ENCRYPTION_KEY')
             fernet = Fernet(encryption_key)
