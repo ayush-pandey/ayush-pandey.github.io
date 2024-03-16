@@ -10,18 +10,38 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-  
+
+      - name: Install Python dependencies
+        run: |
+            python -m pip install --upgrade pip
+            pip install cryptography
       - name: Decrypt comments
         env:
-          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+            ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
         run: |
-          from cryptography.fernet import Fernet
-          with open('documents/encrypted_comments.dat', 'rb') as encrypted_file:
-              encrypted_data = encrypted_file.read()
-          fernet = Fernet(ENCRYPTION_KEY)
-          decrypted_data = fernet.decrypt(encrypted_data).decode()
-          with open('documents/decrypted_comments.json', 'w') as decrypted_file:
-              decrypted_file.write(decrypted_data)
+            python -c "import base64
+            import os
+            from cryptography.fernet import Fernet
+            encryption_key = os.getenv('ENCRYPTION_KEY')
+            fernet = Fernet(encryption_key)
+            with open('documents/encrypted_comments.dat', 'rb') as encrypted_file:
+                encrypted_data = encrypted_file.read()
+            decrypted_data = fernet.decrypt(encrypted_data).decode('utf-8')
+            with open('documents/decrypted_comments.json', 'w') as decrypted_file:
+                decrypted_file.write(decrypted_data)
+            "
+
+      # - name: Decrypt comments
+      #   env:
+      #     ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+      #   run: |
+      #     from cryptography.fernet import Fernet
+      #     with open('documents/encrypted_comments.dat', 'rb') as encrypted_file:
+      #         encrypted_data = encrypted_file.read()
+      #     fernet = Fernet(ENCRYPTION_KEY)
+      #     decrypted_data = fernet.decrypt(encrypted_data).decode()
+      #     with open('documents/decrypted_comments.json', 'w') as decrypted_file:
+      #         decrypted_file.write(decrypted_data)
   
       - name: Upload Decrypted Data as Artifact
         uses: actions/upload-artifact@v2
