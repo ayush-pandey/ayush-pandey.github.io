@@ -39,9 +39,9 @@ table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;o
 table tr th :first-child,table tr td :first-child{margin:0}
 table tr th :last-child,table tr td :last-child{margin:0}
 .container-group{
-            width: 80%;
+            width: 100%;
             margin: auto;
-            text-align: center;
+            text-align: left;
         }
 .group-member {
     display: flex;
@@ -57,7 +57,7 @@ table tr th :last-child,table tr td :last-child{margin:0}
 
 .group-member-description {
     display: inline-block; /* Allows the description to be aligned next to the image */
-    margin-left: 20px; /* Adjust as needed for spacing */
+    margin-left: 2px; /* Adjust as needed for spacing */
     text-align: left; /* Aligns the text to the left */
     max-width: 75%; /* Ensures the description does not extend the full width */
 }
