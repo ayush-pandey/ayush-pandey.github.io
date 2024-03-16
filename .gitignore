@@ -22,3 +22,5 @@ __pycache__/
 # Ignore decrypted files
 documents/decrypted_comments.json
 documents/student_comments.py
+documents/decrypt_test.py
+documents/encrypt_comments.py
