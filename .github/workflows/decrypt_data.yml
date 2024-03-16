@@ -1,0 +1,30 @@
+name: Decrypt and Deploy Website
+
+on:
+  push:
+    branches:
+      - master  # or your default branch
+
+jobs:
+  decrypt-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Decrypt comments
+      env:
+        ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+      run: |
+        from cryptography.fernet import Fernet
+        with open('documents/encrypted_comments.dat', 'rb') as encrypted_file:
+            encrypted_data = encrypted_file.read()
+        fernet = Fernet(ENCRYPTION_KEY)
+        decrypted_data = fernet.decrypt(encrypted_data).decode()
+        with open('documents/decrypted_comments.json', 'w') as decrypted_file:
+            decrypted_file.write(decrypted_data)
