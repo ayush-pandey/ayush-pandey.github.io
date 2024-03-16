@@ -21,9 +21,10 @@ jobs:
         run: |
             python -c "import base64
             from cryptography.fernet import Fernet
+            encryption_key = os.getenv('ENCRYPTION_KEY')
+            fernet = Fernet(encryption_key)
             with open('documents/encrypted_comments.dat', 'rb') as encrypted_file:
                 encrypted_data = encrypted_file.read()
-            fernet = Fernet(base64.urlsafe_b64encode(bytes(ENCRYPTION_KEY, 'utf-8')))
             decrypted_data = fernet.decrypt(encrypted_data).decode('utf-8')
             with open('documents/decrypted_comments.json', 'w') as decrypted_file:
                 decrypted_file.write(decrypted_data)
