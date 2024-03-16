@@ -1,0 +1,24 @@
+# Ignore build output
+/_site/
+/.sass-cache/
+
+# Ignore Python virtual environment
+/venv/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore cache and log files
+*.log
+__pycache__/
+
+# Ignore environment-specific files
+.env
+.env.*
+
+# Ignore package dependencies
+/node_modules/
+
+# Ignore decrypted files
+documents/decrypted_comments.json
+documents/student_comments.py
