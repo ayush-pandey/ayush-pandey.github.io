@@ -43,27 +43,21 @@ table tr th :last-child,table tr td :last-child{margin:0}
             margin: auto;
             text-align: center;
         }
-
 .group-member {
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: flex-start; /* Align the items to the top */
+    justify-content: center; /* Center the items horizontally */
     margin-bottom: 20px;
 }
 
 .group-member img {
     width: 20%;
+    float: left; /* Float the image to the left */
 }
 
 .group-member-description {
-    margin-left: 20px;
-    text-align: left;
-}
-
-.group-member-description h3 {
-    margin: 0;
-}
-
-.group-member-description p {
-    margin: 5px 0;
+    display: inline-block; /* Allows the description to be aligned next to the image */
+    margin-left: 20px; /* Adjust as needed for spacing */
+    text-align: left; /* Aligns the text to the left */
+    max-width: 75%; /* Ensures the description does not extend the full width */
 }
