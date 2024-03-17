@@ -7,8 +7,8 @@
 - name: "Publications"
   link: "/publication"
   
-- name: "Blog"
-  link: "/blog"
+- name: "Group"
+  link: "/group/index.html"
 
 - name: "Resume"
   link: "/resume.pdf"
