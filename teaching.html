@@ -135,9 +135,9 @@
                     <button id="showComments">See what students said about my teaching!</button>
                     <div id="comments"></div>
 
-                    <script>
+                   <script>
                         document.getElementById('showComments').addEventListener('click', function() {
-                            fetch('/assets/comments.json')
+                            fetch('https://webcomments.azurewebsites.net/api/fetchComments')
                                 .then(response => {
                                     if (!response.ok) {
                                         throw new Error('Network response was not ok');
@@ -148,11 +148,12 @@
                                     const commentsDiv = document.getElementById('comments');
                                     commentsDiv.innerHTML = ''; // Clear previous comments
 
-                                    // Get a random comment from the array
-                                    const randomComment = comments[Math.floor(Math.random() * comments.length)];
-
-                                    // Display the comment
-                                    commentsDiv.innerHTML = `<div><strong>Comment:</strong> ${randomComment}</div>`;
+                                    // Assuming the comments data is an array of strings
+                                    comments.forEach(comment => {
+                                        const commentElement = document.createElement('div');
+                                        commentElement.textContent = comment;
+                                        commentsDiv.appendChild(commentElement);
+                                    });
                                 })
                                 .catch(error => {
                                     console.error('Error fetching comments:', error);
@@ -160,6 +161,7 @@
                                 });
                         });
                     </script>
+ 
 
 
                 <div>
