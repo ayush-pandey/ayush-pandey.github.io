@@ -101,6 +101,9 @@ package-lock.json
 package.json
 host.json
 
+# VS code
+.vscode/
+
 # Local files
 documents/decrypt_test.py
 documents/student_comments.py
