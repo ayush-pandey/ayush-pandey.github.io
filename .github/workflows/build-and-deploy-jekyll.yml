@@ -90,8 +90,8 @@ jobs:
             with:
               source: ./
               destination: ./_site
-          # - name: Upload artifact
-          #   uses: actions/upload-pages-artifact@v3
+          - name: Upload artifact
+            uses: actions/upload-pages-artifact@v3
     # Deployment job
     deploy:
         permissions:
