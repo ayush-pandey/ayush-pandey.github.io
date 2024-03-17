@@ -1,4 +1,8 @@
-const { app } = require('@azure/functions');
+const app = require('@azure/functions').app;
+const { BlobServiceClient } = require('@azure/storage-blob');
+
+const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
+const containerName = 'comments-container';
 
 app.http('fetchComments', {
     methods: ['GET'],
@@ -6,21 +10,35 @@ app.http('fetchComments', {
     handler: async (request, context) => {
         context.log(`Http function processed request for url "${request.url}"`);
 
-        // Example comments data
-        const commentsData = [
-            "This course was really helpful!",
-            "The pacing of the class was great and I learned a lot.",
-            "I found the material challenging but rewarding.",
-            "More examples in the future would be great!",
-            "Excellent course, well taught and clearly presented."
-        ];
+        const blobServiceClient = BlobServiceClient.fromConnectionString(connectionString);
+        const containerClient = blobServiceClient.getContainerClient(containerName);
+        const blobClient = containerClient.getBlobClient('comments.json');
+        const downloadBlockBlobResponse = await blobClient.download(0);
+        const downloadedContent = await streamToString(downloadBlockBlobResponse.readableStreamBody);
 
-        // You can add logic here to select specific comments, randomize them, etc.
-        // For simplicity, we're just returning the entire array as is
+        const commentsData = JSON.parse(downloadedContent);
+
+        // Fetch two random comments, one from each category
+        const positiveComment = commentsData.positive_comments[Math.floor(Math.random() * commentsData.positive_comments.length)];
+        const negativeComment = commentsData.negative_comments[Math.floor(Math.random() * commentsData.negative_comments.length)];
 
         return { 
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(commentsData) 
+            body: JSON.stringify([positiveComment, negativeComment]) 
         };
     }
 });
+
+// A helper function used to read a readable stream into a string
+async function streamToString(readableStream) {
+    return new Promise((resolve, reject) => {
+        const chunks = [];
+        readableStream.on('data', (data) => {
+            chunks.push(data.toString());
+        });
+        readableStream.on('end', () => {
+            resolve(chunks.join(''));
+        });
+        readableStream.on('error', reject);
+    });
+}
