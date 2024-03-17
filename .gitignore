@@ -99,6 +99,7 @@ __queuestorage__
 __azurite_db*__.json
 package-lock.json
 package.json
+host.json
 
 # Local files
 documents/decrypt_test.py
