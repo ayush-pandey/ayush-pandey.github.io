@@ -103,3 +103,8 @@ __azurite_db*__.json
 documents/decrypt_test.py
 documents/student_comments.py
 documents/__pycache__/
+src/functions/comments.json
+src/functions/manual_classified_comments.json
+documents/todos.txt
+documents/unclassified_comments.json
+documents/classified_comments.json

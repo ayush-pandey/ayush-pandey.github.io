@@ -132,6 +132,13 @@
                     <iframe style="float: left;margin-right: 20px;display: inline-block"height="323" width="523" src="https://www.youtube.com/embed/A54IK57p2cw" title="Introduction to Bayesian Inference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div> -->
                 <h2>Teaching Feedback</h2>
+                <p>The tool below allows you to quickly read as many or as few of the evaluations that the students in my classes. In the interest of fairness, both positive and negative comments will be shown. There's a caveat though -- the comments are <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/tree/master/documents/gpt_classifier.ipynb">classified</a> using the GPT-3 model by OpenAI and it can make mistakes! </p>
+                <p> All comments are <b>real</b> student comments, anonymized for presentation here.</b></p>
+                <p> Note: You might need to wait a second or two for the free tier of Azure to kick up enough bits of information for the comments to show up.</p>
+                <div class = "feedback-container">
+                    <div class="button-container">
+                        <button id="showFeedback">Show Random Student Feedback!</button>
+                    </div>
                     <div class="comments-container">
                         <div id="positiveComment" class="comment-box positive">
                             <div class="corner-text">Comment classified as positive by GPT</div>
@@ -141,8 +148,8 @@
                             <div class="corner-text">Comment classified as negative by GPT</div>
                             <blockquote>“<span id="negativeText"></span>”</blockquote>
                         </div>
-                        <button id="showComments">Show Random Student Comments!</button>
                     </div>
+                </div>
 
                     <script>
                         document.getElementById('showComments').addEventListener('click', function() {

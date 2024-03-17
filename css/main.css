@@ -66,10 +66,21 @@ table tr th :last-child,table tr td :last-child{margin:0}
     max-width: 80%; /* Ensures the description does not extend the full width */
 }
 
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button-container {
+    margin-bottom: 10px; /* Space between button and boxes */
+}
+
 .comments-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    width: 100%;
 }
 
 .comment-box {
