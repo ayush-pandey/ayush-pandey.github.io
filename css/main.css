@@ -65,3 +65,53 @@ table tr th :last-child,table tr td :last-child{margin:0}
     text-align: left; /* Aligns the text to the left */
     max-width: 80%; /* Ensures the description does not extend the full width */
 }
+
+.comments-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.comment-box {
+    width: 45%;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.comment-box blockquote {
+    font-size: large;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.positive {
+    background-color: #d4edda;
+}
+
+.negative {
+    background-color: #f8d7da;
+}
+
+.corner-text {
+    position: absolute;
+    font-size: small;
+    color: grey;
+    padding: 2px;
+}
+
+.positive .corner-text {
+    top: 0;
+    left: 0;
+}
+
+.negative .corner-text {
+    top: 0;
+    right: 0;
+}
+
+#showComments {
+    display: block;
+    margin: 20px auto;
+}
