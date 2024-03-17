@@ -97,7 +97,8 @@ local.settings.json
 __blobstorage__
 __queuestorage__
 __azurite_db*__.json
-
+package-lock.json
+package.json
 
 # Local files
 documents/decrypt_test.py
