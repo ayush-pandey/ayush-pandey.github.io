@@ -137,7 +137,7 @@
 
                     <script>
                         document.getElementById('showComments').addEventListener('click', function() {
-                            fetch('/path/to/decrypted_comments.json')
+                            fetch('documents/decrypted_comments.json')
                                 .then(response => response.json())
                                 .then(comments => {
                                     const commentsDiv = document.getElementById('comments');
