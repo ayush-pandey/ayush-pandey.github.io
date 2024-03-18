@@ -193,3 +193,26 @@ table tr th :last-child,table tr td :last-child{margin:0}
     display: block;
     margin: 20px auto;
 }
+
+.students-section {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.students-table th,
+.students-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.students-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
