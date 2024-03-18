@@ -94,9 +94,10 @@ table tr th :last-child,table tr td :last-child{margin:0}
 
     /* Use attribute selectors to add labels from the table headers */
     .teaching-experience td:nth-of-type(1):before { content: "Course"; }
-    .teaching-experience td:nth-of-type(2):before { content: "Enrollment"; }
-    .teaching-experience td:nth-of-type(3):before { content: "Staff"; }
-    .teaching-experience td:nth-of-type(4):before { content: "Products"; }
+    .teaching-experience td:nth-of-type(2):before { content: "Department"; }
+    .teaching-experience td:nth-of-type(3):before { content: "Enrollment"; }
+    .teaching-experience td:nth-of-type(4):before { content: "Staff"; }
+    .teaching-experience td:nth-of-type(5):before { content: "Products"; }
 
     /* Last child border reset for aesthetics */
     .teaching-experience td:last-child {
