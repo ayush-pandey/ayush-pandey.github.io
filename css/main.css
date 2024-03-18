@@ -38,7 +38,7 @@ table tr th{font-weight:bold;border:1px solid #ffffff;text-align:left;margin:0;p
 table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:auto;}
 table tr th :first-child,table tr td :first-child{margin:0}
 table tr th :last-child,table tr td :last-child{margin:0}
-.teaching-experience th {
+.teaching-experience th, .students-table th {
     background-color: #f2f2f2; /* Light gray background */
     border: 1px solid #d1d1d1; /* Lighter border color for subtlety */
     box-shadow: inset 0px 1px 0px #fff, /* Top light source */
@@ -51,26 +51,28 @@ table tr th :last-child,table tr td :last-child{margin:0}
     width: 100%;
     border-collapse: collapse;
 }
-.teaching-experience td {
+.teaching-experience td, .students-table td {
     border: 1px solid #d1d1d1;
     padding: 8px;
     text-align: left;
 }
 @media screen and (max-width: 600px) {
-    .teaching-experience thead, .teaching-experience th {
+    .teaching-experience thead, .teaching-experience th, .students-table thead, .students-table th{
         display: none;
     }
     .teaching-experience table, .teaching-experience tbody, .teaching-experience td, .teaching-experience tr {
         display: block;
     }
-
-    .teaching-experience tr {
+    .past-students table, .past-students tbody, .past-students td, .past-students tr {
+        display: block;
+    }
+    .teaching-experience tr, .past-students tr {
         border: 1px solid #ddd;
         margin-bottom: 10px;
         padding: 8px;
     }
 
-    .teaching-experience td {
+    .teaching-experience td, .past-students td{
         border: none;
         border-bottom: 1px solid #ddd;
         position: relative;
@@ -82,7 +84,7 @@ table tr th :last-child,table tr td :last-child{margin:0}
     }
 
     /* Add labels for data on mobile view using pseudo-elements */
-    .teaching-experience td:before {
+    .teaching-experience td:before, .past-students td:before{
         position: absolute;
         left: 10px;
         width: 45%;
@@ -92,6 +94,18 @@ table tr th :last-child,table tr td :last-child{margin:0}
         font-weight: normal;
     }
 
+    /* Last child border reset for aesthetics */
+    .teaching-experience td:last-child, .past-students td:last-child {
+        border-bottom: 0;
+    }
+
+    /* Use attribute selectors to add labels from the table headers */
+    .past-students td:nth-of-type(1):before { content: "Name"; }
+    .past-students td:nth-of-type(2):before { content: "Year"; }
+    .past-students td:nth-of-type(3):before { content: "Project"; }
+    .past-students td:nth-of-type(4):before { content: "Next Position"; }
+
+
     /* Use attribute selectors to add labels from the table headers */
     .teaching-experience td:nth-of-type(1):before { content: "Course"; }
     .teaching-experience td:nth-of-type(2):before { content: "Department"; }
@@ -99,10 +113,6 @@ table tr th :last-child,table tr td :last-child{margin:0}
     .teaching-experience td:nth-of-type(4):before { content: "Staff"; }
     .teaching-experience td:nth-of-type(5):before { content: "Products"; }
 
-    /* Last child border reset for aesthetics */
-    .teaching-experience td:last-child {
-        border-bottom: 0;
-    }
 }
 
 .container-group{
@@ -205,14 +215,3 @@ table tr th :last-child,table tr td :last-child{margin:0}
     margin-bottom: 1rem;
 }
 
-.students-table th,
-.students-table td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-}
-
-.students-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
