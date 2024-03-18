@@ -39,15 +39,11 @@ table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;o
 table tr th :first-child,table tr td :first-child{margin:0}
 table tr th :last-child,table tr td :last-child{margin:0}
 @media screen and (max-width: 600px) {
-    .teaching-experience table, .teaching-experience thead, .teaching-experience tbody, .teaching-experience th, .teaching-experience td, .teaching-experience tr {
-        display: block;
+    .teaching-experience thead, .teaching-experience th {
+        display: none;
     }
-
-    /* Hide table headers on mobile */
-    .teaching-experience thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+    .teaching-experience table, .teaching-experience tbody, .teaching-experience td, .teaching-experience tr {
+        display: block;
     }
 
     .teaching-experience tr {
@@ -61,7 +57,10 @@ table tr th :last-child,table tr td :last-child{margin:0}
         border-bottom: 1px solid #ddd;
         position: relative;
         padding-left: 50%;
-        text-align: right;
+        text-align: left;
+        display: flex; /* New */
+        flex-direction: column; /* New */
+        align-items: flex-start; /* New */
     }
 
     /* Add labels for data on mobile view using pseudo-elements */
@@ -70,9 +69,9 @@ table tr th :last-child,table tr td :last-child{margin:0}
         left: 10px;
         width: 45%;
         padding-right: 10px;
-        white-space: nowrap;
+        white-space: normal;
         text-align: left;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     /* Use attribute selectors to add labels from the table headers */
