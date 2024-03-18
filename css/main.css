@@ -38,6 +38,24 @@ table tr th{font-weight:bold;border:1px solid #ffffff;text-align:left;margin:0;p
 table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:auto;}
 table tr th :first-child,table tr td :first-child{margin:0}
 table tr th :last-child,table tr td :last-child{margin:0}
+.teaching-experience th {
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid #d1d1d1; /* Lighter border color for subtlety */
+    box-shadow: inset 0px 1px 0px #fff, /* Top light source */
+                inset -1px 0px 0px #ccc, /* Left shadow */
+                inset 0px -1px 0px #ccc; /* Bottom shadow */
+    padding: 8px;
+    text-align: left;
+}
+.teaching-experience table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.teaching-experience td {
+    border: 1px solid #d1d1d1;
+    padding: 8px;
+    text-align: left;
+}
 @media screen and (max-width: 600px) {
     .teaching-experience thead, .teaching-experience th {
         display: none;
