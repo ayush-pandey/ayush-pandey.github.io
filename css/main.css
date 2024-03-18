@@ -35,9 +35,58 @@ table{margin:15px 0;border-collapse:collapse;width:100%;padding:0;}
 table tr{border-top:1px solid #fdfcc6;background-color:rgb(255, 255, 255);margin:0;padding:0}
 table tr:nth-child(2n){background-color:#fafaf3}
 table tr th{font-weight:bold;border:1px solid #ffffff;text-align:left;margin:0;padding:6px 13px}
-table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:scroll;}
+table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:auto;}
 table tr th :first-child,table tr td :first-child{margin:0}
 table tr th :last-child,table tr td :last-child{margin:0}
+@media screen and (max-width: 600px) {
+    .teaching-experience table, .teaching-experience thead, .teaching-experience tbody, .teaching-experience th, .teaching-experience td, .teaching-experience tr {
+        display: block;
+    }
+
+    /* Hide table headers on mobile */
+    .teaching-experience thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .teaching-experience tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .teaching-experience td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    /* Add labels for data on mobile view using pseudo-elements */
+    .teaching-experience td:before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Use attribute selectors to add labels from the table headers */
+    .teaching-experience td:nth-of-type(1):before { content: "Course"; }
+    .teaching-experience td:nth-of-type(2):before { content: "Enrollment"; }
+    .teaching-experience td:nth-of-type(3):before { content: "Staff"; }
+    .teaching-experience td:nth-of-type(4):before { content: "Products"; }
+
+    /* Last child border reset for aesthetics */
+    .teaching-experience td:last-child {
+        border-bottom: 0;
+    }
+}
+
 .container-group{
             width: 100%;
             margin: auto;
