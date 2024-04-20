@@ -132,7 +132,7 @@ table tr th :last-child,table tr td :last-child{margin:0}
 }
 
 .group-member img {
-    width: 30%;
+    width: 20%;
     float: left; /* Float the image to the left */
 }
 
