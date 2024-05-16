@@ -45,14 +45,14 @@
                     
                         </li>
                 
-<!--                     
-                        <li class="alignable pull-right nav-list"><a href="/projects.html">Projects</a>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/teaching.html">Teaching</a>
                     
                     
                         /
                     
                         </li>
-                 -->
+                
                     
                         <li class="alignable pull-right nav-list"><a href="/publication.html">Publications</a>
                     
@@ -89,10 +89,106 @@
         </div>
         <div style="clear:both"></div>
         <hr>
-        
             <div class="container content">
-                <h1 id="current-projects">Current Projects</h1>
-<ul>
+                <h2 id="current-projects">Current Projects</h2>
+                <ol>
+                    <li><a href="/projects/AI_safety.html">Safety guarantees and robustness quantification of generative AI models</a></li>
+                    <li><a href="/projects/system_design.html">Contract-based design for large-scale design of engineered biological systems</a></li>
+                    <li><a href="/projects/autograder.html">LLM-based personalized grading to enable independent and open-ended summative assessments</a></li>
+                    <li><a href="/projects/hands_on_EE.html">Broadening student participation in electrical engineering with hands-on activities in theoretical courses</a></li>
+                    <li><a href="/projects/AI_education.html">Student self-efficacy in computing at the high school level</a></li>
+                </ol>
+                <hr />
+                <hr />
+                <h2 id="summer-projects">Summer 2024 Projects</h2>
+                <p>List of available projects for Summer 2024. Hover your mouse over the "#" column elements to see more details.</p>
+                <div class="table-format">
+                  <table class="table-format">
+                    <tr>
+                      <th>Project</th>
+                      <th>Basic skills</th>
+                      <th>Preferred skills</th>
+                      <th>Data</th>
+                      <th>Model</th>
+                      <th title="Number of positions">#</th>
+                      <th>References</th>
+                      <th>Student(s)</th>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/AI_education.html">Categorical quantification of student learning from qualitative textual data.</a></td>
+                      <td>Statistical analysis</td>
+                      <td>AI models in Python</td>
+                      <td>Real student data from UC Merced</td>
+                      <td>Llama 3b / GPT</td>
+                      <td title="1 for the AI pipeline, 1 for statistical analysis, and 1 for GUI">3</td>
+                      <td><a href="documents/author_copy_ASEE_2024_PCEE_final_paper.pdf">Shailja et al. ASEE 2024</a>, <a href="https://dl.acm.org/doi/abs/10.1145/3581754.3584136?casa_token=9RxntwbDLjEAAAAA:B0czXqD7Nh1J2i4nEON7sp_C6VOepzAXD6_-ocrsvQCmYvZPWIZAALCyDATGLZwMk6mnrzVjM6kZ_g">Xiao et al. IUI 2023</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/autograder.html">LLM-based automatic grading of Python assignments.</a></td>
+                      <td>Python</td>
+                      <td>AI models in Python</td>
+                      <td>Student data from UC Merced</td>
+                      <td>LLama 3b and other LLMs</td>
+                      <td title="1 for LLM comparison, 1 for data analysis, 1 for tool dev">3</td>
+                      <td><a href="https://arxiv.org/pdf/2401.05399">Oli et al. 2024</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>A web-app for Python-based modeling of protein expression.</td>
+                      <td>Python</td>
+                      <td>Web dev (for ex, Flask)</td>
+                      <td>Experimental data from Caltech</td>
+                      <td>Networks w/ <a href="https://github.com/BuildACell/BioCRNPyler">BioCRNpyler</a></td>
+                      <td>1</td>
+                      <td><a href="https://www.biorxiv.org/content/10.1101/2023.08.14.553301v1">Jurado et al. bioRxiv 2023</a>,<a href="https://github.com/zjuradoq/PURE_CRN_models">GitHub for Python models</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/AI_safety.html">Self-driving car navigation using large-language models.</a></td>
+                      <td>Python</td>
+                      <td>CARLA/Unity or other backend sim</td>
+                      <td><a href="https://waymo.com/open/data/motion/">Waymo Open dataset</a></td>
+                      <td>Llama 3b</td>
+                      <td title="1 for simulator, 1 for dataset generation, 1 for LLM integration">3</td>
+                      <td><a href="https://arxiv.org/html/2402.05746v2">Wei et al. arXiv 2024</a>, <a href="https://arxiv.org/abs/2209.10033">Shi et al. arXiv 2022</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/AI_safety.html">Evaluation of tokenization schemes on LLM performance.</a></td>
+                      <td>Python</td>
+                      <td>AI interpretability</td>
+                      <td><a href="https://huggingface.co/datasets/truthful_qa?row=2">Truthful QA</a></td>
+                      <td>Llama 3b</td>
+                      <td>1</td>
+                      <td><a href="https://arxiv.org/abs/2403.00417">Yang arXiv 2024</a>, <a href="https://arxiv.org/abs/2109.07958">Lin et al. arXiv 2021</a></td>
+                      <td>Saaketh Raghava</td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/AI_safety.html">Safe navigation with transformer models</a></td>
+                      <td>Python</td>
+                      <td>Control theory</td>
+                      <td><a href="https://arxiv.org/abs/1908.08031">Srinivasa et al. 2019</a></td>
+                      <td><a href="https://arxiv.org/pdf/2303.04212">RL models</a></td>
+                      <td>1</td>
+                      <td><a href="https://arxiv.org/pdf/2303.04212">Meng et al. arXiv 2023</a></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <hr />
+                  <hr />
+                <h2 id="past-projects">Past Projects</h2>
+                <ol>
+                  <li>Characterization of integrase and excisionase activity in cell-free. Published in <a href="https://pubs.acs.org/doi/10.1021/acssynbio.2c00534">ACS Synthetic Biology</a>.</li>
+                  <li>Robustness guarantees for nonlinear dynamical systems. Published in <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rnc.6013">Wiley International Journal of Robust and Nonlinear Control</a>.</li>
+                  <li>Open-source modeling tools for synthetic biology: <a href="https://github.com/BuildACell/BioCRNPyler">BioCRNpyler</a>, <a href="https://github.com/biocircuits/bioscrape/">Bioscrape</a>, <a href="https://github.com/buildACell/subsbml">Sub-SBML</a>, and <a href="https://github.com/ayush9pandey/autoReduce">AutoReduce</a>.</li>
+                  <li>Study of fundamental limits and tradeoffs in active and passive systems</li>
+                  <li>Design and implementation of an autonomous bicycly: The i-Bike Project. More <a href="projects/i-bike.html">here</a>.</li>
+                  <li>The Autonomous Ground Vehicle research group at IIT Kharagpur: Team leader for two consecutive years leading the 40 student member team to Intelligent Ground Vehicle Competition <a href="http://www.igvc.org/objective.htm">IGVC</a>. AGV won the 2nd prize among teams from all around the world in 2018.</li>
+                  <li>State-space averaging of switched dynamical systems (masters thesis project)</li>
+                  <li>Robust controller design using H-infinity loop-shaping approach (best thesis award) </li>
+                </ol>
+<!-- <ul>
   <li>Control theory and synthetic biology - Working on applications of three primary tools from control theory to synthetic biology.
     <ul>
       <li>Model reduction</li>
@@ -101,9 +197,9 @@
     </ul>
   </li>
   <li>Other current projects that I am working on are described in the following section</li>
-</ul>
+</ul> -->
 
-<h2 id="software-tools-for-synthetic-biology">Software Tools for Synthetic Biology</h2>
+<!-- <h2 id="software-tools-for-synthetic-biology">Software Tools for Synthetic Biology</h2>
 <ul>
   <li>
     <p>sbmlsense - Python toolbox for sensitivity analysis of biomolecular systems. There are plenty of tools available for sensitivity analysis of biological systems such as <a href="http://copasi.org/">COPASI</a>, <a href="https://sites.google.com/site/amigo2toolbox/features">AMIGO</a> and many more. However, there are a few important features that we aim to develop in sbmlsense such as having capability to do sensitivity analysis and inform the parameter identification algorithms that follow. Apart from the identifiability analysis, we envision sbmlsense to be used as a standalone tool for sensitivity analysis for multiple types of data (and possibly also together) such as multiple time series data together, distributional data etc.</p>
@@ -124,9 +220,9 @@ A subset of functionalities in bioCRNpyler would enable the following modeling a
       <li>Easily add new mechanisms, and components to extend modeling features.</li>
     </ul>
   </li>
-</ul>
+</ul> -->
 
-<p>My current progress is available at <a href="https://github.com/ayush9pandey/BioCRNPyler">my fork</a> for the <a href="https://github.com/WilliamIX/BioCRNPyler">original repository</a></p>
+<!-- <p>My current progress is available at <a href="https://github.com/ayush9pandey/BioCRNPyler">my fork</a> for the <a href="https://github.com/WilliamIX/BioCRNPyler">original repository</a></p>
 
 <h1 id="completed-projects">Completed projects</h1>
 <ul>
@@ -136,8 +232,8 @@ A subset of functionalities in bioCRNpyler would enable the following modeling a
       <li>Modeling of logic gates that involve multiple biocircuits working together to create a logic function</li>
     </ul>
   </li>
-</ul>
-
+</ul> -->
+<!-- 
 <p>All code and these examples are available <a href="https://github.com/BuildACell/subsbml/tree/master/examples">here</a></p>
 
 <ul>
@@ -149,9 +245,9 @@ A subset of functionalities in bioCRNpyler would enable the following modeling a
 </ul>
 
 <h2 id="sub-sbml--a-subsystem-interaction-modeling-toolbox-for-sbml-models"><a name="subsbml">Sub-SBML</a> : A Subsystem Interaction Modeling Toolbox for SBML Models</h2>
-<p><em>Ayush Pandey and Richard Murray</em></p>
+<p><em>Ayush Pandey and Richard Murray</em></p> -->
 
-<p>We present Sub-SBML, a Python based toolbox to create, edit, combine, and model interactions among multiple SBML models. Sub-SBML works with a “subsystem” architecture of modeling where a single SBML model can be contained within a subsystem. Three major functionalities are developed in Sub-SBML that take advantage of this subsystem framework of modeling – creating subsystems, combining multiple subsystems, and modeling interactions such as transport of molecules and input-output relationships among multiple subsystems.
+<!-- <p>We present Sub-SBML, a Python based toolbox to create, edit, combine, and model interactions among multiple SBML models. Sub-SBML works with a “subsystem” architecture of modeling where a single SBML model can be contained within a subsystem. Three major functionalities are developed in Sub-SBML that take advantage of this subsystem framework of modeling – creating subsystems, combining multiple subsystems, and modeling interactions such as transport of molecules and input-output relationships among multiple subsystems.
 Sub-SBML provides functions to create subsystems for SBML models in order to use various utility functions to edit the model (such as renaming different lists of model components, creating multiple components at once, integrations for different simulator options, simulating variable species amount in a model etc). It is often desired in modeling of compounded biomolecular systems to combine multiple smaller models for different modules. The primary features of Sub-SBML allow for modeling of such systems by creating subsystems for different models and then combining these subsystems as desired, while also modeling the interactions among the models. A list of subsystems may be combined by specifying a list of species which would be shared in the final combined model. The toolbox also provides functions to model the cases when it is desired that all species that have the same name be a single combined species in the final model.</p>
 
 <p>Sub-SBML can also be used to model compartments in SBML for modeling the transport of species between different models. A subsystem object in Sub-SBML consists of an SBML model that can have one compartment to hold all the species of that model. Multiple subsystems may be placed inside a “system”. A system object in Sub-SBML acts as a container for subsystems. Subsystems may be defined to be internal to a system, external to a system, or as membranes to a system. Hence, an SBML model of a system would consist of two compartments – internal and external. The membrane subsystem will also have these two compartments and reactions modeling the transport of species across it. A system model can be generated that would give a combined model of all subsystems that are internal, external and set as membrane to this system, hence modeling the transport across this system container. Similarly, multiple system objects can be modeled and interactions across multiple systems may be modeled as well.</p>
@@ -182,51 +278,18 @@ Sub-SBML provides functions to create subsystems for SBML models in order to use
       <li>April 2018 - Sept 2018</li>
     </ul>
   </li>
-</ul>
-
-<h1 id="past-projects">Past projects</h1>
-
-<ul>
-  <li>Study of fundamental limits and tradeoffs in active and passive systems
-    <ul>
-      <li>Jan - Apr 2018</li>
-    </ul>
-  </li>
-  <li>i-Bike, IIT Kharagpur
-    <ul>
-      <li>Won various accolades for our student project of an autonomous bicycle with dual mode of locomotion.
-        <ul>
-          <li>Won $8000 for first position in national competition organized by KPIT where more than 10k students from all over India participated</li>
-          <li>Indian patent filed (pending application number 201631025904)</li>
-          <li>In the media - <a href="https://www.washingtonpost.com/news/innovations/wp/2016/03/18/there-may-soon-be-another-self-driving-vehicle-on-the-road-and-its-not-a-car/">Washington Post</a>, <a href="http://economictimes.indiatimes.com/news/science/inspired-by-differently-abled-batchmates-iit-kgp-students-develop-driver-less-bicycle/articleshow/51047966.cms">Economic Times</a>, <a href="http://www.autocarpro.in/news-national/iit-kharagpur-wins-gold-kpit-sparkle-2016-10525">AutoCar Professional</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <p>More details <a href="/i-bike.html">here</a></p>
-  </li>
-  <li>Autonomous Ground Vehicle (<a href="http://www.agv.iitkgp.ac.in/publications">AGV</a>, IIT Kharagpur)
-    <ul>
-      <li>Team leader for two consecutive years leading the 40 student member team to Intelligent Ground Vehicle Competition <a href="http://www.igvc.org/objective.htm">IGVC</a>. AGV won the 2nd prize among teams from all around the world in 2018.</li>
-    </ul>
-  </li>
-  <li>State-space averaging of switched dynamical systems
-    <ul>
-      <li>Masters thesis project at IIT Kharagpur</li>
-      <li>Advisor : Prof. Siddhartha Mukhopadhyay</li>
-    </ul>
-  </li>
-  <li>Robust controller design using H-infinity loop-shaping approach
-    <ul>
-      <li>Bachelors thesis project at IIT Kharagpur</li>
-      <li>Advisor : Prof. Sourav Patra</li>
-      <li>Awarded best thesis project award in 2016</li>
-    </ul>
-  </li>
-</ul>
+</ul> -->
+<!-- <h1 id="past-projects">Past projects</h1> -->
+<!-- <ul> -->
+ 
 
             </div>
-        
+      <hr />
+      <hr />
+      <p>Last update: May 15, 2024. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>   
     </div>
+
+
+     
     
 </body>
