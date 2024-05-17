@@ -108,7 +108,7 @@
                 <hr />
                 <hr />
                 <h2 id="summer-projects">Summer 2024 Projects</h2>
-                <p>List of available projects for Summer 2024. Hover your mouse over the "#" column elements to see more details.</p>
+                <p>List of available projects for Summer 2024. <strong>Hover your mouse over the "#" column elements to see more details.</strong></p>
                 <div class="table-format">
                   <table class="table-format">
                     <tr>
@@ -117,7 +117,7 @@
                       <th>Preferred skills</th>
                       <th>Data</th>
                       <th>Model</th>
-                      <th title="Number of positions">#</th>
+                      <th title="Number of positions. Hover over the elements in this column for more information on each project.">#</th>
                       <th>References</th>
                       <th>Student(s)</th>
                     </tr>
@@ -132,14 +132,54 @@
                       <td></td>
                     </tr>
                     <tr>
-                      <td> <a href="projects/autograder.html">LLM-based automatic grading of Python assignments.</a></td>
+                      <td> <a href="projects/autograder.html">LLM autograder: integrating feedback along with grades</a></td>
                       <td>Python</td>
                       <td>AI models in Python</td>
                       <td>Student data from UC Merced</td>
-                      <td>LLama 3b and other LLMs</td>
-                      <td title="1 for LLM comparison, 1 for data analysis, 1 for tool dev">3</td>
+                      <td>LLama 3b-8</td>
+                      <td title="Update the existing dataset, code, and the prompt to include feedback from the AI along with grading scores and test on Llama 3-8-B model. Compare the AI predictions with human feedback. Will need to adjust/add to original data to have feedback for each criteria as some are blank.">1</td>
                       <td><a href="https://arxiv.org/pdf/2401.05399">Oli et al. 2024</a></td>
-                      <td>Anirudh Kaushal, </td>
+                      <td>Anirudh Kaushal </td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/autograder.html">LLM autograder: test and compare models</a></td>
+                      <td>Python</td>
+                      <td>AI models in Python</td>
+                      <td>Student data from UC Merced</td>
+                      <td>LLama, GPT, Bert</td>
+                      <td title="Train on a bigger model (llama 3b) with 70 billion parameters. Study its performance on code analysis. Also run other LLMs by finding other freely available LLMs. After rigorous testing with Llama 8-B and Llama 3, try paid GPT-4/Claude API.">1</td>
+                      <td><a href="https://arxiv.org/pdf/2401.05399">Oli et al. 2024</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/autograder.html">LLM autograder: cost analysis</a></td>
+                      <td>Python</td>
+                      <td>Economic feasibility analysis</td>
+                      <td>Data on GPU usage/TA costs</td>
+                      <td>LLama, University cost models</td>
+                      <td title="What is the cost vs speed tradeoff on using multiple GPUs? Implement multi-GPU setups for the autograding tasks. Analyze the $ dollar cost, the educational impact, and compare with university TA budgets for feasibility analysis.">1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/autograder.html">LLM autograder: effect of prompts</a></td>
+                      <td>Python</td>
+                      <td>Prompt engineering</td>
+                      <td>Student data from UC Merced</td>
+                      <td>LLama 3b</td>
+                      <td title="“Test different prompting methods such as: Alpaca (system prompt and user prompt style) and Text format (all together). Study the effect of long instruction vs short instruction. Try prompts with two fixed grading criteria, two random criteria sampled for each assignment that needs to be graded, randomly sample the number of criteria for each assignment and then all criteria together. Compare the performance. All code will be provided.">1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td> <a href="projects/autograder.html">LLM autograder: integrate unit tests</a></td>
+                      <td>Python</td>
+                      <td>AI models in Python</td>
+                      <td>Student data from UC Merced</td>
+                      <td>LLama 3b</td>
+                      <td title="Integrating a Python runtime environment to facilitate code execution and testing. The first (easy) step could be to have the tests be manual and combine the unit test grading with LLM grading to have a final grading score. The second step would be to generate the unit tests using an LLM and grading the code based on these unit tests. Finetune a model to create a “general unit test” creator. Use subprocess to handle inputs to the code. Use GPT-4 one-shot to generate the unit tests and then Llama to provide feedback and grade.">1</td>
+                      <td></td>
+                      <td>Max Fu</td>
                     </tr>
                     <tr>
                       <td>A web-app for Python-based modeling of protein expression.</td>
@@ -159,7 +199,7 @@
                       <td>Llama 3b</td>
                       <td title="1 for simulator, 1 for dataset generation, 1 for LLM integration">3</td>
                       <td><a href="https://arxiv.org/html/2402.05746v2">Wei et al. arXiv 2024</a>, <a href="https://arxiv.org/abs/2209.10033">Shi et al. arXiv 2022</a></td>
-                      <td></td>
+                      <td>Areesha Imtiaz, Dheeraj Somashekar, </td>
                     </tr>
                     <tr>
                       <td> <a href="projects/AI_safety.html">Evaluation of tokenization schemes on LLM performance.</a></td>
