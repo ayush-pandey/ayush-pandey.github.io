@@ -212,3 +212,10 @@ table tr th :last-child,table tr td :last-child{margin:0}
     margin-bottom: 1rem;
 }
 
+.modern-display {
+        font-family: 'Bebas Neue', sans-serif;
+}
+
+.handwritten-text {
+        font-family: 'Indie Flower', cursive;
+}
