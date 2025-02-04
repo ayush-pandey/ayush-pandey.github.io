@@ -8,34 +8,8 @@
     <meta name="keywords" content="blog, accent, , Ayush Pandey, jekyll">
     <meta name="author" content="">
     
-    <script src="/ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
-            YOUTUBE_VIDEO_MARGIN=5;
-        }
-        $('iframe').each(function(index,item) {
-            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
-            var w=$(item).attr('width');
-            var h=$(item).attr('height');
-            var ar = h/w*100;
-            ar=ar.toFixed(2);
-            /Style iframe    
-            $(item).css('position','absolute');
-            $(item).css('top','0');
-            $(item).css('left','0');    
-            $(item).css('width','100%');
-            $(item).css('height','100%');
-            $(item).css('float','right');
-            $(item).css('margin-left','2px');
-            $(item).css('max-width',w+'px');
-            $(item).css('max-height', h+'px');        
-            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
-            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
-            }
-        });
-        });
-    </script>
+    <script src="/js/index.js"></script>
+
     
     <meta name="description" content="">
     <link href='https:/fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -163,6 +137,7 @@ Here are some keywords that describe my research in this area:
         <li><a href="/group/index.html">Prerana Somarapu</a></li>
         <li><a href="/group/index.html">Shri Krishnakumar</a></li>
         <li><a href="/group/index.html">Axel Muniz Tello</a></li>
+        <li><a href="/group/index.html">Chandra Govindarajan</a></li>
         <li><a href="/group/index.html">Randy Serrano</a></li>
     </ol>
     <p>See the <a href="/group/index.html#past-students-h2">past students</a> page for a list of all students who I have mentored in the past.</p>
@@ -182,7 +157,7 @@ Here are some keywords that describe my research in this area:
 <h2 id="news">Milestones and News</h2>
                 <ul>
                     <li>Jan 2025: Patent granted on "Autonomous two-wheeler with dual model of locomotion". Indian Patent: 558183.</li>
-                    <li>Jan 2025: Pacti (pacti.org, Incer et al.) paper was published in ACM Transactions on Cyber-Physical Systems. <a href="doi.org/10.1145/3704736">DOI: 10.1145/3704736</a></li>
+                    <li>Jan 2025: Pacti (<a href="https://pacti.org">pacti.org</a>, Incer et al.) paper was published in ACM Transactions on Cyber-Physical Systems. <a href="doi.org/10.1145/3704736">DOI: 10.1145/3704736</a></li>
                     <li>Dec 2024: Saaketh's article is now published in the UC Merced Research Journal! Read <a href="https://doi.org/10.5070/M417164607">here</a>.</li>
                     <li>Nov 2024: Invited to participate in the CAHSI AI Ideation workshop at the Great Minds in STEM conference at Fort Worth, Texas.</li>
                     <li>Oct 2024: Joined the California Learning Lab's INSPIRE 2024 workshop and the AI for Science at Scale workshop at UC Riverside.</li>
@@ -194,7 +169,11 @@ Here are some keywords that describe my research in this area:
                     <li>Mar 2024: Check out this <a href="/teaching.html#teaching-feedback">Teaching Feedback</a> tool that I designed! It shows two randomly chosen student evaluations that I have received each time.</li>
                 </ul>
                 <hr/>
-                Last updated: Feb 1, 2025. All original material on this website is free-to-use and can be shared with proper attribution. You can view the <a href="/LICENSE">LICENSE</a> here. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.
+                <!-- Add text here that automatically fetches the last update date from github (last commit) and writes "Last updated: <date_fetched>"-->
+                <p id="last-updated">Fetching last update date...</p> 
+                <!-- Last updated: Feb 3, 2025.-->
+                 <p>All original material on this website is free-to-use and can be shared with proper attribution. You can view the <a href="/LICENSE">LICENSE</a> here. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>
+                 <br>
             </div>
 <hr />
 <hr /> 

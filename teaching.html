@@ -12,34 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <!-- <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" /> -->
     <link rel="stylesheet" href="/css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-        if(typeof YOUTUBE_VIDEO_MARGIN == 'undefined') {
-            YOUTUBE_VIDEO_MARGIN=5;
-        }
-        $('iframe').each(function(index,item) {
-            if($(item).attr('src').match(/(https?:)?\/\/www\.youtube\.com/)) {
-            var w=$(item).attr('width');
-            var h=$(item).attr('height');
-            var ar = h/w*100;
-            ar=ar.toFixed(2);
-            //Style iframe    
-            $(item).css('position','absolute');
-            $(item).css('top','0');
-            $(item).css('left','0');    
-            $(item).css('width','100%');
-            $(item).css('height','100%');
-            $(item).css('float','right');
-            $(item).css('margin-left','2px');
-            $(item).css('max-width',w+'px');
-            $(item).css('max-height', h+'px');        
-            $(item).wrap('<div style="max-width:'+w+'px;margin:0 auto; padding:'+YOUTUBE_VIDEO_MARGIN+'px;" />');
-            $(item).wrap('<div style="position: relative;padding-bottom: '+ar+'%; height: 0; overflow: hidden;" />');
-            }
-        });
-        });
-    </script>
+    <script src="/js/index.js"></script>
     <!-- Facebook Open Graph -->
     <meta name="og:description" content="">
     <meta name="og:title" content="Ayush Pandey">
@@ -288,7 +261,9 @@
             </ul> -->
             <hr />
             <hr />
-            <p>Last update: Mar 17, 2024.</p>
+            <p id="last-updated">Fetching last updated...</p>
+            <p>You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>
+            <br>
       </div> 
     </div>
     

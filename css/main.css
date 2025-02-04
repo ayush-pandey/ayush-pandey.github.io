@@ -219,3 +219,6 @@ table tr th :last-child,table tr td :last-child{margin:0}
 .handwritten-text {
         font-family: 'Indie Flower', cursive;
 }
+.detail-project {
+    background-color:antiquewhite;
+}

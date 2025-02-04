@@ -1,0 +1,49 @@
+/* Basic container styles */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Project header */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.project-header .project-title {
+    font-weight: bold;
+}
+
+.toggle-description {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Project description */
+.project-description {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: none;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.project-description p {
+    margin: 5px 0;
+}
+
+/* Hidden class for collapsed project descriptions */
+.project-description.hidden {
+    display: none;
+}
