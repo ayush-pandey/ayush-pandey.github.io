@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    if (!window.location.pathname.includes("summer_2025.html")) return;
+    // Run for files starting in summer_{anything}.html
 
+    // if (!window.location.pathname.includes("summer_2025.html")) return;
+    if (!window.location.pathname.match(/summer_[0-9]{4}\.html/)) return
     console.log("summer.js loaded");
 
     const toggleButtons = document.querySelectorAll('.project-header');
