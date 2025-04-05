@@ -41,16 +41,16 @@
 .badges a {
     display: inline-flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 14px;
     text-decoration: none;
-    color: #fff;
-    margin: 10px 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    color: #fffefe;
+    margin: 1px 1px;
+    padding: 5px 5px;
+    border-radius: 0px;
     font-weight: bold;
 }
 
-.badges .github {
+ .badges .github {
     background-color: #333;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .badges .webpage {
-    background-color: #4caf50;
+    background-color: #07650c;
 }
 
 .badges img {
