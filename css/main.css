@@ -1,224 +1,333 @@
-html{height:100%;width:100%;margin:0;padding:0;overflow-x:hidden !important}
-body{margin:0;font-family:"quicksand";height:100%;font-size:20px}
-a{text-decoration:none;color:#004fff}
-a:hover{text-decoration:underline}
-hr{border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)}
-#author-name{font-size:45px;color:#0b0404;display:inline-block}
-.navbar{padding:40px 0 0 0}
-.navbar-ul{display:inline-block;margin:0;padding:0px 0 0px 0;margin-left:15px}
-.nav-list{list-style-type:none;margin:0 5px 0 10px}
-.alignable,.pull-left,.pull-right{display:inline-block}
-.pull-left{float:left}
-.pull-right{float:right}
+/* Google Fonts import for Helvetica  */
+@import url("https://fonts.googleapis.com/css?family=Helvetica:400,500,700&display=swap");
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Reset & Base
+──────────────────────────────────────────────────────────────────────────── */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+html {
+  overflow-x: hidden !important;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 18px;
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Links & Horizontal Rules
+──────────────────────────────────────────────────────────────────────────── */
+a {
+  text-decoration: none;
+  color: #004fff;
+}
+a:hover,
+.content a:hover {
+  text-decoration: underline;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Navbar & Header
+──────────────────────────────────────────────────────────────────────────── */
+#author-name {
+  display: inline-block;
+  font-size: 45px;
+  color: #0b0404;
+}
+.navbar {
+  padding-top: 40px;
+}
+.navbar-ul {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+.nav-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px 0 5px;
+}
+.alignable,
+.pull-left,
+.pull-right {
+  display: inline-block;
+}
+.pull-left { float: left; }
+.pull-right { float: right; }
 .no-underline {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-.container{max-width:1000px;margin:auto}
-.wrapper{min-height:100%}
-@media (max-width: 900px){.container{max-width:600px;transition:0.3s ease all}}
-@media (max-width: 750px){.container{max-width:83%}.navbar-ul{margin-top:5px}}
-@media (max-width: 580px){#author-name{display:inline-block}}
-.content a:hover{text-decoration:underline}
-.content ol{counter-reset:list}
-.content ol>li{list-style-position:none;position:relative;list-style:none;margin-top:5px;margin-bottom:5px}
-.content ul>li{margin:5px 0 5px 0}
-.content ul{padding:0 20px 0 20px}
-.content ol{padding:0 30px 0 30px}
-.content ol>li:before{content:"[" counter(list,decimal) "] ";counter-increment:list;position:absolute;left:-30px}
-.content blockquote{border-left:5px solid #333333;margin:20px 0 20px 0;padding:2px 8px 2px 8px;font-style:italic}
-.content .profile-picture{height:282px;width:214px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:0%}
-p .content .profile-picture{padding:0;margin:0}
-@media (max-width: 480px){.content .profile-picture img{margin-top:-5px}}
-.content img{text-align:center;width:100%}
-table{margin:15px 0;border-collapse:collapse;width:100%;padding:0;}
-table tr{border-top:1px solid #fdfcc6;background-color:rgb(255, 255, 255);margin:0;padding:0}
-table tr:nth-child(2n){background-color:#fafaf3}
-table tr th{font-weight:bold;border:1px solid #ffffff;text-align:left;margin:0;padding:6px 13px}
-table tr td{border:1px solid #2e2d2d;text-align:left;margin:0;padding:6px 13px;overflow:auto;}
-table tr th :first-child,table tr td :first-child{margin:0}
-table tr th :last-child,table tr td :last-child{margin:0}
-.table-format th {
-    background-color: #f2f2f2; /* Light gray background */
-    border: 1px solid #d1d1d1; /* Lighter border color for subtlety */
-    box-shadow: inset 0px 1px 0px #fff, /* Top light source */
-                inset -1px 0px 0px #ccc, /* Left shadow */
-                inset 0px -1px 0px #ccc; /* Bottom shadow */
-    padding: 8px;
-    text-align: left;
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Layout Containers
+──────────────────────────────────────────────────────────────────────────── */
+.wrapper {
+  min-height: 100%;
 }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 600px;
+    transition: 0.3s ease all;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    max-width: 83%;
+  }
+  .navbar-ul {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 580px) {
+  #author-name {
+    /* ensures it stays inline on small screens */
+    display: inline-block;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Content: Lists, Blockquotes & Images
+──────────────────────────────────────────────────────────────────────────── */
+.content ul {
+  padding: 0 20px;
+}
+.content ul > li {
+  margin: 5px 0;
+}
+.content ol {
+  counter-reset: list;
+  padding: 0 30px;
+}
+.content ol > li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0;
+}
+.content ol > li:before {
+  content: "[" counter(list) "] ";
+  counter-increment: list;
+  position: absolute;
+  left: -30px;
+}
+.content blockquote {
+  border-left: 5px solid #333;
+  margin: 20px 0;
+  padding: 2px 8px;
+  font-style: italic;
+}
+.content img {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.content .profile-picture {
+  float: right;
+  position: relative;
+  margin: -10px 0 0 15px;
+  width: 214px;
+  height: 282px;
+  border-radius: 0;
+}
+@media (max-width: 480px) {
+  .content .profile-picture img {
+    margin-top: -5px;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Tables: .table-format (desktop + mobile)
+──────────────────────────────────────────────────────────────────────────── */
 .table-format table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  padding: 0;
 }
+.table-format tr {
+  border-top: 1px solid #fdfcc6;
+  background: #fff;
+}
+.table-format tr:nth-child(even) {
+  background: #fafaf3;
+}
+.table-format th,
 .table-format td {
-    border: 1px solid #d1d1d1;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #d1d1d1;
+  padding: 8px;
+  text-align: left;
 }
+.table-format th {
+  background-color: #f2f2f2;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset -1px 0 0 #ccc,
+    inset 0 -1px 0 #ccc;
+  font-weight: bold;
+}
+
+/* ────────────────────────────────────────────────────────────────────────────
+   Responsive Tables (max-width:600px)
+──────────────────────────────────────────────────────────────────────────── */
 @media screen and (max-width: 600px) {
-    .table-format thead, .table-format th {
-        display: none;
-    }
-    .table-format table, .table-format tbody, .table-format td, .table-format tr {
-        display: block;
-    }
-    .table-format tr {
-        border: 1px solid #ddd;
-        margin-bottom: 10px;
-        padding: 8px;
-    }
-
-    .table-format td{
-        border: none;
-        border-bottom: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%;
-        text-align: left;
-        display: flex; /* New */
-        flex-direction: column; /* New */
-        align-items: flex-start; /* New */
-    }
-
-    /* Add labels for data on mobile view using pseudo-elements */
-    .table-format td:before{
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: normal;
-        text-align: left;
-        font-weight: normal;
-    }
-
-    /* Last child border reset for aesthetics */
-    .table-format td:last-child{
-        border-bottom: 0;
-    }
-
-    /* Use attribute selectors to add labels from the table headers */
-    .past-students td:nth-of-type(1):before { content: "Name"; }
-    .past-students td:nth-of-type(2):before { content: "Year"; }
-    .past-students td:nth-of-type(3):before { content: "Project"; }
-    .past-students td:nth-of-type(4):before { content: "Next Position"; }
-
-
-    /* Use attribute selectors to add labels from the table headers */
-    .teaching-experience td:nth-of-type(1):before { content: "Course"; }
-    .teaching-experience td:nth-of-type(2):before { content: "Department"; }
-    .teaching-experience td:nth-of-type(3):before { content: "Enrollment"; }
-    .teaching-experience td:nth-of-type(4):before { content: "Staff"; }
-    .teaching-experience td:nth-of-type(5):before { content: "Products"; }
-
-}
-
-.container-group{
-            width: 100%;
-            margin: auto;
-            text-align: left;
-        }
-/* .group-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 100px;
+  .table-format table,
+  .table-format thead,
+  .table-format th,
+  .table-format tbody,
+  .table-format tr,
+  .table-format td {
+    display: block;
     width: 100%;
-    align-content: flex-end;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: left;
-} */
-/* 
-.group-member img {
-    width: 20%;
-    float: left; 
-} */
-
-/* .group-member-description {
-    display: inline-block; 
-    margin-left: 2px; 
-    text-align: left; 
-    max-width: 80%; 
-} */
-
-.feedback-container {
+  }
+  .table-format tr {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  .table-format td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 12px 12px 12px 50%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .table-format td:last-child {
+    border-bottom: 0;
+  }
+
+  /* mobile “labels” from headers */
+  .past-students td:nth-of-type(1):before { content: "Name"; }
+  .past-students td:nth-of-type(2):before { content: "Year"; }
+  .past-students td:nth-of-type(3):before { content: "Project"; }
+  .past-students td:nth-of-type(4):before { content: "Next Position"; }
+
+  .teaching-experience td:nth-of-type(1):before { content: "Course"; }
+  .teaching-experience td:nth-of-type(2):before { content: "Department"; }
+  .teaching-experience td:nth-of-type(3):before { content: "Enrollment"; }
+  .teaching-experience td:nth-of-type(4):before { content: "Staff"; }
+  .teaching-experience td:nth-of-type(5):before { content: "Products"; }
 }
 
+/* ────────────────────────────────────────────────────────────────────────────
+   Group-Home Table Overrides (no borders + no shadows)
+──────────────────────────────────────────────────────────────────────────── */
+.group-index,
+.group-index table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none!important;
+  background: none!important;
+  box-shadow: none!important;
+}
+.group-index tr,
+.group-index th,
+.group-index td {
+  border: none!important;
+  background: none!important;
+  box-shadow: none!important;
+  padding: 10px 15px;
+  text-align: left;
+  vertical-align: top;
+}
 
-/* .button-container {
-    margin-bottom: 10px;
-} */
+/* ────────────────────────────────────────────────────────────────────────────
+   Utility & Miscellaneous
+──────────────────────────────────────────────────────────────────────────── */
+.container-group {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
 
+/* ────────────────────────────────────────────────────────────────────────────
+   Feedback Widget
+──────────────────────────────────────────────────────────────────────────── */
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .comments-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
-
 .comment-box {
-    width: 45%;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-    text-align: center;
+  width: 45%;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
 }
-
 .comment-box blockquote {
-    font-size: large;
-    font-style: italic;
-    margin: 20px 0;
+  margin: 20px 0;
+  font-size: 1.125em;
+  font-style: italic;
 }
-
 .positive {
-    background-color: #d4edda;
+  background-color: #d4edda;
 }
-
 .negative {
-    background-color: #f8d7da;
+  background-color: #f8d7da;
 }
-
 .corner-text {
-    position: absolute;
-    font-size: small;
-    color: grey;
-    padding: 2px;
+  position: absolute;
+  font-size: 0.875em;
+  color: grey;
+  padding: 2px;
 }
-
 .positive .corner-text {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
-
 .negative .corner-text {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
-
 #showComments {
-    display: block;
-    margin: 20px auto;
+  display: block;
+  margin: 20px auto;
 }
 
+/* ────────────────────────────────────────────────────────────────────────────
+   Students Section
+──────────────────────────────────────────────────────────────────────────── */
 .students-section {
-    width: 100%;
-    margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
-
 .students-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
 }
 
+/* ────────────────────────────────────────────────────────────────────────────
+   Specialty Fonts & Backgrounds
+──────────────────────────────────────────────────────────────────────────── */
 .modern-display {
-        font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
-
 .handwritten-text {
-        font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 .detail-project {
-    background-color:antiquewhite;
+  background-color: antiquewhite;
 }
