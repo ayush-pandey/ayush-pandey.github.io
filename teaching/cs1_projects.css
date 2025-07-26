@@ -1,0 +1,64 @@
+/* ===== cs1_projects.html styles ===== */
+
+/* center & style search bar */
+.search-container input#searchBar {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* filter buttons */
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background .2s, color .2s;
+}
+
+.filter-button.active {
+  background: #004fff;
+  color: #fff;
+  border-color: #004fff;
+}
+
+/* project list entries */
+.project-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+}
+
+.project-item h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.project-item p {
+  margin: 0;
+}
+
+/* download button */
+.download-container button#downloadPdf {
+  background: #004fff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.download-container button#downloadPdf:hover {
+  background: #0031b3;
+}

@@ -1,0 +1,1167 @@
+[
+  {
+    "title": "Turn signals on a car",
+    "description": "Animated sequential turn signals for cars using multiple LEDs. Ask the user their turn directions, then visualize an LED-based turn signal. Build a circuit with an LED and some switches for options of turn signals.",
+    "categories": ["hardware"]
+  },
+  {
+    "title": "Traffic lights simulator",
+    "description": "LED traffic light simulator that manages the lights for all four directions.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Circuit resistance calculator",
+    "description": "Implement series and parallel circuits in Python. Provide series, parallel, and custom modes where the user can enter multiple resistors. Compute and output the effective resistance for each case.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Weather analysis",
+    "description": "Collect temperature data (via sensor or web), plot graphs of temperature patterns over a week, highlight special events, and let the user choose which visualizations to see.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Electric vehicle batteries",
+    "description": "Calculate EV energy consumption and cost (Wh/kWh). Collect battery specs into spreadsheets, analyze cost, efficiency, and power delivery in Python, and generate performance graphs per battery type.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Energy consumption vs solar panel analysis",
+    "description": "Ask the user about their energy consumption, estimate costs, solar cell count and payoff time. Plot solar payback curves vs. usual energy costs.",
+    "categories": ["data"]
+  },
+  {
+    "title": "What’s the time?",
+    "description": "Predict time of day from solar cell voltage-current data. Load multiple data files, predict their timestamps, and plot time vs. power alongside a battery-powered clock comparison.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Energy bill app",
+    "description": "Python app to calculate and predict household appliance energy consumption. Users select appliances, view usage and cost graphs, and forecast next month’s energy bill.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Automated irrigation systems algorithm",
+    "description": "Use soil moisture sensor data to generate PWM motor outputs that automate water pump flow for optimal moisture maintenance.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Logic gate detector",
+    "description": "Load circuit I/O voltage data, analyze it in Python to identify whether the circuit functions as AND, OR, NOT, NAND, or NOR.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Brain tumor detection",
+    "description": "Process brain MRI scans in Python to detect tumor patterns. Convert images to matrices, identify tumor regions algorithmically, and visualize results with marked regions.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Face detection analysis",
+    "description": "Collect data from online face detectors, analyze dominant features, image categories, and accuracy in Python, then plot feature-usage statistics.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Predict circuit structure",
+    "description": "Infer resistive circuit layouts (series, parallel, combination) from voltage-current measurements by solving circuit equations and presenting matching diagrams.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Color detector",
+    "description": "Process color images in Python to find user-selected colors. Perform color-space conversions and matrix operations to highlight chosen colors in the image.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Algorithmic LED patterns",
+    "description": "Generate LED patterns (blinking, fading, chasing) with Python that mirror a four-LED circuit. Include EV-LED pattern info in the app.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "RGB LED color mixing",
+    "description": "Simulate RGB LED color mixing in Python. Users input a target color; compute resistor values for a real RGB LED, build the circuit, and verify model predictions.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Circuit analyzer",
+    "description": "Let users build virtual circuits (resistors, capacitors) step by step in Python, calculate total resistance or capacitance, and save circuit data to a file.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Resistor color code decoder",
+    "description": "GUI-based Python app to select resistor color bands and display the corresponding resistance value and tolerance.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Speaker noise filter design",
+    "description": "Assist in designing speaker noise filters. Users input cutoff frequencies; Python computes resistor and capacitor values. Optionally validate with a real speaker circuit.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Low-pass filter design",
+    "description": "Design a speaker low-pass filter using resistors and capacitors.",
+    "categories": ["hardware"]
+  },
+  {
+    "title": "High-pass filter design",
+    "description": "Design a speaker high-pass filter using resistors and capacitors.",
+    "categories": ["hardware"]
+  },
+  {
+    "title": "IR sensor data cleanup",
+    "description": "Stabilize IR sensor readings in Python via noise filters. Let users choose filter strength, then plot raw vs. filtered distance over time.",
+    "categories": ["data"]
+  },
+  {
+    "title": "I-V curve plotter",
+    "description": "Plot and analyze current-voltage curves in Python. Input measured data, graph the I-V curve, and compute threshold voltage, max power point, and degradation rates.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Solar cell analysis",
+    "description": "Analyze monthly solar cell voltage-current data to find max power points. Compute P=V×I, plot power vs. time, and correlate peaks with time or weather.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Temperature monitor",
+    "description": "Use Arduino to log temperature data over multiple days, then read the CSV in Python to plot thresholds, max/min labels, and detect trends per user choice.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "PWM motor controller analyzer",
+    "description": "Generate and simulate PWM signals in Python to control motor speed and torque, with options for home-automation use cases.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Py-scilloscope",
+    "description": "Python signal generator and oscilloscope simulator. Generate sine, square, triangle waves, allow frequency/amplitude control, and simulate circuit I/O.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Automatic night light",
+    "description": "Simulate a motion-activated night light in Python. Users input motion levels; the program adjusts brightness accordingly.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Automatic water filter",
+    "description": "Control water dispensing via Python and sensor input. Detect bottle placement, dispense/stop based on sensor or timeout, and increment a dispense counter.",
+    "categories": ["hardware"]
+  },
+  {
+    "title": "Bike movement analysis",
+    "description": "Collect gyroscope data (roll, pitch, yaw) on a bike ride, analyze patterns and power-accuracy trade-offs in Python, and plot motion variables over time.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Nerf gun optimization",
+    "description": "Predict PWM signals for nerf blaster motors to optimize power, velocity, and stability. Visualize signals in Python and validate on hardware.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Energy time-keeper app",
+    "description": "Read activity logs (activity, start/end times) in Python, compute electrical energy per category over a week, and graph time vs. energy consumption.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Noise cancelling",
+    "description": "Remove noise from recorded audio files in Python, graph frequency components, and highlight removed frequencies.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Sound amplification",
+    "description": "Amplify specific frequencies in audio files with Python, graph frequency and intensity, and optionally build a transistor amplifier to match software results.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "EV braking analysis",
+    "description": "Predict EV stopping distances under various braking conditions. Simulate braking with IR sensors and LEDs, then plot performance in Python.",
+    "categories": ["simulations", "hardware"]
+  },
+  {
+    "title": "RC car EV simulator",
+    "description": "Analyze RC car voltage-efficiency data, compare to EVs, and plot efficiency comparisons using Python.",
+    "categories": ["data", "simulations"]
+  },
+  {
+    "title": "Battery performance comparison",
+    "description": "Measure voltage over time for multiple batteries, analyze performance statistics in Python, and plot key markers.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Water turbine performance",
+    "description": "Analyze water turbine motor data in Python.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Solar panel tracking simulation",
+    "description": "Generate PWM signals to rotate a solar panel toward its max power angle in Python.",
+    "categories": ["simulations", "hardware"]
+  },
+  {
+    "title": "EE curriculum advisor",
+    "description": "Use Python to survey user interests and recommend EE major tracks and technical courses.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Memory usage analyzer",
+    "description": "Analyze memory usage across RAM, GPU, and cache for various file types in Python, reporting distributions and metrics.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Cybersecurity simulation",
+    "description": "Simulate encryption, storage, and decryption flows in a cybersecurity stack with Python, offering scenario options and summaries.",
+    "categories": ["simulations", "data"]
+  },
+  {
+    "title": "Crop sustainability predictor",
+    "description": "Collect soil moisture and plant growth data, analyze crop sustainability in Python, plot moisture vs. longevity, and optionally build a sensor circuit.",
+    "categories": ["data", "hardware"]
+  },
+  {
+    "title": "Laptop heat analysis",
+    "description": "Record PC heat levels under various workloads, analyze and predict temperature profiles with Python, and graph power vs. heat over time.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Speaker recording analysis",
+    "description": "Record audio via a speaker circuit, analyze loudness and frequency properties in Python, and provide interactive waveform visualizations.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Power outage simulation",
+    "description": "Simulate a power outage circuit with LEDs and motor, log voltage/current data, and analyze regulator performance in Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Self-driving radar simulation",
+    "description": "Build a 360° IR sensor array to mimic vehicle radar, collect obstacle voltages/distances, and visualize readings in Python.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Motion sensing light",
+    "description": "Create a motion-sensing LED circuit, log performance data, and analyze circuit vs. commercial device outputs in Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Phone rotation analysis",
+    "description": "Log phone rotation angles and screen behavior, analyze triggers with Python, and graph rotation properties alongside gyroscope voltages.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Smart cruise control",
+    "description": "Collect GPS and speed limit data to simulate cruise control logic in Python, plotting suggested speeds and restrictions.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "PC temperature profiling",
+    "description": "Monitor PC component temperatures under varied tasks, analyze heating/cooling requirements in Python, and compare profiles.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Voice recognition analysis",
+    "description": "Record multiple voices, analyze audio waveforms and frequencies with Python to study voice recognition systems, and plot distinguishing features.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Power monitoring system",
+    "description": "Build a sensor-based power monitor, collect real-time voltage/current data, and visualize power usage in Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Encrypted circuit communications",
+    "description": "Implement encrypted messaging with Python and a SOS-LED demonstration, with optional GUI for key management.",
+    "categories": ["simulations", "data"]
+  },
+  {
+    "title": "Battery management system",
+    "description": "Read battery cell voltage/temperature in Python, adjust parameters for efficiency, and present interactive graphs.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Self-driving path planner",
+    "description": "Implement grid-based path planning algorithms in Python for autonomous vehicles with multiple map scenarios.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Phone battery analysis",
+    "description": "Analyze phone battery performance data in Python, graph statistics, and provide user-driven visualizations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Self-driving braking system",
+    "description": "Build a wheeled cart with IR sensors to measure braking response, log data, and analyze braking patterns in Python.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Automotive warning system",
+    "description": "Build an analog sensor warning circuit, log temperature data, and analyze warning performance in Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Morse code translator",
+    "description": "Create a Python Morse code translator with LED/buzzer circuit demonstration.",
+    "categories": ["simulations", "hardware"]
+  },
+  {
+    "title": "Voltage multiplier analysis",
+    "description": "Design diode-capacitor voltage multipliers, collect voltage/current data, and analyze error/noise with Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Architectural power modeling",
+    "description": "Model a 3D-printed structure’s power needs in Python, allow user component selection, and verify predictions with measurements.",
+    "categories": ["simulations", "hardware"]
+  },
+  {
+    "title": "Tic-Tac-Toe LED game",
+    "description": "Light up LEDs on a tic-tac-toe board with Python logic and simulate gameplay via switch inputs.",
+    "categories": ["game", "hardware"]
+  },
+  {
+    "title": "Music note analyzer",
+    "description": "Measure musical notes with a circuit and analyze soundwaves with Python for accuracy feedback.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "PID control simulation",
+    "description": "Simulate PID motor speed control with encoder feedback in Python, optionally validate with hardware tests.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Wind impact on solar energy",
+    "description": "Analyze solar cell performance under varying wind and temperature conditions in Python.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Sleep-synchronized lighting",
+    "description": "Simulate lighting schedules based on user sleep preferences in Python and visualize on/off patterns.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Renewable energy data analysis",
+    "description": "Collect and analyze data from three renewable sources in Python, visualize costs and performance metrics.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Car speed control",
+    "description": "Use encoder feedback to simulate PWM-based DC motor speed control in Python and graph performance metrics.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Phone brightness modeling",
+    "description": "Analyze phone ambient light sensor data in Python to study brightness adjustment behavior and battery impact.",
+    "categories": ["data"]
+  },
+  {
+    "title": "EV brand performance comparison",
+    "description": "Compare Tesla vs. Toyota EV battery performance data in Python with query-driven visualizations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Power grid simulation",
+    "description": "Simulate California’s power grid in Python, analyze distribution scenarios, and visualize system dynamics.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Comprehensive battery analysis",
+    "description": "Calculate battery performance and cost in Python, analyze efficiency and power delivery, and build a verification circuit.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Voice assistant application",
+    "description": "Design a Python voice assistant that processes voice inputs and summarizes audio properties.",
+    "categories": ["data", "simulations"]
+  },
+  {
+    "title": "Ultrasonic radar",
+    "description": "Build an ultrasonic IR radar system, collect obstacle motion data, and analyze detection properties in Python.",
+    "categories": ["hardware", "simulations"]
+  },
+  {
+    "title": "Solar-powered clock simulator",
+    "description": "Simulate a solar-charged clock in Python using I-V curves and optionally build a physical prototype.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Water flow efficiency analysis",
+    "description": "Model and solve water flow equations for dispensers in Python, analyze efficiencies, and visualize results.",
+    "categories": ["data", "simulations"]
+  },
+  {
+    "title": "Automatic door analysis",
+    "description": "Collect data on automatic door operation and analyze sensor range, accuracy, and performance with Python.",
+    "categories": ["hardware", "data"]
+  },
+  {
+    "title": "Weather analysis",
+    "description": "Output highest and lowest temperatures recorded, average temperature, number of rainy days, and days forecast as dry but with rainfall. Visualize and report using real-world weather data.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Real estate analysis",
+    "description": "Histogram of for-sale houses per state. Output the most expensive house overall, the most expensive in a user-selected state, and average prices by state.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Movie rating analysis",
+    "description": "Compute average ratings for three movies by matching movie IDs across two CSV files, then visualize the results.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Employment analysis",
+    "description": "Output top three majors by employment, average unemployment and employment rates for a specific job, and averages by major category.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Steak cook preference analysis",
+    "description": "Determine average preferred steak doneness percentage from votes, and allow users to record their own preference.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Contact Book",
+    "description": "Read, add, delete, and modify contact entries in a file, then save updates back to the file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Gradebook",
+    "description": "Allow teachers to input student grades across subjects, calculate averages, and retrieve individual performance.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Password Manager",
+    "description": "Store and retrieve passwords securely with encryption in a simple command-line tool.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Calculator",
+    "description": "Perform addition, subtraction, multiplication, and division. Store the last three results in a file and display history on demand.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Flashcard quizzer",
+    "description": "Create and manage a Q&A file. Users can add cards or take a quiz, then receive a score.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Rock Paper Scissors",
+    "description": "Play rock-paper-scissors against the computer. Maintain win/loss score in a file, display and update before each game.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Birthdays Reminder",
+    "description": "Store friends’ birthdays in a file sorted chronologically. Output the next and furthest upcoming birthdays and days until each, or a specific person’s birthday.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Work logger",
+    "description": "Log daily work hours in a file. Calculate monthly earnings at minimum wage, add visual reports, multi-employee support, and a live timesheet.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Dictionary creator",
+    "description": "Maintain a word dictionary. Users can look up definitions or list words starting with a given letter.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Hangman",
+    "description": "Play hangman with random words loaded from a file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Tic Tac Toe",
+    "description": "Play tic-tac-toe vs. computer. Store and display win/loss record in a file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Music Playlist Creator",
+    "description": "Create, load, edit, and save music playlists. Track listening statistics and visualize listening history.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Address Book",
+    "description": "Store, retrieve, add, edit, search, and delete personal contact details in a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Student Grade Management System",
+    "description": "Command-line tool to manage and analyze student grades with add/view/average features, saving to and loading from JSON.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Movie Watchlist",
+    "description": "Manage a watchlist of movies: add titles, mark as watched, rate/review entries.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Number guesser",
+    "description": "Guess a random number with 'very cold' to 'very hot' hints. Record attempts per game in a file and show the last game’s attempt count.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Blackjack",
+    "description": "Play Blackjack (21) vs. computer. Display and update win/loss record stored in a file at each game’s start and end.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Coin toss game",
+    "description": "Simulate coin tosses vs. computer, display and update score in a text file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Recipe suggester",
+    "description": "Suggest recipes based on user-provided ingredients. Provide an exploration menu and realistic recipes from a database.",
+    "categories": ["data"]
+  },
+  {
+    "title": "News Aggregator",
+    "description": "Compile top news from real-world APIs by user preference. Navigate via menu and adapt recommendations based on stored user scores.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Currency Converter",
+    "description": "Convert currencies using a public API. Visualize rate trends over time for selected currency pairs.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Trivia quiz game",
+    "description": "Play trivia from a question database. Display score and optional end-game fact sheet based on answered questions.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Fitness tracker",
+    "description": "Log daily activity and diet, show progress graphs, workout summaries, and dietary recommendations over multiple days.",
+    "categories": ["data"]
+  },
+  {
+    "title": "E-commerce platform",
+    "description": "Display products, reviews, and orders. Implement shopping cart and order summaries, saving data to files with optional visualizations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Russian Roulette",
+    "description": "Simulate Russian Roulette vs. computer.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Car sale finder",
+    "description": "Recommend cars from a database/CSV based on cost, ratings, and user criteria.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Password manager",
+    "description": "Generate, store, and retrieve passwords across websites. Securely write to and load from an encrypted file. Optionally visualize common passwords.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Adventure text game",
+    "description": "Interactive story with puzzle items to solve challenges.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Baseball player analysis",
+    "description": "Fetch and visualize baseball player stats from a dataset, highlighting interesting facts.",
+    "categories": ["data"]
+  },
+  {
+    "title": "SimSteam platform",
+    "description": "Manage owned games file, record hours played, levels, achievements, and visualize consolidated data.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Task Scheduler",
+    "description": "Add, edit, and delete tasks with deadlines. Display priority based on proximity to the current date.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Recipe Cookbook",
+    "description": "Display, search, and add recipes from a CSV/TXT file via a menu interface.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Workout Generator",
+    "description": "Recommend workouts by body part or full routines from a CSV database.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Car performance finder",
+    "description": "Recommend cars based on performance criteria specified by the user.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Mortgage analyzer",
+    "description": "Visualize historical mortgage rate trends. Analyze future payments based on user input and stored expense rates.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Activity Guide",
+    "description": "Ask the user questions to recommend activities in a chosen city, reading activity options from a CSV file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Air Quality checker",
+    "description": "Display historical and current air quality for your area by reading and updating a CSV of previous checks.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Electric vehicle charging cost calculator",
+    "description": "Calculate EV charging costs at various stations based on battery capacity, target charge percentage, and travel distance.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Morse Code translator",
+    "description": "Translate text to and from Morse code, save translation history to a file, and allow viewing past translations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Notepad",
+    "description": "Read, append, find, replace, and delete words in a text or CSV file via a simple notepad interface.",
+    "categories": ["data"]
+  },
+  {
+    "title": "QR Generator",
+    "description": "Manage a CSV of names and links, generate and display QR codes for a selected person and link using Matplotlib.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Palindrome checker",
+    "description": "Read words from a CSV file and identify which entries are palindromes, then display the results.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Goldbach's conjecture",
+    "description": "Given an even number >5, output pairs of primes that sum to it and record input and results to a file.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Song recommender",
+    "description": "Ask the user questions to recommend three songs from a CSV/database, with options to add new songs and prevent duplicates.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Make your own dice for board games",
+    "description": "Simulate dice of various types, allow custom dice creation, record rolls to a file, and visualize faces and probability distributions.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "CatCard interface",
+    "description": "Duplicate CatCard functionalities in Python: add funds, check balance, report lost card, access resources, and chart expense distributions.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Pavilion menu generator",
+    "description": "Automate UC Merced Pavilion dining menus (breakfast, lunch, dinner) ensuring nutritional balance, fun items, and write weekly tables to a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Gacha simulator",
+    "description": "Simulate gacha game mechanics and rates.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Wordle game",
+    "description": "Implement Wordle using a CSV of valid words.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Speedometer Calculator",
+    "description": "Calculate required speed given start, destination, and time constraints using city-distance data from a CSV.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Video game recommender",
+    "description": "Recommend video games by querying a CSV database based on user preferences.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Battleship game",
+    "description": "Play Battleship with randomly placed ships; track and display scores between user and computer from a file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Bobcat Shuttle Tracker",
+    "description": "Simulate Bobcat Shuttle locations, update positions via loops, read initial data from a file, and visualize routes.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Library Resource Locator",
+    "description": "Help students find and reserve study rooms, computers, or books in Kolligian Library using dictionaries and file-based availability.",
+    "categories": ["data"]
+  },
+  {
+    "title": "UCM Event Calendar",
+    "description": "Fetch and display UC Merced events from an .ics file, sort by category, and save organized calendars for offline use.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Course Schedule Optimizer",
+    "description": "Optimize student course schedules based on preferences (free days, professors, requirements) and save viable combinations to a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Housing Roommate Matcher",
+    "description": "Match roommates based on stored profiles and preferences, outputting compatible pairs saved for future reference.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Text adventure",
+    "description": "Navigate a text-based world with puzzles, timed challenges, and file-driven random events based on player input.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Financial Aid Calculator",
+    "description": "Estimate student costs and aid using conditional logic, output detailed breakdowns saved to a text file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "ProfRateUCM",
+    "description": "Allow students to rate and comment on professors/courses, calculate averages, and save top-rated lists and visualizations to a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Merced Outdoors Trip Planner",
+    "description": "Plan trips around Merced by selecting hiking trails, lakes, and campsites, generating itineraries saved to a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Alphabet game",
+    "description": "Guess a random letter by indicating if the target is before or after the guess, with a timer and fastest-time logging.",
+    "categories": ["game"]
+  },
+  {
+    "title": "UCM Club Finder",
+    "description": "Match student interests to campus clubs using dictionaries and save recommended lists for later.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Research Opportunity Finder",
+    "description": "Compile and filter research positions by department or skills, outputting lists saved to a file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Cypher Decoder",
+    "description": "Encode and decode messages with variable-letter shifts, generating and applying a shift key for each character.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Car building program",
+    "description": "Select car models and parts, calculate total cost, and output a bill of materials.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Akinator implementation",
+    "description": "Guess user-chosen characters via yes/no questions, logging history of correct and incorrect guesses.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Music tracker",
+    "description": "Log per-user song plays with artist, title, and rating; rank songs by mean rating and plot histograms of artist rankings.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Poker probability",
+    "description": "Compute win counts for poker hands from a dataset file and report per-player outcomes.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Gas trip requirement calculator",
+    "description": "Calculate required gas for a trip given engine specs or car model and trip distance.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Wheel of Fortune",
+    "description": "Emulate Wheel of Fortune using puzzles from a CSV/TXT file, store and display game results.",
+    "categories": ["game"]
+  },
+  {
+    "title": "DeskFinder",
+    "description": "Reserve desks for time slots, display availability and future reservations, updating a CSV/TXT file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Jeopardy game",
+    "description": "Play Jeopardy with questions loaded from a CSV/TXT file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "English to Spanish Translation",
+    "description": "Translate English text to Spanish, caching past translations in a file and checking before translating.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Star catalog",
+    "description": "Explore constellations, star sizes, colors, and distances via a prompt-driven interface.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Buzzfeed Quizzes",
+    "description": "Run three multiple-choice quizzes (car, computer, phone) from TXT files, require all answers, and report correctness.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Turbos and Superchargers",
+    "description": "Analyze turbocharger and supercharger operation modes and suggest improvements via code.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Geo Distance guesser",
+    "description": "Game: guess distances between two random locations within 20% error or study mode to compute distances using geopy.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Weightlifting exercises recommender",
+    "description": "Recommend exercises by muscle group from a CSV/TXT file of available routines.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Fruit tree success calculator",
+    "description": "Determine fruit tree viability by USDA zone, rainfall, and temperature using city and plant data files.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Soccer statistics app",
+    "description": "Provide player stats, reports, visualizations, and fun facts for soccer data.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Python linter",
+    "description": "Implement a command-line Python linter to analyze code style and report issues.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Largest Prime Factor",
+    "description": "Compute and cache largest prime factor for numbers <100, storing inputs and results in a CSV.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Estimate Pi",
+    "description": "Use Monte Carlo sampling to estimate π, output the estimate, and plot sampled points.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Fibonacci Sequence Generator",
+    "description": "Generate the Fibonacci sequence up to a given limit, explore performance of different methods, and report timings.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Newton's Method for Root Finding",
+    "description": "Implement Newton’s method with adjustable guesses and tolerances, output roots, and plot the function.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Traveling Salesman Problem Solver",
+    "description": "Solve the TSP using heuristic methods (e.g., nearest neighbor), output the shortest path and distance.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Random Walk Simulator",
+    "description": "Simulate and visualize 2D or 3D random walks, exploring step size and dimensional effects.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Simple Encryption Algorithms",
+    "description": "Encrypt and decrypt text using Caesar and Vigenère ciphers, and compare algorithm strengths and weaknesses.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Maze Solver",
+    "description": "Solve mazes with DFS/BFS algorithms and visualize the solved path.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Choice game",
+    "description": "Branching narrative game allowing player choices that lead to different endings.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Game Theory Simulations",
+    "description": "Simulate game theory scenarios like Prisoner’s Dilemma, reporting strategy performance stats.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Simple Weather Simulator",
+    "description": "Use mathematical models and historical data to simulate and predict weather patterns.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Loan Calculator",
+    "description": "Calculate loan payments and generate amortization schedules, exploring rate and frequency impacts.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Statistics Calculator",
+    "description": "Compute mean, median, mode, standard deviation, etc., visualize results, and save to CSV.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Enigma Machine",
+    "description": "Replicate Enigma machine encryption by mapping alphabetic input through rotor configurations, allowing message scrambling and unscrambling using accurate rotor combinations.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Jumper.io",
+    "description": "Manage event guest lines: add/remove people, view queue status, and verify payment.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Invisible map adventure",
+    "description": "Navigate an unseen map similar to Oregon Trail, avoid traps, track deaths and completion time; levels read from CSV.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Loot collector game",
+    "description": "Control a spaceship to collect loot using arrow keys; track and display current and high scores.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Ping Pong game",
+    "description": "Play ping pong with score persistence: load scores at start and save results at end.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Color calculator",
+    "description": "Combine two primary colors (red, yellow, blue) to produce secondary hues, with extended color mixing options.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Timer reminder",
+    "description": "Set a message and time to trigger a reminder notification at the specified time.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Fish Bait Sorter",
+    "description": "Select from a predefined list of bait types, manage a favorites list, ensuring no duplicates, and check bait categories (live/artificial).",
+    "categories": ["data"]
+  },
+  {
+    "title": "Fast Food Ordering Simulator",
+    "description": "Select a restaurant, load menu from CSV, place orders, and calculate total cost.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Housing Campus converter",
+    "description": "Calculate living expenses for on/off campus housing including commuting costs based on distance and gas price inputs.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Average technological output of college freshman",
+    "description": "Analyze and visualize average time spent on academic vs. personal technology use using Matplotlib.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Age/Food Simulator",
+    "description": "Recommend healthy or unhealthy food based on user age, height, gender, nationality, and weight statistics, with a follow-up health survey.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Cake ordering form",
+    "description": "Capture contact details, calculate cake order price, and suggest premade flavors.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Fun/Personality quizzes",
+    "description": "Offer multiple personality quizzes from CSV; update and store result tallies for each outcome.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Class progress visualizer",
+    "description": "Input quiz scores for a class, then display a histogram of score distribution using Matplotlib.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Product analyzer",
+    "description": "Plot sales history from CSV; allow users to select a product and view its sales trend line chart.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Attendance tracker",
+    "description": "Manage attendance records for a class CSV, mark daily presence, and visualize attendance rates per student.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Pattern memorizing game",
+    "description": "Show a letter pattern briefly, then prompt user recall; increase length each round, record highest score in CSV.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Spell Checker",
+    "description": "Identify misspelled words in user text or file input, suggest corrections interactively.",
+    "categories": ["data"]
+  },
+  {
+    "title": "PR Weight Tracker",
+    "description": "Track personal record lifts (bench, squat, deadlift) via CSV, update when broken, and generate reports and visualizations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Scientific calculator",
+    "description": "Perform basic arithmetic and trigonometric functions (sin, cos, tan) and log calculation history to a text file.",
+    "categories": ["data"]
+  },
+  {
+    "title": "7/11 Dice game",
+    "description": "Simulate the 7-11 dice game with Pygame, maintain and display score history.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Crime rate calculator",
+    "description": "Compute crimes per 100,000 population based on user-input crime counts and population.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Stress Analysis on Materials",
+    "description": "Simulate stress-strain curves for materials under tensile, compressive, and shear loads, plot curves, and generate fatigue reports.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Solar Panel Efficiency Calculator",
+    "description": "Calculate solar panel efficiency under varying conditions (angle, weather, time) and plot daily efficiency graphs with summary.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Electrical Circuit Solver",
+    "description": "Use Kirchhoff’s laws to compute currents and voltages in circuits; explore effects of components and output distributions and CSV reports.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Energy Consumption Reporter",
+    "description": "Model and optimize building energy usage based on insulation, HVAC, and weather; generate daily/monthly consumption charts.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Material Life Cycle Analysis",
+    "description": "Assess environmental impact of materials from production to disposal, outputting impact scores and selection recommendations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Message encoder",
+    "description": "Encrypt and decrypt text messages with a key; share encoded messages for recipients with the correct key.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Skateboard part recommender",
+    "description": "Recommend skateboard components for custom builds based on user requirements.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Logo Guess quiz",
+    "description": "Identify brand logos in a quiz format.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Text Adventure game",
+    "description": "Collect tokens through mini-games (word, number, puzzle) in a text-based adventure.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Food recommender",
+    "description": "Suggest food items based on user-specified qualities.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Housing Roommate Finder",
+    "description": "Match roommates by comparing student profiles and preferences, output saved match lists.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Video game recommender",
+    "description": "Recommend games by platform, genre, player count, and duration from user preferences.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Periodic Table lookup",
+    "description": "Display element properties by name or symbol.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Bobcat Shuttle Tracker",
+    "description": "Simulate and display Bobcat shuttle locations and routes, update positions dynamically.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Vehicle Service Tracker",
+    "description": "Record vehicle service history (mileage, year, make, model) and output maintenance logs.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Go Fish card game",
+    "description": "Play Go Fish vs. computer; track win/loss history.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Soccer Code",
+    "description": "Analyze and generate soccer-related code patterns.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Russian Roulette",
+    "description": "Simulate Russian Roulette game against the computer.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Higher and Lower Game",
+    "description": "Guess a hidden number by higher/lower prompts; log guess time to file.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Blackjack",
+    "description": "Play Blackjack with deck manipulation, Ace valuation rules, and persistent scoring.",
+    "categories": ["game"]
+  },
+  {
+    "title": "Trajectory Calculator",
+    "description": "Compute 2D and 3D projectile trajectories from initial velocity vectors.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Shoe size comparer",
+    "description": "Compare shoe size data for men and women and identify patterns.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Food Ordering simulator",
+    "description": "Simulate restaurant ordering workflows.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Club Finder",
+    "description": "Match student interests to campus clubs using stored club data.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Energy consumer",
+    "description": "Analyze building energy consumption based on IVAC settings and weather inputs.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Personal Finance summary",
+    "description": "Track user expenses and income, set savings goals, and recommend spending cuts.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Athlete Player stats",
+    "description": "Self-rate athlete skills and compute overall ratings from input skill approximations.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Time Management App Project",
+    "description": "Mobile app to organize tasks, schedules, and time usage.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Rock paper scissors game",
+    "description": "Play rock-paper-scissors vs. computer with persistent scoring.",
+    "categories": ["game"]
+  },
+  {
+    "title": "GI Character Analyzer",
+    "description": "Analyze Genshin Impact team stats including characters, weapons, levels, and effects.",
+    "categories": ["data"]
+  },
+  {
+    "title": "Interactive Program",
+    "description": "Handle directional movement and quaternion rotations via user input.",
+    "categories": ["simulations"]
+  },
+  {
+    "title": "Workout Planner",
+    "description": "Generate weekly workout plans by splitting days and targeting muscle groups with recovery schedules and dietary options.",
+    "categories": ["data"]
+  }
+]

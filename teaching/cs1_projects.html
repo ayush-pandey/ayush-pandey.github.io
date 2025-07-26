@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="archive, accent, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="cs1_projects.css">
+
+    <script src="/js/index.js"></script>
+    <script src="cs1_projects.js"></script>
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/cs1_projects.html">
+    <meta name="og:type" content="article">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="/cs1_projects.html">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                <li class="alignable pull-right nav-list"><a href="/contact.html">Contact</a></li>
+                <li class="alignable pull-right nav-list"><a href="/teaching.html">Teaching</a> /</li>
+                <li class="alignable pull-right nav-list"><a href="/projects.html">Projects</a> /</li>
+                <li class="alignable pull-right nav-list"><a href="/publication.html">Publications</a> /</li>
+                <li class="alignable pull-right nav-list"><a href="/group/index.html">Research Group</a> /</li>
+                <li class="alignable pull-right nav-list"><a target="_blank" href="/Ayush_Pandey_CV.pdf">CV</a> /</li>
+                <li class="alignable pull-right nav-list"><a href="/">About</a> /</li>
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        <div class="container content">
+            <h2>Find a Python project to work on</h2>
+
+            <div class="search-container" style="text-align:center; margin: 20px 0;">
+                <input type="text" id="searchBar" placeholder="Search projects..." style="width:60%; padding:8px; font-size:1rem;">
+            </div>
+
+            <div class="filter-container" style="text-align:center; margin-bottom:20px;">
+                <button class="filter-button" data-category="game">Game</button>
+                <button class="filter-button" data-category="data">Data</button>
+                <button class="filter-button" data-category="hardware">Hardware</button>
+                <button class="filter-button" data-category="simulations">Simulations</button>
+                <button class="filter-button" id="clearBtn">Clear Display</button>
+
+            </div>
+
+            <div id="projectResults" class="project-list">
+                <!-- Filtered project items will be injected here -->
+            </div>
+
+            <div class="download-container" style="text-align:center; margin-top:40px;">
+                <a href="cs1_projects.pdf" download>
+                    <button id="downloadPdf">Download PDF of all project ideas</button>
+                </a>
+            </div>
+             <p id="last-updated">Fetching last update date...</p> 
+                <!-- Last updated: Feb 3, 2025.-->
+                 <p>All original material on this website is free-to-use and can be shared with proper attribution. You can view the <a href="/LICENSE">LICENSE</a> here. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>
+                 <br>
+        </div>
+        <hr>
+        <hr>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchBar = document.getElementById('searchBar');
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const projectResults = document.getElementById('projectResults');
+            let selectedCategories = new Set();
+            let projects = [];
+
+            // TODO: adjust path/format to match your actual data file
+            fetch('all_cs1_projects.json')
+              .then(res => res.json())
+              .then(data => {
+                  projects = data;
+                  displayProjects(projects);
+              });
+
+            searchBar.addEventListener('input', filterProjects);
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const cat = btn.dataset.category;
+                    btn.classList.toggle('active');
+                    selectedCategories.has(cat) ? selectedCategories.delete(cat) : selectedCategories.add(cat);
+                    filterProjects();
+                });
+            });
+
+            function filterProjects() {
+                const q = searchBar.value.toLowerCase();
+                let filtered = projects.filter(p =>
+                    p.title.toLowerCase().includes(q) ||
+                    p.description.toLowerCase().includes(q)
+                );
+                if (selectedCategories.size) {
+                    filtered = filtered.filter(p =>
+                        p.categories.some(c => selectedCategories.has(c))
+                    );
+                }
+                displayProjects(filtered);
+            }
+
+            function displayProjects(list) {
+                projectResults.innerHTML = '';
+                if (!list.length) {
+                    projectResults.innerHTML = '<p>No matching projects found.</p>';
+                    return;
+                }
+                list.forEach(p => {
+                    const div = document.createElement('div');
+                    div.className = 'project-item';
+                    div.innerHTML = `<h3>${p.title}</h3><p>${p.description}</p>`;
+                    projectResults.appendChild(div);
+                });
+            }
+        });
+        </script>
+        
+    </div>
+</body>
+</html>
