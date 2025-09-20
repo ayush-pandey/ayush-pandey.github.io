@@ -1,64 +1,90 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOMContentLoaded fired');
   const searchBar      = document.getElementById('searchBar');
-  if (!searchBar) return;  // only run on cs1_projects.html
-
-  const filterButtons  = document.querySelectorAll('.filter-button');
   const projectResults = document.getElementById('projectResults');
-  let selectedCategories = new Set();
-  let projects = [];
+  const clearBtn       = document.getElementById('clearBtn');
 
-  // load JSON but don't render anything yet
+  // only select buttons that actually have data-category
+  const filterButtons = document.querySelectorAll('.filter-button[data-category]');
+
+  console.log('filterButtons count:', filterButtons.length);
+  filterButtons.forEach((b,i) =>
+    console.log(`btn[${i}] category=`, b.dataset.category)
+  );
+
+  // *** immediately clear any static content ***
+  projectResults.innerHTML = '';
+
+  let projects = [];
+  let selectedCategories = new Set();
+
+  // load JSON
   fetch('all_cs1_projects.json')
-    .then(res => res.json())
+    .then(r => r.json())
     .then(data => {
       projects = data;
-      projectResults.innerHTML = '';  // start empty
+      console.log('loaded projects:', projects.length);
+      // already cleared above
     })
     .catch(console.error);
 
-  // wire up search input
-  searchBar.addEventListener('input', applyFilters);
-
-  // wire up filter buttons
-  filterButtons.forEach(btn => btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-    const cat = btn.dataset.category;
-    if (selectedCategories.has(cat)) selectedCategories.delete(cat);
-    else                            selectedCategories.add(cat);
+  // wire up search
+  searchBar.addEventListener('input', () => {
+    console.log('search input:', searchBar.value);
     applyFilters();
-  }));
+  });
 
+  // wire up filters
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      console.log('filter clicked:', cat);
+      btn.classList.toggle('active');
+      if (selectedCategories.has(cat)) selectedCategories.delete(cat);
+      else                            selectedCategories.add(cat);
+      console.log('selectedCategories:', Array.from(selectedCategories));
+      applyFilters();
+    });
+  });
+
+  // clear button
+  clearBtn.addEventListener('click', () => {
+    console.log('clearBtn clicked');
+    projectResults.innerHTML = '';
+    searchBar.value = '';
+    selectedCategories.clear();
+    filterButtons.forEach(b => b.classList.remove('active'));
+  });
+
+  // filtering logic
   function applyFilters() {
     const q = searchBar.value.trim().toLowerCase();
-
-    // if no query AND no categories selected => clear and bail
+    console.log('applyFilters:', { q, cats: Array.from(selectedCategories) });
     if (!q && selectedCategories.size === 0) {
+      console.log('nothing selected → clearing');
       projectResults.innerHTML = '';
       return;
     }
-
-    // otherwise filter
     const filtered = projects.filter(p => {
-      const matchCat = selectedCategories.size === 0
+      const okCat = selectedCategories.size === 0
         ? true
         : p.categories.some(c => selectedCategories.has(c));
-      const matchQ = q === ''
+      const okQ = q === ''
         ? true
         : p.title.toLowerCase().includes(q)
           || p.description.toLowerCase().includes(q);
-      return matchCat && matchQ;
+      return okCat && okQ;
     });
-
-    // render
-    if (filtered.length === 0) {
-      projectResults.innerHTML = '<p>No matching projects found.</p>';
-    } else {
-      projectResults.innerHTML = filtered.map(p => `
-        <div class="project-item">
-          <h3>${p.title}</h3>
-          <p>${p.description}</p>
-        </div>
-      `).join('');
-    }
+    console.log('filtered count:', filtered.length);
+    projectResults.innerHTML = filtered.length
+      ? filtered.map(p=>`
+          <div class="project-item">
+            <h3>${p.title}</h3>
+            <p>${p.description}</p>
+          </div>
+        `).join('')
+      : '<p>No matching projects found.</p>';
   }
+  clearBtn.classList.add('active');
+  projectResults.innerHTML = '';
 });
