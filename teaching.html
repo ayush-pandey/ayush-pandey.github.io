@@ -115,33 +115,13 @@
                         <button id="showComments">Show Random Student Feedback!</button>
                     </div>
                     <div class="comments-container">
-                        <div class="positive-comments-row">
-                            <div id="positiveComment" class="comment-box positive">
-                                <div class="corner-text">Comment classified as positive by GPT</div>
-                                <blockquote>“<span id="positiveText"></span>”</blockquote>
-                            </div>
-                            <div id="positiveComment2" class="comment-box positive">
-                                <div class="corner-text">Comment classified as positive by GPT</div>
-                                <blockquote>“<span id="positiveText2"></span>”</blockquote>
-                            </div>
-                            <div id="positiveComment3" class="comment-box positive">
-                                <div class="corner-text">Comment classified as positive by GPT</div>
-                                <blockquote>“<span id="positiveText3"></span>”</blockquote>
-                            </div>
+                        <div id="positiveComment" class="comment-box positive">
+                            <div class="corner-text">Comment classified as positive by GPT</div>
+                            <blockquote>“<span id="positiveText"></span>”</blockquote>
                         </div>
-                        <div class="negative-comments-row">
-                            <div id="negativeComment" class="comment-box negative">
-                                <div class="corner-text">Comment classified as negative by GPT</div>
-                                <blockquote>“<span id="negativeText"></span>”</blockquote>
-                            </div>
-                            <div id="negativeComment2" class="comment-box negative">
-                                <div class="corner-text">Comment classified as negative by GPT</div>
-                                <blockquote>“<span id="negativeText2"></span>”</blockquote>
-                            </div>
-                            <div id="negativeComment3" class="comment-box negative">
-                                <div class="corner-text">Comment classified as negative by GPT</div>
-                                <blockquote>“<span id="negativeText3"></span>”</blockquote>
-                            </div>
+                        <div id="negativeComment" class="comment-box negative">
+                            <div class="corner-text">Comment classified as negative by GPT</div>
+                            <blockquote>“<span id="negativeText"></span>”</blockquote>
                         </div>
                     </div>
                 </div>
@@ -157,23 +137,16 @@
                                 })
                                 .then(comments => {
                                     // Expecting 6 comments: first 3 positive, next 3 negative
-                                    document.getElementById('positiveText').textContent = comments[0] || '';
-                                    document.getElementById('positiveText2').textContent = comments[1] || '';
-                                    document.getElementById('positiveText3').textContent = comments[2] || '';
+                                    const positives = comments.slice(0, 3).filter(Boolean);
+                                    const negatives = comments.slice(3, 6).filter(Boolean);
 
-                                    document.getElementById('negativeText').textContent = comments[3] || '';
-                                    document.getElementById('negativeText2').textContent = comments[4] || '';
-                                    document.getElementById('negativeText3').textContent = comments[5] || '';
+                                    document.getElementById('positiveText').innerHTML = positives.join('<br/><br/>');
+                                    document.getElementById('negativeText').innerHTML = negatives.join('<br/><br/>');
                                 })
                                 .catch(error => {
                                     console.error('Error fetching comments:', error);
-                                    document.getElementById('positiveText').textContent = 'Failed to load positive comment.';
-                                    document.getElementById('positiveText2').textContent = 'Failed to load positive comment.';
-                                    document.getElementById('positiveText3').textContent = 'Failed to load positive comment.';
-
-                                    document.getElementById('negativeText').textContent = 'Failed to load negative comment.';
-                                    document.getElementById('negativeText2').textContent = 'Failed to load negative comment.';
-                                    document.getElementById('negativeText3').textContent = 'Failed to load negative comment.';
+                                    document.getElementById('positiveText').textContent = 'Failed to load positive comments.';
+                                    document.getElementById('negativeText').textContent = 'Failed to load negative comments.';
                                 });
                         });
                     </script>
