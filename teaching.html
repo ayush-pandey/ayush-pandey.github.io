@@ -109,19 +109,39 @@
                 <h2>Teaching Feedback</h2>
                 <p>The tool below allows you to quickly read as many or as few of the evaluations that the students in my classes have given. In the interest of fairness, both positive and negative comments will be shown. There's a caveat though &mdash; I have <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/tree/master/documents/gpt_classifier.ipynb">classified</a> the comments using the GPT-3 model by OpenAI and it can make mistakes! </p>
                 <p> All comments are <b>real</b> student comments, anonymized for presentation here.</b></p>
-                <p> Note: You might need to wait a few seconds or click twice for the free tier of Azure to kick up enough bits of information for the first two comments to show up. If you see an error, use the IT department trick: reload and try again (preferably, Ctrl+Shift+R to reload with fresh cache for this website).</p>
+                <p> Note: You might need to wait ~5 seconds or click twice for the free tier of Azure to kick up enough bits of information for the first two comments to show up. If you see an error, use the IT department trick: reload and try again (preferably, Ctrl/Cmd+Shift+R to reload with fresh cache for this website).</p>
                 <div class = "feedback-container">
                     <div class="button-container">
                         <button id="showComments">Show Random Student Feedback!</button>
                     </div>
                     <div class="comments-container">
-                        <div id="positiveComment" class="comment-box positive">
-                            <div class="corner-text">Comment classified as positive by GPT</div>
-                            <blockquote>“<span id="positiveText"></span>”</blockquote>
+                        <div class="positive-comments-row">
+                            <div id="positiveComment" class="comment-box positive">
+                                <div class="corner-text">Comment classified as positive by GPT</div>
+                                <blockquote>“<span id="positiveText"></span>”</blockquote>
+                            </div>
+                            <div id="positiveComment2" class="comment-box positive">
+                                <div class="corner-text">Comment classified as positive by GPT</div>
+                                <blockquote>“<span id="positiveText2"></span>”</blockquote>
+                            </div>
+                            <div id="positiveComment3" class="comment-box positive">
+                                <div class="corner-text">Comment classified as positive by GPT</div>
+                                <blockquote>“<span id="positiveText3"></span>”</blockquote>
+                            </div>
                         </div>
-                        <div id="negativeComment" class="comment-box negative">
-                            <div class="corner-text">Comment classified as negative by GPT</div>
-                            <blockquote>“<span id="negativeText"></span>”</blockquote>
+                        <div class="negative-comments-row">
+                            <div id="negativeComment" class="comment-box negative">
+                                <div class="corner-text">Comment classified as negative by GPT</div>
+                                <blockquote>“<span id="negativeText"></span>”</blockquote>
+                            </div>
+                            <div id="negativeComment2" class="comment-box negative">
+                                <div class="corner-text">Comment classified as negative by GPT</div>
+                                <blockquote>“<span id="negativeText2"></span>”</blockquote>
+                            </div>
+                            <div id="negativeComment3" class="comment-box negative">
+                                <div class="corner-text">Comment classified as negative by GPT</div>
+                                <blockquote>“<span id="negativeText3"></span>”</blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,18 +156,24 @@
                                     return response.json();
                                 })
                                 .then(comments => {
-                                    // Assuming the function returns an array with two comments
-                                    // where the first is positive and the second is negative
-                                    const positiveCommentBox = document.getElementById('positiveText');
-                                    const negativeCommentBox = document.getElementById('negativeText');
+                                    // Expecting 6 comments: first 3 positive, next 3 negative
+                                    document.getElementById('positiveText').textContent = comments[0] || '';
+                                    document.getElementById('positiveText2').textContent = comments[1] || '';
+                                    document.getElementById('positiveText3').textContent = comments[2] || '';
 
-                                    positiveCommentBox.textContent = comments[0]; // First comment is positive
-                                    negativeCommentBox.textContent = comments[1]; // Second comment is negative
+                                    document.getElementById('negativeText').textContent = comments[3] || '';
+                                    document.getElementById('negativeText2').textContent = comments[4] || '';
+                                    document.getElementById('negativeText3').textContent = comments[5] || '';
                                 })
                                 .catch(error => {
                                     console.error('Error fetching comments:', error);
                                     document.getElementById('positiveText').textContent = 'Failed to load positive comment.';
+                                    document.getElementById('positiveText2').textContent = 'Failed to load positive comment.';
+                                    document.getElementById('positiveText3').textContent = 'Failed to load positive comment.';
+
                                     document.getElementById('negativeText').textContent = 'Failed to load negative comment.';
+                                    document.getElementById('negativeText2').textContent = 'Failed to load negative comment.';
+                                    document.getElementById('negativeText3').textContent = 'Failed to load negative comment.';
                                 });
                         });
                     </script>
