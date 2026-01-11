@@ -95,7 +95,19 @@
         <div style="clear:both"></div>
         <hr>
             <div class="container">
+    
     <h2>AI Systems and Education (ASE) Group Members</h2>
+    <!-- Group Photo Carousel -->
+    <div class="carousel-container">
+        <button class="carousel-arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
+        <div class="carousel-image-wrapper">
+            <img id="carouselImage" src="/images/group1_bowling.jpg" alt="Research Group Photo">
+            <div class="carousel-caption" id="carouselCaption">Bowling Party: Summer 2025</div>
+        </div>
+        <button class="carousel-arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+                
             <div class="group-container">
                 <!-- <div class="group-member" id="alexfrias">
                     <img src="/images/alexfrias.png" alt="Alex Frias">
@@ -553,5 +565,27 @@
                 </div>
                 
                 </div>
+
+<script>
+    // Carousel functionality
+    const images = [
+        { src: '/images/group1_bowling.jpg', caption: 'Bowling Party: Summer 2025' },
+        { src: '/images/group2_halloween_2025.jpg', caption: 'Halloween Party: October 2025' },
+        { src: '/images/group3_aizen.jpg', caption: 'Aizen wins an award for his summer 2025 internship' },
+        { src: '/images/group4_pizza_party.jpg', caption: 'Group Pizza Party: Fall 2024' }
+    ];
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        } else if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        document.getElementById('carouselImage').src = images[currentIndex].src;
+        document.getElementById('carouselCaption').textContent = images[currentIndex].caption;
+    }
+</script>
 
 </html>
