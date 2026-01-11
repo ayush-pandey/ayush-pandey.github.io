@@ -136,9 +136,6 @@
                                     return response.json();
                                 })
                                 .then(comments => {
-                                    // Support both formats:
-                                    // 1) 6 items (first 3 positive, next 3 negative)
-                                    // 2) 2 items (each item contains multiple paragraphs separated by blank lines)
                                     const splitIntoItems = (text) => {
                                         if (!text || typeof text !== 'string') return [];
                                         // Split on blank lines (one or more) and trim

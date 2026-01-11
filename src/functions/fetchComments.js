@@ -18,13 +18,25 @@ app.http('fetchComments', {
 
         const commentsData = JSON.parse(downloadedContent);
 
-        // Fetch two random comments, one from each category
-        const positiveComment = commentsData.positive_comments[Math.floor(Math.random() * commentsData.positive_comments.length)];
-        const negativeComment = commentsData.negative_comments[Math.floor(Math.random() * commentsData.negative_comments.length)];
+        // Helper to pick up to 'count' unique random items from an array
+        const pickRandomItems = (arr, count) => {
+            if (!Array.isArray(arr) || arr.length === 0) return [];
+            const target = Math.min(count, arr.length);
+            const indices = new Set();
+            while (indices.size < target) {
+                indices.add(Math.floor(Math.random() * arr.length));
+            }
+            return Array.from(indices).map(i => arr[i]);
+        };
 
-        return { 
+        // Fetch three random comments from each category
+        const positiveThree = pickRandomItems(commentsData.positive_comments, 3);
+        const negativeThree = pickRandomItems(commentsData.negative_comments, 3);
+
+        // Return a flat array of 6 items: first 3 positive, next 3 negative
+        return {
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify([positiveComment, negativeComment]) 
+            body: JSON.stringify([...positiveThree, ...negativeThree])
         };
     }
 });
