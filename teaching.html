@@ -136,12 +136,34 @@
                                     return response.json();
                                 })
                                 .then(comments => {
-                                    // Expecting 6 comments: first 3 positive, next 3 negative
-                                    const positives = comments.slice(0, 3).filter(Boolean);
-                                    const negatives = comments.slice(3, 6).filter(Boolean);
+                                    // Support both formats:
+                                    // 1) 6 items (first 3 positive, next 3 negative)
+                                    // 2) 2 items (each item contains multiple paragraphs separated by blank lines)
+                                    const splitIntoItems = (text) => {
+                                        if (!text || typeof text !== 'string') return [];
+                                        // Split on blank lines (one or more) and trim
+                                        return text
+                                            .split(/\r?\n\s*\r?\n+/)
+                                            .map(s => s.trim())
+                                            .filter(Boolean)
+                                            .slice(0, 3);
+                                    };
 
-                                    document.getElementById('positiveText').innerHTML = positives.join('<br/><br/>');
-                                    document.getElementById('negativeText').innerHTML = negatives.join('<br/><br/>');
+                                    let positives = [];
+                                    let negatives = [];
+
+                                    if (Array.isArray(comments)) {
+                                        if (comments.length >= 6) {
+                                            positives = comments.slice(0, 3).filter(Boolean);
+                                            negatives = comments.slice(3, 6).filter(Boolean);
+                                        } else if (comments.length >= 2) {
+                                            positives = splitIntoItems(comments[0]);
+                                            negatives = splitIntoItems(comments[1]);
+                                        }
+                                    }
+
+                                    document.getElementById('positiveText').innerHTML = (positives.join('<br/><br/>') || 'No positive comments available.');
+                                    document.getElementById('negativeText').innerHTML = (negatives.join('<br/><br/>') || 'No negative comments available.');
                                 })
                                 .catch(error => {
                                     console.error('Error fetching comments:', error);
