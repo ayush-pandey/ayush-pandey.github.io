@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example AI Transcript Snippets</title>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 1em; border-radius: 3px; overflow-x: auto; }
+        h1, h2, h3 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+
+</head>
+<body>
+    <h1>Example AI transcript snippets (this is AI generated since I cannot share student data yet)</h1>
+<p>This document shows examples of effective interactions with an AI Pair Programmer. Your own submission should be the complete, unedited transcript of your entire conversation.</p>
+<hr />
+<h3>Interaction 1: Getting Started</h3>
+<p><strong>Student:</strong></p>
+<blockquote>
+<p>Hello! I'm a student learning Python and I'm using a <strong>Raspberry Pi Pico</strong> with the <strong>Thonny IDE</strong>. I have a <strong>DHT11 temperature sensor</strong> connected to <strong>GP15</strong>. I need to write a MicroPython script that reads the temperature and humidity from the sensor. Can you provide the basic code to do just that one thing? Please include comments explaining each part of the code.</p>
+</blockquote>
+<p><strong>AI Pair Programmer:</strong></p>
+<blockquote>
+<p>Yes, I understand. Here is a basic MicroPython script to read from a DHT11 sensor on a Raspberry Pi Pico.
+```python</p>
+<h1>Import required libraries</h1>
+<p>import machine
+import utime
+import dht</p>
+<h1>Define the GPIO pin the DHT11 data pin is connected to.</h1>
+<p>SENSOR_PIN = 15</p>
+<h1>Initialize the DHT11 sensor object.</h1>
+<p>sensor = dht.DHT11(machine.Pin(SENSOR_PIN))</p>
+<p>print("Starting sensor readings...")</p>
+<h1>Main loop</h1>
+<p>while True:
+    try:
+        # Trigger a sensor reading.
+        sensor.measure()
+        temp_c = sensor.temperature()
+        hum = sensor.humidity()</p>
+<pre><code>    # Print the readings.
+    print(f"Temperature: {temp_c}°C, Humidity: {hum}%")
+
+except OSError as e:
+    print(f"Failed to read sensor: {e}")
+
+# Wait 5 seconds before the next reading.
+utime.sleep(5)
+</code></pre>
+<p>```</p>
+<p><strong>Explanation:</strong>
+1.  We import the necessary libraries: <code>machine</code> for hardware access, <code>utime</code> for delays, and <code>dht</code> for the sensor.
+2.  We create a <code>sensor</code> object, telling the <code>dht</code> library that our sensor is on Pin 15.
+3.  The <code>while True:</code> loop runs forever.
+4.  Inside the loop, <code>sensor.measure()</code> takes a new reading.
+5.  <code>sensor.temperature()</code> and <code>sensor.humidity()</code> get the values.
+6.  <code>utime.sleep(5)</code> waits for 5 seconds to avoid reading from the sensor too quickly.
+7.  The <code>try...except</code> block will catch errors if the sensor fails to provide a reading.</p>
+</blockquote>
+<hr />
+<h3>Interaction 2: Debugging a Specific Error</h3>
+<p><strong>Student:</strong></p>
+<blockquote>
+<p>I'm getting a <code>TypeError</code> when I try to write my data to a CSV file.</p>
+<p>Here is the full error message:
+<code>TypeError: can't convert 'int' object to str implicitly</code></p>
+<p>Here is my code that is causing the error:
+```python</p>
+<h1>... (previous code) ...</h1>
+<p>while True:
+    # ... (sensor reading code) ...</p>
+<pre><code># Get current time
+timestamp = utime.localtime()
+
+# This is the line that causes the error
+log_entry = timestamp + "," + temp_c + "," + hum + "\n"
+
+with open("data.csv", "a") as f:
+    f.write(log_entry)
+
+utime.sleep(10)
+</code></pre>
+<p><code>``
+The error seems to be on the</code>log_entry = ...` line. I think I need to convert the numbers to strings, but I'm not sure of the best way to do it. Can you explain the error and show me how to fix that line?</p>
+</blockquote>
+<p><strong>AI Pair Programmer:</strong></p>
+<blockquote>
+<p>You are exactly right. The <code>TypeError</code> happens because you are trying to use the <code>+</code> operator to join different data types: <code>timestamp</code> (a tuple), <code>temp_c</code> (an integer or float), and <code>hum</code> (an integer or float) with a string (","). Python doesn't allow this.</p>
+<p>You need to convert all the non-string variables to strings before you can join them.</p>
+<p>Here are two common ways to fix this.</p>
+<p><strong>1. Using the <code>str()</code> function (Simple and Clear):</strong>
+This is the most direct fix. Wrap each variable in <code>str()</code>.
+<code>python
+log_entry = str(timestamp) + "," + str(temp_c) + "," + str(hum) + "\n"</code></p>
+<p><strong>2. Using an f-string (Modern and Readable):</strong>
+This is often considered more "Pythonic". You create a special string (an "f-string") that allows you to embed variables directly inside it.
+<code>python
+log_entry = f"{timestamp},{temp_c},{hum}\n"</code></p>
+<p>Both of these lines will produce the same result. The f-string approach is generally preferred by modern Python developers because it's easier to read. You can replace your faulty <code>log_entry</code> line with either of these.</p>
+</blockquote>
+<hr />
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A student's guide to AI pair programming</title>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 1em; border-radius: 3px; overflow-x: auto; }
+        h1, h2, h3 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+
+</head>
+<body>
+    <h1>A student's guide to AI pair programming (note: this is adapted from various online sources and edited using AI tools)</h1>
+<h2>1. Why good prompts matter</h2>
+<p>Working with an AI pair programmer is like having a conversation. The quality of its answers depends heavily on the quality of your questions. A well-written prompt will get you useful, relevant code and explanations. A vague or confusing prompt will lead to generic, unhelpful, or incorrect responses.</p>
+<p>This guide will teach you how to "engineer" your prompts to get the best possible results from your AI partner. Learning this skill is a key objective of this assignment.</p>
+<h2>2. The four C's of effective prompting</h2>
+<p>A good prompt gives the AI the information it needs to be a helpful partner. A simple way to remember this is with the "Four C's": Context, Clarity, Conciseness, and Constraints.</p>
+<ul>
+<li><strong>Context:</strong> The AI doesn't know what you know. You have to provide the background information it needs. This is the most important part of any good prompt.</li>
+<li><strong>Clarity:</strong> Be specific. Vague questions get vague answers. Clearly state what you want the AI to do.</li>
+<li><strong>Conciseness:</strong> Keep your prompts focused on one task at a time. If you ask the AI to do five things at once, it might do a poor job at all of them.</li>
+<li><strong>Constraints:</strong> Tell the AI what it <em>shouldn't</em> do, or how you want the output formatted. This helps guide the AI to a better response.</li>
+</ul>
+<hr />
+<h2>3. Example scenarios</h2>
+<p>Here is how you can apply the Four C's in different situations during your project.</p>
+<h3>Scenario 1: Starting the project</h3>
+<p>Your first prompt is crucial for setting the <strong>Context</strong>.</p>
+<ul>
+<li>
+<p><strong>A Bad Prompt:</strong></p>
+<blockquote>
+<p>"how do i make a temperature thing"</p>
+</blockquote>
+</li>
+<li>
+<p><strong>A Good Prompt (using the Four C's):</strong></p>
+<blockquote>
+<p><strong>[Context]:</strong> "Hello! I'm a student learning Python and I'm using a <strong>Raspberry Pi Pico</strong> with the <strong>Thonny IDE</strong>. I have a <strong>DHT11 temperature sensor</strong> connected to <strong>GP15</strong>.
+<strong>[Clarity]:</strong> I need to write a MicroPython script that reads the temperature and humidity from the sensor.
+<strong>[Conciseness]:</strong> Can you provide the basic code to do just that one thing?
+<strong>[Constraints]:</strong> Please include comments explaining each part of the code. Don't worry about printing to a display or saving to a file yet."</p>
+</blockquote>
+</li>
+</ul>
+<h3>Scenario 2: Asking for a specific function</h3>
+<p>When you need a new feature, be <strong>Clear</strong> and <strong>Concise</strong>.</p>
+<ul>
+<li>
+<p><strong>A Bad Prompt:</strong></p>
+<blockquote>
+<p>"now make it do csv"</p>
+</blockquote>
+</li>
+<li>
+<p><strong>A Good Prompt:</strong></p>
+<blockquote>
+<p><strong>[Context]:</strong> "Here is my current MicroPython code: <code>[paste your current, working code]</code>
+<strong>[Clarity]:</strong> I want to write the temperature and humidity readings to a <strong>CSV file</strong> on the Pico called <code>data.csv</code>. The file should have three columns: <code>timestamp</code>, <code>temperature_C</code>, and <code>humidity</code>.
+<strong>[Conciseness]:</strong> Can you show me how to modify my main loop to open the file, append a new line with the data, and then close it?"</p>
+</blockquote>
+</li>
+</ul>
+<h3>Scenario 3: Debugging an error</h3>
+<p>When you have a bug, give the AI all the information. The error message itself is critical <strong>Context</strong>.</p>
+<ul>
+<li>
+<p><strong>A Bad Prompt:</strong></p>
+<blockquote>
+<p>"my code is broken"</p>
+</blockquote>
+</li>
+<li>
+<p><strong>A Good Prompt:</strong></p>
+<blockquote>
+<p><strong>[Context]:</strong> "I'm using a <strong>Raspberry Pi Pico</strong> and my code was working, but now it's giving me an error. Here is the full error message I see in Thonny: <code>[paste the complete, exact error message]</code>.
+Here is the full script that is causing the error: <code>[paste your full script]</code>.
+<strong>[Clarity]:</strong> The error seems to happen on the line <code>[mention the line number or the line of code]</code>. I think the problem is related to converting the sensor reading to a string, but I'm not sure.
+<strong>[Constraints]:</strong> Can you explain what this error means and suggest two or three possible ways I could fix it?"</p>
+</blockquote>
+</li>
+</ul>
+<h2>4. What to do when the AI is wrong</h2>
+<p><strong>AI models are not perfect.</strong> They will sometimes:
+    <br>
+- Make up facts or library names ("hallucinate").
+    <br>
+- Give you code that doesn't run.
+    <br>
+- Give you code that is inefficient or overly complex.</p>
+    <br>
+<p><strong>It is your job to be the human in the loop!</strong>
+    <br>
+- <strong>Always test the code.</strong> Never assume the AI's output is correct.
+    <br>
+- <strong>Think critically.</strong> Does the explanation make sense? Is there a simpler way to do this?
+    <br>
+- <strong>Re-prompt if needed.</strong> If you don't get a good answer, try rephrasing your question. Add more context or be more specific. Tell the AI what was wrong with its last response.</p>
+    <br>
+<p>Good luck!</p>
+</body>
+</html>

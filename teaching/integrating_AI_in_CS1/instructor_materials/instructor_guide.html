@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor's guide</title>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 1em; border-radius: 3px; overflow-x: auto; }
+        h1, h2, h3 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+
+</head>
+<body>
+    <h1>Instructor's guide</h1>
+<h2>1. Assignment philosophy and overview</h2>
+<p>This assignment is designed to teach modern programming skills in a way that is both engaging and authentic. The core philosophy rests on two pillars:</p>
+<ol>
+<li>
+<p><strong>AI as a pair programmer and hardware debugging partner:</strong> We position AI not as a magic black box, but as a "pair programmer." This requires students to learn the crucial skill of <strong>prompt engineering</strong>—how to ask good questions to get good answers. It teaches them to be critical of AI-generated code and to use it as a starting point, not a final product.</p>
+</li>
+<li>
+<p><strong>Hardware-in-the-loop verification:</strong> The requirement to validate code with physical hardware is the cornerstone of the assignment's authenticity. An AI can write code, but it cannot build a circuit or verify that the code works in the real world. This forces students to understand, adapt, and debug the code, ensuring they are active participants in their learning.</p>
+</li>
+</ol>
+<h2>2. Learning objectives</h2>
+<p>After completing this assignment, students will be able to:</p>
+<ul>
+<li>Effectively use an LLM as a pair programmer to brainstorm, generate, and debug code.</li>
+<li>Apply prompt engineering principles to elicit desired responses from an AI.</li>
+<li>Interface a microcontroller (Pico or Arduino) with sensors and actuators.</li>
+<li>Write a complete, functional program that solves a problem using hardware I/O.</li>
+<li>Maintain a detailed log of their development process.</li>
+<li>Critically reflect on the capabilities and limitations of AI in software development.</li>
+</ul>
+<h2>3. Suggested timeline (3-week example)</h2>
+<p>This assignment can be adapted, but a 3-week timeline is often effective. For a more structured approach, especially in introductory courses, you can use a series of milestone assignments to keep students on track.</p>
+<p>Another way that you can adapt this assignment is to shrink the milestones into a two-week timeframe, depending on the level of students in the class and their prior familiarity with engineering and makerspaces.</p>
+<ul>
+<li>
+<p><strong>Week 1: Introduction and setup</strong></p>
+<ul>
+<li>Introduce the assignment, the philosophy, and the submission requirements.</li>
+<li>Lecture on AI pair programming and walk through the <code>guide_to_ai_prompts.md</code>.</li>
+<li><strong>Lab/Homework:</strong> Students work on Milestone 1 (Project Proposal).</li>
+</ul>
+</li>
+<li>
+<p><strong>Week 2: Core development</strong></p>
+<ul>
+<li>This week is dedicated to working on the project.</li>
+<li><strong>Lab/Homework:</strong> Students work on Milestones 2 and 3 (Setup and main loop).</li>
+</ul>
+</li>
+<li>
+<p><strong>Week 3: Finalizing and submission</strong></p>
+<ul>
+<li>Students should be finishing their code, finalizing their hardware setup, and recording their verification video.</li>
+<li><strong>Lab/Homework:</strong> Students work on Milestone 4 and the final submission package.</li>
+<li><strong>Due Date:</strong> End of Week 3.</li>
+</ul>
+</li>
+</ul>
+<h2>4. Example milestone structure</h2>
+<p>Here are instructions that you can use about scaffolding the project with milestones:</p>
+<p>Project milestone assignments are designed to help you make progress on your projects in a logical and gradual manner. Our class projects are complex open-ended challenges that will require continuous effort on your part. Trying to cram all the project work to the week before submission deadline will most likely lead to a significant amount of stress for you as well as an incomplete/incorrect final result. For this reason, I have created the project milestones as a guide for your progress.</p>
+<p>By completing these assignments on time, you will make steady progress on your project and have a clear picture of how the week's topic relates to the bigger picture. Please notice that completing the project milestone for a given week does not mean you are done working on your project for that week. Instead, completing this assignment means you have reached a good point from which to explore different aspects of the project and develop your own solution to the challenges I have posed.</p>
+<h3>Milestone 1: Project proposal</h3>
+<p>This week's milestone is the project proposal. Students should submit a PDF file that answers the following questions:</p>
+<p><strong>Goal and objectives:</strong>
+    <br>
+- What is your personal goal for this project? Start by describing a general area that you would like to work on, for example, "I would like to build a circuit to measure sound levels and write Python code to do interesting things."
+    <br>
+- Write one sentence about where your project can be applied in real life in the future (if developed further). Describe what your project's applications might be.</p>
+<p><strong>Approach:</strong>
+- List all the components that you might need for this project. Spend around 10 minutes looking up your project on the internet and note down things.
+    <br>
+- Write down the inputs and outputs of your project. Input can be anything physical or human interaction. Output can be anything in response that humans understand.
+    <br>
+- What kind of data can you collect in your project? Fill out a table like this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Type of data</th>
+<th style="text-align: left;">Quantity (how many instances are possible)</th>
+<th style="text-align: left;">Is it possible to automate the data collection/analysis in this category?</th>
+<th style="text-align: left;">Can you use publicly available data to support this category?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Input (for example, user inputs)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Processing variable (for example, voltage)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Output (for example, voltage or display)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Challenges:</strong>
+- What aspects of the project are unclear to you? (1-2 lines)
+    <br>
+- Which parts of the project you might need the most help on? (1-2 lines)</p>
+<p><strong>Backup:</strong>
+- Go through the ideas in the <code>project_ideas.md</code> document. What are your top 3 choices of projects to work on if the project you proposed above is not feasible for this class?</p>
+<h3>Milestone 2: Setup project infrastructure and decision-making</h3>
+<p>For this week's project milestone, the goal is to finalize the project idea and get started with the structure of how the user will interact with the project. The specific tasks are:
+    <br>
+1.  Download and install a code editor like VS Code.
+    <br>
+2.  Set up the editor to run Python 3 and install relevant extensions (e.g., Python and Pylance for VS Code).
+    <br>
+3.  Create a new Python file and write a print statement that describes the project idea in 2-3 sentences.
+    <br>
+4.  In the same Python file, write code for printing any user choices and code to accept user inputs.
+    <br>
+5.  End the Python file with some print statements on expected outputs of the program by using if-elif-else.</p>
+    <br>
+<h3>Milestone 3: Generate data and implement your main project loop</h3>
+<p>For this week's project milestone, the goal is to write a loop structure for the code to collect the data needed for the project. For example, if you need to collect data on voltages and currents of a solar cell, you would implement a loop to collect that data. If the project requires a circuit, this is the milestone where it should be planned.</p>
+<p>The specific tasks that each submission must have:
+    <br>
+1.  Build up from the Python file for the previous milestone.
+    <br>
+2.  Design and implement the main loop in the project code. It could be as simple as asking a few questions until the user decides to stop, or more complicated to collect many different data points.
+    <br>
+3.  Show a picture of the circuit design (a rough schematic is fine). If the project does not involve building hardware, the student should show a rough flowchart of the project's data flow.</p>
+    <br>
+<h3>Milestone 4: Create circuits/collect data/get external files sorted</h3>
+<p>This project milestone is highly dependent on the individual project idea. Students should work towards their project goal and complete the hands-on part of their project (if any). If they do not have a hands-on component, they should curate data for their project by collecting it from the internet or other sources. With this milestone, they should finish all of these non-programming aspects. In terms of programming, they should do one or more of the following:
+    <br>
+- Load project files (like CSVs or text files) in their code and use them appropriately.
+    <br>
+- Generate a graph or other visualization.</p>
+<h2>5. Common student challenges and how to help</h2>
+<ul>
+<li>
+<p><strong>"The AI's code doesn't work!"</strong></p>
+<ul>
+<li>This is a feature, not a bug, of the assignment. Guide the student to treat this as a debugging challenge. Ask them: "What was your prompt? What was the error? How could you rephrase your prompt to be more specific? What have you tried so far to fix it yourself?"</li>
+</ul>
+</li>
+<li>
+<p><strong>Over-reliance on the AI:</strong></p>
+<ul>
+<li>Some students may try to have the AI write the entire project at once. The reflection journal and AI transcript are your primary tools to combat this. Emphasize that a huge block of code pasted from the AI with no iterative dialogue will be graded poorly. The process is as important as the product.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hardware/Wiring issues:</strong></p>
+<ul>
+<li>Encourage students to start with the simplest possible circuit (like blinking an LED) to verify that their board and computer are communicating correctly before they add sensors. Have them double-check their wiring against a diagram. Collaboration with engineering makerspace lab (many universities are offering these spaces that are freely accessible to the students) is critical for these assignments to succeed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Vague prompts and frustration:</strong></p>
+<ul>
+<li>If a student is frustrated, ask to see their AI conversation. Often, they are using vague prompts like "it's broken." Walk them through creating a better prompt using the "Four C's" from the guide.</li>
+</ul>
+</li>
+</ul>
+<h2>6. Grading and assessment</h2>
+<p>Refer to the <code>assessment_rubric.md</code> for detailed criteria. Key points for grading:</p>
+<ul>
+<li><strong>The Reflection journal is key:</strong> This is where you will see the student's learning process. A good journal shows evidence of trial and error, critical thinking about the AI's suggestions, and a clear narrative of their project's development. A lazy journal is a red flag.</li>
+<li><strong>The AI transcript:</strong> Look for an iterative process. Does the student ask follow-up questions? Do they refine their prompts? Or did they just ask the AI to "write the whole thing"?</li>
+<li><strong>Hardware video:</strong> The video doesn't need to be high-production. It simply needs to clearly show the circuit and the corresponding software output, proving that the project works as intended.</li>
+</ul>
+<h2>7. Hardware management</h2>
+<ul>
+<li><strong>Student-purchased kits:</strong> This is often the simplest approach logistically. Provide students with a link to the <code>hardware_recommendations.md</code> file and a list of 2-3 specific kits you recommend from online retailers. Often kits can be purchased for less than $20 (see below: department might agree to cover the budget).</li>
+<li><strong>Department-provided kits:</strong> If the department provides kits, ensure you have a good system for checking them in and out. It can be helpful to have a lab session dedicated to ensuring all the components in the kits are working at the start of the assignment.</li>
+</ul>
+<h2>8. Support infrastructure: a note on makerspaces and near-peer mentors</h2>
+<p>A key element to making this assignment successful is leveraging the support infrastructure available at many universities.</p>
+<ul>
+<li>
+<p><strong>Makerspaces:</strong> University makerspaces are an invaluable resource. They provide access to tools (soldering irons, 3D printers, oscilloscopes), components, and knowledgeable staff. We highly recommend partnering with your local makerspace. Staff can help students with circuit debugging, component selection, and safe practices. This assignment can serve as a great introduction for students to the creative and supportive environment of a makerspace.</p>
+</li>
+<li>
+<p><strong>Near-Peer Mentors (Learning Assistants):</strong> For the hardware validation component, near-peer mentors can be incredibly effective. Hiring undergraduate students who have previously completed the course to act as Learning Assistants (LAs) or tutors for 2-3 hours per week provides a huge benefit. These LAs can hold office hours specifically for hardware help, work closely with the makerspace staff, and provide guidance that is more relatable to students than that from a professor. They bridge the gap and make the hardware aspect far less intimidating for beginners.</p>
+</li>
+</ul>
+<hr>
+</body>
+</html>

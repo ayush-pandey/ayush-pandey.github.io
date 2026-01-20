@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware recommendations</title>
+
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+        th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 1em; border-radius: 3px; overflow-x: auto; }
+        h1, h2, h3 { border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+    </style>
+
+</head>
+<body>
+    <h1>Hardware recommendations</h1>
+    <p><b>Note: Collaboration with engineering makerspace and exploring the possibility of near peer learning assistants can greatly simplify this process!</b></p>
+<p>This document provides recommendations for hardware to be used in the assignment. The goal is to use low-cost, accessible, and well-documented components to ensure students can successfully build and verify their projects.</p>
+<p>We recommend standardizing on one or both of the following microcontroller platforms.</p>
+<hr />
+<h2>1. Primary microcontroller platforms</h2>
+<h3>Raspberry Pi Pico / Pico W</h3>
+<p>The Pico is a low-cost, high-performance microcontroller from the Raspberry Pi Foundation. Its use of MicroPython makes it an excellent choice for courses where students are already learning or using Python, as they do not need to learn a new language.</p>
+<ul>
+<li><strong>Key Features:</strong><ul>
+<li><strong>Language:</strong> MicroPython (a subset of Python 3).</li>
+<li><strong>IDE:</strong> Thonny IDE is recommended for beginners. It's simple and has built-in support for flashing MicroPython to the Pico.</li>
+<li><strong>Cost:</strong> ~$4 for the Pico, ~$7 for the Pico W (which includes WiFi).</li>
+<li><strong>Strengths:</strong> Python-native, strong documentation, large community, very low cost.</li>
+</ul>
+</li>
+<li><strong>Official Website:</strong> <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/">https://www.raspberrypi.com/products/raspberry-pi-pico/</a></li>
+<li><strong>Getting Started Guide:</strong> <a href="https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico">https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico</a></li>
+</ul>
+<h3>Arduino Uno R3 / R4</h3>
+<p>The Arduino Uno is arguably the most popular and well-known microcontroller for beginners and hobbyists. It has a massive ecosystem of shields, sensors, and tutorials. It is programmed in C++ using the Arduino framework, which simplifies many common tasks.</p>
+<ul>
+<li><strong>Key Features:</strong><ul>
+<li><strong>Language:</strong> C++ (with the Arduino framework).</li>
+<li><strong>IDE:</strong> Arduino IDE (v2 is recommended).</li>
+<li><strong>Cost:</strong> ~$25-$30 for official boards, though cheaper clones are widely available.</li>
+<li><strong>Strengths:</strong> Extremely robust community support, vast number of tutorials and libraries, very easy to get started with the hardware.</li>
+</ul>
+</li>
+<li><strong>Official Website:</strong> <a href="https://store.arduino.cc/products/uno-r4-minima">https://store.arduino.cc/products/uno-r4-minima</a></li>
+<li><strong>Getting Started Guide:</strong> <a href="https://docs.arduino.cc/guides/uno-r4-minima/">https://docs.arduino.cc/guides/uno-r4-minima/</a></li>
+</ul>
+<hr />
+<h2>2. Recommended starter kits</h2>
+<p>For simplicity, we recommend that students purchase a "starter kit" that includes one of the above microcontrollers along with a variety of common components. This is often cheaper and easier than buying individual parts.</p>
+<p><b>IMPORTANT:</b> If you have a school makerspace lab / tinkering space, they already have most items needed for hardware verification in the assignment. So this assignment promotes active engagement with the facilities on campus.</p>
+<ul>
+<li><strong>Example Kits:</strong><ul>
+<li><strong>Elegoo Uno R3 Project Starter Kit:</strong> A very popular and comprehensive kit for the Arduino Uno.</li>
+<li><strong>Vilros Raspberry Pi Pico Starter Kit:</strong> A good starting point for the Pico.</li>
+<li>Many other kits are available on sites like Adafruit, SparkFun, or Amazon. A typical kit should cost between <strong>$30 and $50</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>3. Common components list</h2>
+<p>A good starter kit should include most of the following. These are the components most likely to be used in the suggested projects.</p>
+<ul>
+<li><strong>Core:</strong><ul>
+<li>Breadboard (solderless)</li>
+<li>Jumper Wires (male-male, male-female, female-female)</li>
+</ul>
+</li>
+<li><strong>Outputs:</strong><ul>
+<li>LEDs (various colors: red, green, yellow, blue, white)</li>
+<li>RGB LED (common cathode or anode)</li>
+<li>Buzzer (piezo)</li>
+<li>Small DC Motor</li>
+<li>Servo Motor</li>
+</ul>
+</li>
+<li><strong>Inputs:</strong><ul>
+<li>Push Buttons / Switches</li>
+<li>Potentiometers</li>
+<li>Photoresistors (for light sensing)</li>
+</ul>
+</li>
+<li><strong>Sensors:</strong><ul>
+<li><strong>Temperature/Humidity:</strong> DHT11 or DHT22</li>
+<li><strong>Distance:</strong> HC-SR04 (Ultrasonic) or IR sensor</li>
+<li><strong>Moisture:</strong> Soil Moisture Sensor</li>
+<li><strong>Motion:</strong> PIR Motion Sensor</li>
+</ul>
+</li>
+<li><strong>Passive Components:</strong><ul>
+<li>Resistors (a variety of values, e.g., 220Ω, 1kΩ, 10kΩ)</li>
+<li>Capacitors</li>
+</ul>
+</li>
+<li><strong>Measurement (Optional but Recommended):</strong><ul>
+<li>Basic Digital Multimeter (for verifying circuits)</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
