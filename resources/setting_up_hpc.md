@@ -1,6 +1,7 @@
-# A quick tutorial on setting up high performance computing at uC Merced
+# A quick tutorial on setting up high performance computing at UC Merced
 
 Author: Ayush Pandey and Gavin Abrigo
+
 Date (last updated): March 3, 2026
 
 ## Access to HPC
@@ -99,6 +100,72 @@ This command requests 1 GPU for 20 minutes on the `test` partition of the cluste
 
 ## Training and testing
 
+To train the model, run the following command in the terminal:
 
+```
+python main.py --epochs 2 --save-model
+```
 
+Then, to test the model, create a new Python file called `infer.py` and add the following code:
+
+```
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torchvision import datasets, transforms
+
+# Same model as in main.py :contentReference[oaicite:6]{index=6}
+class Net(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(1, 32, 3, 1)
+        self.conv2 = nn.Conv2d(32, 64, 3, 1)
+        self.dropout1 = nn.Dropout(0.25)
+        self.dropout2 = nn.Dropout(0.5)
+        self.fc1 = nn.Linear(9216, 128)
+        self.fc2 = nn.Linear(128, 10)
+
+    def forward(self, x):
+        x = self.conv1(x); x = F.relu(x)
+        x = self.conv2(x); x = F.relu(x)
+        x = F.max_pool2d(x, 2)
+        x = self.dropout1(x)
+        x = torch.flatten(x, 1)
+        x = self.fc1(x); x = F.relu(x)
+        x = self.dropout2(x)
+        x = self.fc2(x)
+        return F.log_softmax(x, dim=1)
+
+def main():
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    model = Net().to(device)
+    state = torch.load("mnist_cnn.pt", map_location=device)
+    model.load_state_dict(state)
+    model.eval()
+
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize((0.1307,), (0.3081,))
+    ])
+
+    test_ds = datasets.MNIST("../data", train=False, download=True, transform=transform)
+    x, y = test_ds[0]
+    x = x.unsqueeze(0).to(device)
+
+    with torch.no_grad():
+        logp = model(x)
+        p = logp.exp().squeeze(0)
+        pred = int(p.argmax().item())
+        conf = float(p.max().item())
+
+    print(f"device={device}  pred={pred}  conf={conf:.4f}  true={y}")
+
+if __name__ == "__main__":
+    main()
+```
+
+Now, you are all set and you have trained and tested your first neural network model on the HPC cluster! 
+
+> Did you know? UC Merced HPC has a ``click and run`` feature that allows you to run Jupyter notebooks on the cluster without needing to set up an ssh tunnel. You can access this feature on this [link](https://ucmerced.2i2c.cloud/hub/login?next=%2Fhub%2F) and find the tutorial to request GPU resources for Jupyter notebooks [here](https://ucm-it.github.io/hpc_docs/docs/hpcdocs/HPC-clusters/running-jobs/interact_job/).
 

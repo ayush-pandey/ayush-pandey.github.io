@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Setting Up HPC </title>
+    <script src="/js/index.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="hpc, computing, , Ayush Pandey, jekyll">
+    <meta name="author" content="">
+    
+    
+    
+    <meta name="description" content="">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/resources/setting_up_hpc.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://twitter.com/ayush9pandey">
+    
+        <meta name="twitter:image" content="">
+    
+</head>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/contact.html">Contact</a>
+                    
+                    
+                        </li>
+
+                        <li class="alignable pull-right nav-list"><a href="/teaching.html">Teaching</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/group/index.html">Research Group</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        <div class="container content">
+<h1
+id="a-quick-tutorial-on-setting-up-high-performance-computing-at-uc-merced">A
+quick tutorial on setting up high performance computing at UC
+Merced</h1>
+<p>Author: Ayush Pandey and Gavin Abrigo</p>
+    <p>Date (last updated): March 3, 2026</p>
+<h2 id="access-to-hpc">Access to HPC</h2>
+<p>You should already have access to the HPC cluster at UC Merced. If
+you do not, please contact your PI to understand the process.</p>
+<h2 id="logging-in-to-the-hpc-cluster">Logging in to the HPC
+cluster</h2>
+<p>To check whether your login works, you can use the terminal on your
+computer to ssh into the cluster. Enter the following command, replacing
+<code>username</code> with your actual username:</p>
+<pre><code>ssh -X username@login.rc.ucmerced.edu</code></pre>
+<p>This command will log you into the cluster. The <code>-X</code> flag
+allows you to use graphical applications on the cluster, which is
+necessary for some of the software we will be using.</p>
+<h2 id="logging-in-through-vs-code">Logging in through VS Code</h2>
+<p>Since VS Code is the IDE that you are probably using already, it is
+highly recommended that you work on the HPC cluster through the remote
+development features of VS Code. This allows you to use the same
+interface and tools that you are used to, while still leveraging the
+power of the HPC cluster. To set this up, you will need to install the
+“Remote - SSH” extension in VS Code. Once you have that installed, you
+can follow these steps: 1. Open the command palette in VS Code
+(Ctrl+Shift+P or Cmd+Shift+P). 2. Type “Remote-SSH: Connect to Host…”
+and select it. 3. In the input box that appears, enter the same ssh
+command as above. 4. You will be prompted to enter your password for the
+HPC cluster. Once you do, VS Code will establish a connection to the
+cluster and open a new window that is connected to the HPC
+environment.</p>
+<p>If it does not work, make sure that you are on the UC Merced VPN (and
+try again!).</p>
+<h2 id="install-miniconda-to-manage-your-python-environments">Install
+Miniconda to manage your Python environments</h2>
+<p>Run the following commands in the terminal to download and install
+Miniconda, which will allow you to manage your Python environments on
+the HPC cluster:</p>
+<pre><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh</code></pre>
+<p>To initialize and activate conda, run the following commands:</p>
+<pre><code>conda init
+source ~/.bashrc
+conda --version</code></pre>
+<p>This should print the version of conda that you have installed,
+confirming that it is set up correctly.</p>
+<h2 id="create-a-conda-environment-for-your-project">Create a conda
+environment for your project</h2>
+<p>Run the following commands to create a new conda environment for your
+project. Replace <code>myenv</code> with the name you want to give your
+environment:</p>
+<pre><code>
+conda create -n yourprojectenv python=3.11
+conda activate yourprojectenv
+</code></pre>
+<p>This will create a new conda environment with Python 3.11 and
+activate it. You can then install any packages you need for your project
+using <code>conda install</code> or <code>pip install</code>.</p>
+<p>Let’s install a package: the Github CLI:</p>
+<pre><code>conda install gh --channel conda-forge</code></pre>
+<p>This will install the Github CLI tool, which you can use to interact
+with Github from the command line. You can verify that it is installed
+correctly by running <code>gh --version</code>. You should see the
+version of the Github CLI that you have installed, confirming that it is
+set up correctly.</p>
+<h2 id="clone-your-project-repository-and-run-example">Clone your
+project repository and run example</h2>
+<p>Now, let’s create some neural network models! We will do this using
+pytorch examples repository. The first step is to clone this public
+repository. Run:</p>
+<pre><code>git clone https://github.com/pytorch/examples.git</code></pre>
+<p>Then, change directory to the <code>mnist</code> example:</p>
+<p><code>cd examples/mnist</code></p>
+<p>Now, install all package that are required to run the example:</p>
+<pre><code>pip install -r requirements.txt</code></pre>
+<p>Now it’s time to make sure that pytorch can detect the GPU. Add the
+following code to a new Python file:</p>
+<pre><code>import torch
+print(&#39;cuda:&#39;, torch.cuda.is_available())
+if torch.cuda.is_available():
+    print(&#39;device name:&#39;, torch.cuda.get_device_name(0))
+else:
+    print(&#39;No GPU detected&#39;)</code></pre>
+<p>After running the Python file, you will see that GPU is not
+available. This is because we need to request GPU resources from the
+cluster before we can use them. To do this, we will use the
+<code>srun</code> command, which allows us to run a command on the
+cluster with specific resource requirements. On the terminal (where you
+have the conda environment activated), run the following command:</p>
+<pre><code>srun --pty --nodes=1 --ntasks-per-node=1 --gres=gpu:1 -p test --time=00:20:00 /bin/bash</code></pre>
+<p>This command requests 1 GPU for 20 minutes on the <code>test</code>
+partition of the cluster. Once you run this command, you will be logged
+into a new shell that has access to the GPU called a <code>gnode</code>.
+Run <code>nvidia-smi</code> to verify that you have access to the GPU.
+You should see a table with information about the GPU, including its
+name and memory usage.</p>
+<h2 id="training-and-testing">Training and testing</h2>
+<p>To train the model, run the following command in the terminal:</p>
+<pre><code>python main.py --epochs 2 --save-model</code></pre>
+<p>Then, to test the model, create a new Python file called
+<code>infer.py</code> and add the following code:</p>
+
+<pre><code>
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torchvision import datasets, transforms
+
+# Same model as in main.py :contentReference[oaicite:6]{index=6}
+class Net(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.conv1 = nn.Conv2d(1, 32, 3, 1)
+        self.conv2 = nn.Conv2d(32, 64, 3, 1)
+        self.dropout1 = nn.Dropout(0.25)
+        self.dropout2 = nn.Dropout(0.5)
+        self.fc1 = nn.Linear(9216, 128)
+        self.fc2 = nn.Linear(128, 10)
+
+    def forward(self, x):
+        x = self.conv1(x); x = F.relu(x)
+        x = self.conv2(x); x = F.relu(x)
+        x = F.max_pool2d(x, 2)
+        x = self.dropout1(x)
+        x = torch.flatten(x, 1)
+        x = self.fc1(x); x = F.relu(x)
+        x = self.dropout2(x)
+        x = self.fc2(x)
+        return F.log_softmax(x, dim=1)
+
+def main():
+    device = torch.device(&quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;)
+
+    model = Net().to(device)
+    state = torch.load(&quot;mnist_cnn.pt&quot;, map_location=device)
+    model.load_state_dict(state)
+    model.eval()
+
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize((0.1307,), (0.3081,))
+    ])
+
+    test_ds = datasets.MNIST(&quot;../data&quot;, train=False, download=True, transform=transform)
+    x, y = test_ds[0]
+    x = x.unsqueeze(0).to(device)
+
+    with torch.no_grad():
+        logp = model(x)
+        p = logp.exp().squeeze(0)
+        pred = int(p.argmax().item())
+        conf = float(p.max().item())
+
+    print(f&quot;device={device}  pred={pred}  conf={conf:.4f}  true={y}&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+    </code></pre>
+<p>Now, you are all set and you have trained and tested your first
+neural network model on the HPC cluster!</p>
+<blockquote>
+<p>Did you know? UC Merced HPC has a <code>click and run</code> feature
+that allows you to run Jupyter notebooks on the cluster without needing
+to set up an ssh tunnel. You can access this feature on this <a
+href="https://ucmerced.2i2c.cloud/hub/login?next=%2Fhub%2F">link</a> and
+find the tutorial to request GPU resources for Jupyter notebooks <a
+href="https://ucm-it.github.io/hpc_docs/docs/hpcdocs/HPC-clusters/running-jobs/interact_job/">here</a>.</p>
+</blockquote>
+   <hr />
+        <hr />
+        <p id="last-updated">Fetching last updated...</p>
+        <p>You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/blob/master/group/proposal.html">pull request on GitHub</a>. The content of this webpage is licensed under the <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/blob/master/LICENSE">MIT License</a></p>
+        <br>
+        </div>
+    </div>
+</body>
+</html>

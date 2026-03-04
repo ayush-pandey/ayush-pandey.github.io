@@ -125,11 +125,70 @@ hr {
   left: -30px;
 }
 .content blockquote {
-  border-left: 5px solid #333;
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px 20px;
   margin: 20px 0;
-  padding: 2px 8px;
-  font-style: italic;
+  border-radius: 4px;
+  color: #856404;
 }
+code {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  background: #fff8e4;
+  color: #695005;
+  font-size: 13px;
+}
+pre code {
+  background-color: transparent;
+}
+pre {
+  background-color: #f8f7f7;
+  color: #f8f8f2;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  overflow-x: auto;
+}
+pre code.language-php,
+pre code.language-sql,
+pre code.language-javascript,
+pre code.language-bash,
+pre code.language-shell {
+  background-color: #282c34 !important;
+  color: #abb2bf;
+}
+/* Syntax Highlighting */
+code span.kw { color: #c678dd; font-weight: bold; } /* Keyword */
+code span.dt { color: #e5c07b; } /* Datatype */
+code span.dv { color: #d19a66; } /* Decimal Value */
+code span.bn { color: #d19a66; } /* Base N */
+code span.fl { color: #d19a66; } /* Float */
+code span.ch { color: #98c379; } /* Char */
+code span.st { color: #98c379; } /* String */
+code span.co { color: #5c6370; font-style: italic; } /* Comment */
+code span.ot { color: #e06c75; } /* Other */
+code span.al { color: #e06c75; font-weight: bold; } /* Alert */
+code span.fu { color: #61afef; } /* Function */
+code span.er { color: #e06c75; font-weight: bold; } /* Error */
+code span.wa { color: #e06c75; font-style: italic; } /* Warning */
+code span.cn { color: #d19a66; } /* Constant */
+code span.sc { color: #e5c07b; } /* Special Char */
+code span.vs { color: #98c379; } /* Verbatim String */
+code span.ss { color: #98c379; } /* Special String */
+code span.im { color: #c678dd; } /* Import */
+code span.va { color: #e06c75; } /* Variable */
+code span.cf { color: #c678dd; } /* Control Flow */
+code span.op { color: #56b6c2; } /* Operator */
+code span.bu { color: #e5c07b; } /* BuiltIn */
+code span.ex { color: #d19a66; } /* Extension */
+code span.pp { color: #e5c07b; } /* Preprocessor */
+code span.at { color: #d19a66; } /* Attribute */
+code span.do { color: #5c6370; font-style: italic; } /* Documentation */
+code span.an { color: #5c6370; font-style: italic; } /* Annotation */
+code span.cv { color: #5c6370; font-style: italic; } /* Comment Var */
+code span.in { color: #5c6370; font-style: italic; } /* Information */
 .content img {
   width: 100%;
   text-align: center;
