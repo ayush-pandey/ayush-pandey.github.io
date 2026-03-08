@@ -167,5 +167,5 @@ if __name__ == "__main__":
 
 Now, you are all set and you have trained and tested your first neural network model on the HPC cluster! 
 
-> Did you know? UC Merced HPC has a ``click and run`` feature that allows you to run Jupyter notebooks on the cluster without needing to set up an ssh tunnel. You can access this feature on this [link](https://ucmerced.2i2c.cloud/hub/login?next=%2Fhub%2F) and find the tutorial to request GPU resources for Jupyter notebooks [here](https://ucm-it.github.io/hpc_docs/docs/hpcdocs/HPC-clusters/running-jobs/interact_job/).
+> Did you know? UC Merced HPC has a ``click and run`` feature that allows you to run Jupyter notebooks on the cluster without needing to set up an ssh tunnel. You can access this feature on this [link](https://ucmerced.2i2c.cloud/hub/login?next=%2Fhub%2F).
 
