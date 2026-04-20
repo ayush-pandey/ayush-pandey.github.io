@@ -1,0 +1,153 @@
+.project-page {
+  line-height: 1.55;
+}
+
+.project-kicker {
+  color: #59616a;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-size: 34px;
+  line-height: 1.15;
+  margin: 0 0 12px 0;
+}
+
+.project-subtitle {
+  color: #2f3437;
+  font-size: 19px;
+  margin: 0 0 18px 0;
+  max-width: 880px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.project-tag {
+  background: #f6f7f9;
+  border: 1px solid #cbd5de;
+  border-radius: 6px;
+  color: #27313a;
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px 9px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 28px 0;
+}
+
+.project-action {
+  border: 1px solid #004fff;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.project-action.secondary {
+  border-color: #8794a1;
+  color: #27313a;
+}
+
+.project-hero {
+  margin: 28px 0 34px 0;
+}
+
+.project-banner {
+  background: #ffffff;
+  border: 1px solid #d6dce2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-banner img {
+  background: #ffffff;
+  display: block;
+  max-height: 560px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.figure-caption {
+  color: #59616a;
+  font-size: 15px;
+  margin: 8px 0 0 0;
+}
+
+.highlight-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 16px 0 28px 0;
+}
+
+.highlight {
+  background: #ffffff;
+  border: 1px solid #d9dee4;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.highlight h3 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.highlight p {
+  margin: 0;
+}
+
+.project-figure {
+  margin: 0;
+}
+
+.project-figure img {
+  background: #ffffff;
+  border: 1px solid #d9dee4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.resource-list {
+  list-style: none;
+  margin: 12px 0 24px 0;
+  padding: 0 !important;
+}
+
+.resource-list li {
+  border-top: 1px solid #d9dee4;
+  margin: 0;
+  padding: 14px 0;
+}
+
+.resource-title {
+  font-weight: 700;
+}
+
+.people-list {
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-banner img {
+    max-height: none;
+  }
+}

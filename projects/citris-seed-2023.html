@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Ayush Pandey </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="AI safety, low-level control using transformers, in-context learning">
+    <meta name="author" content="">
+    
+    
+    
+    <meta name="description" content="Project page for a 2023 CITRIS Seed Award on safety guarantees, robustness quantification, transformer control, and hallucination evaluation.">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Ayush Pandey RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/citris-seed-2023.css">
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="Project page for a 2023 CITRIS Seed Award on safety guarantees, robustness quantification, transformer control, and hallucination evaluation.">
+    <meta name="og:title" content="Ayush Pandey">
+    <meta name="og:url" content="/projects/citris-seed-2023.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayush Pandey">
+    <meta name="twitter:description" content="Project page for a 2023 CITRIS Seed Award on safety guarantees, robustness quantification, transformer control, and hallucination evaluation.">
+    <meta name="twitter:url" content="/projects/citris-seed-2023.html">
+    
+        <meta name="twitter:image" content="/projects/project_main.png">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/contact.html">Contact</a>
+                    
+                    
+                        </li>
+
+                        <li class="alignable pull-right nav-list"><a href="/teaching.html">Teaching</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/group/index.html">Research Group</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content project-page">
+                <p class="project-kicker">2023 CITRIS Seed Award</p>
+                <h1 class="project-title">Safety guarantees and robustness quantification of generative AI models</h1>
+                <p class="project-subtitle">This project studies safety guarantees for transformer-based models in safety-critical applications, with air-traffic control as a motivating domain.</p>
+
+                <div class="project-tags" aria-label="Project keywords">
+                    <span class="project-tag">AI safety</span>
+                    <span class="project-tag">low-level control using transformers</span>
+                    <span class="project-tag">in-context learning</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="project-action" href="#outcomes">Main outcomes</a>
+                    <a class="project-action" href="#papers">Papers</a>
+                    <a class="project-action" href="#code">Code</a>
+                    <a class="project-action secondary" href="#people">People</a>
+                </div>
+
+                <figure class="project-hero">
+                    <div class="project-banner">
+                        <img src="/projects/project_main.png" alt="High-level overview connecting system dynamics, Lyapunov analysis, transformer interpretability, and in-context control laws">
+                    </div>
+                    <figcaption class="figure-caption">A high-level view of the project: adapting safety tools from control theory and formal methods to transformer-based models.</figcaption>
+                </figure>
+
+                <h2 id="overview">Project overview</h2>
+                <p>
+                    Generative AI technologies have led to transformative leaps in the capabilities of AI, but transformer-based models are known to suffer from hallucinations: responses that are incorrect, but may sound reasonable. They can also be vulnerable to prompt injection and jailbreaking. Such responses are not admissible in safety-critical applications such as air-traffic control.
+                </p>
+                <p>
+                    The central question of this project is how developments from dynamical systems, control theory, and formal methods can provide safety and performance guarantees for transformer-based models. The work focuses on metrics for safety and robustness, representability of stability and safety guarantees by transformer architectures, and proof-of-concept testbeds for understanding how transformer models can perform low-level control in safety-critical applications.
+                </p>
+
+                <h2 id="highlights">Key highlights</h2>
+                <div class="highlight-grid">
+                    <div class="highlight">
+                        <h3>Stability guarantees</h3>
+                        <p>The project provides methods to train transformer neural networks that achieve similar stability guarantees as in optimal control methods.</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Low-level control</h3>
+                        <p>Transformer models were evaluated on low-level control of unstable, nonlinear systems where the context contains only unforced system dynamics and the system parameters are unknown to the transformer.</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Robust training for in-context learning</h3>
+                        <p>The project shows how transformer-based controllers can learn corrective actions (with Gaussian noise injection) rather than only clean nominal behavior.</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>Failure metrics</h3>
+                        <p>Developed a hallucination-evaluation framework that classifies LLM failures into factual errors, speculative responses, logical fallacies, and improbable scenarios.</p>
+                    </div>
+                </div>
+
+                <h2 id="outcomes">Main outcomes</h2>
+                <h3>1. In-context learning for low-level control</h3>
+                <p>
+                    One of the remarkable abilities of transformer-based neural networks is in-context learning. This motivates the question: can we control a system knowing only that it belongs to a particular family of systems and some data on system evolution, but no specific parameter information?
+                </p>
+                <p>
+                    Our CDC paper (Smith et al. 2026) studies a multi-head, GPT-2 style architecture for in-context control of unstable, nonlinear dynamical systems. The context consists only of the unforced, zero-torque system dynamics. At inference time, the transformer predicts the next state, controller mode, and control action, and the control action is applied to the plant in closed loop (see figure below).
+                </p>
+                <p>
+                    Low-level stabilization is challenging because small perturbations in predicted control actions can lead to compounding errors and distribution shift. Transformer models also face numerical sensitivity when they must predict values that range from large magnitudes to small magnitudes, as in stabilizing control sequences. Additive Gaussian noise in training data forces the expert controller to generate corrective torques for perturbed states, so the transformer observes recovery behavior needed for closed-loop stability.
+                </p>
+                <p>
+                    Experiments on the cartpole and acrobot benchmarks show that controller performance improves as context increases for trained transformers. With sufficient context, the transformer models outperform naive nominal baselines, and the results show cases of out-of-distribution stabilization. Ongoing work includes a more thorough comparison of how the transformer model behaves compared to other data-driven baseline methods.
+                </p>
+
+                <figure class="project-figure">
+                    <img src="/projects/icl_main_paper_fig.svg" alt="Causal transformer controller diagram with state, error, controller mode, and control action appended to context">
+                    <figcaption class="figure-caption">Causal transformer architecture for closed-loop control using context examples (figure credit: Ebonye Smith).</figcaption>
+                </figure>
+
+                <h3>2. Hallucination classification for safety-critical LLM use</h3>
+                <p>
+                    The project proposes safety metrics for transformer-based models under worst-case disturbances such as prompt injection, jailbreaking, and intrinsic noise. The hallucination work contributes to this aim by introducing a weighted metric for detecting and categorizing LLM hallucinations in safety-sensitive applications.
+                </p>
+                <p>
+                    The framework combines semantic similarity, F1, ROUGE, BLEU, and exact match scores, then uses a rubric to classify hallucinations into factual errors, speculative responses, logical fallacies, and improbable scenarios. On TruthfulQA with Falcon 7B, the metric identified 387 hallucinated responses and 430 non-hallucinated responses, closely matching a GPT-4-based evaluation.
+                </p>
+
+                <h2 id="papers">Papers and reports</h2>
+                <ul class="resource-list">
+                    <li>
+                        <span class="resource-title">How do Transformers Perform Low-Level Control In-Context?</span><br>
+                        Ebonye Smith, Aidan Andrews, Phoenix Wilson, Alexis Frias, Ayush Pandey, and Gireeja Ranade. IEEE Conference on Decision and Control (under review).
+                    </li>
+                    <li>
+                        <span class="resource-title">Classification of Hallucinations in Large Language Models Using a Novel Weighted Metric</span><br>
+                        Saaketh Raghava. UC Merced Undergraduate Research Journal, 17(1), 2024. DOI: <a href="https://doi.org/10.5070/M417164607">10.5070/M417164607</a>. <a href="/projects/Hallucinations_LLMs_Raghava_2024.pdf">PDF</a>. <a href="https://escholarship.org/uc/item/4w0620r1">eScholarship</a>.
+                    </li>
+                </ul>
+
+                <h2 id="code">Code</h2>
+                <ul class="resource-list">
+                    <li>
+                        <span class="resource-title">Transformer control experiments</span><br>
+                        Code for the in-context control experiments is available at <a href="https://github.com/ebonyelsmith/transformer_control">github.com/ebonyelsmith/transformer_control</a>.
+                    </li>
+                </ul>
+
+                <h2 id="presentations">Presentations</h2>
+                <ul class="resource-list">
+                    <li>Talk by Ayush Pandey at Lawrence Livermore National Lab (LLNL) workshop on AI safety: August 2025.</li>
+                    <li>Undergraduate student presentations: Aidan Andrews (UC Berkeley), Saaketh Raghava (UC Merced), and Axel Muniz Tello (UC Merced)</li>
+                </ul>
+
+                <h2 id="people">People</h2>
+                <ul class="people-list">
+                    <li><strong>UC Merced:</strong> Ayush Pandey, Saaketh Raghava, Axel Muniz Tello, Alex Frias (now graduate student at USC)</li>
+                    <li><strong>UC Berkeley:</strong> Gireeja Ranade, Ebonye Smith, Phoenix Wilson, Aidan Andrews (NSF REU Scholar, undergraduate at UIUC)</li>
+                </ul>
+
+                <h2 id="funding">Funding</h2>
+                <p>
+                    This project is supported by a <a href="https://citris-uc.org/2023-seed-award-will-explore-safety-of-ai-in-air-traffic-control/">CITRIS and the Banatao Institute 2023 Seed Award</a>.
+                </p>
+
+                <hr/>
+                <hr/>
+                <p id="last-updated">Fetching last updated date...</p>
+                <p>The page consists of copyright material from publications that are either under review or published. Other than these, the rest of the content is free-to-use and can be shared with proper attribution. You can view the <a href="/LICENSE">LICENSE</a> here. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>
+                <br>
+                </div>
+        </div>
+    </body>
+</html>
