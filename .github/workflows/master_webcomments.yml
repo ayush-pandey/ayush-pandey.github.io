@@ -7,10 +7,16 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'host.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'src/functions/**'
+      - '.github/workflows/master_webcomments.yml'
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.azure-function-package'
   NODE_VERSION: '20.x' # set this to the node version to use (supports 8.x, 10.x, 12.x)
 
 jobs:
@@ -25,11 +31,25 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      - name: 'Prepare Azure Function Package'
+        shell: pwsh
+        run: |
+          $packagePath = '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+          if (Test-Path $packagePath) {
+            Remove-Item -Recurse -Force $packagePath
+          }
+          New-Item -ItemType Directory -Path $packagePath | Out-Null
+          New-Item -ItemType Directory -Path "$packagePath/src" | Out-Null
+          Copy-Item host.json $packagePath
+          Copy-Item package.json $packagePath
+          Copy-Item package-lock.json $packagePath
+          Copy-Item -Recurse src/functions "$packagePath/src/functions"
+
       - name: 'Resolve Project Dependencies Using Npm'
         shell: pwsh
         run: |
           pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-          npm install
+          npm ci --omit=dev
           npm run build --if-present
           npm run test --if-present
           popd
