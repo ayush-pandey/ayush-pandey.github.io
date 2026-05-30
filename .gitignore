@@ -110,5 +110,6 @@ src/functions/manual_classified_comments.json
 documents/todos.txt
 documents/unclassified_comments.json
 documents/classified_comments.json
+documents/deploy_comments_azure.md
 
 .github/chatmodes/
