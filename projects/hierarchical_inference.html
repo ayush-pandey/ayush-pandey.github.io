@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hierarchical Bayesian inference | Ayush Pandey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="hierarchical inference, Bayesian inference, dynamical systems, model reduction">
+    <meta name="author" content="">
+    <script src="/js/index.js"></script>
+    
+    
+    
+    <meta name="description" content="Learning behavioral compatibility across hierarchical dynamical models to accelerate Bayesian parameter inference.">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/citris-seed-2023.css">
+    
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="Learning behavioral compatibility across hierarchical dynamical models to accelerate Bayesian parameter inference.">
+    <meta name="og:title" content="Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference">
+    <meta name="og:url" content="/projects/hierarchical_inference.html">
+    <meta name="og:type" content="article">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference">
+    <meta name="twitter:description" content="Learning behavioral compatibility across hierarchical dynamical models to accelerate Bayesian parameter inference.">
+    <meta name="twitter:url" content="/projects/hierarchical_inference.html">
+    
+        <meta name="twitter:image" content="/images/hierarchical_inference_linear.png">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="/">Ayush Pandey</a>
+            <ul class="alignable pull-right navbar-ul">
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/contact.html">Contact</a>
+                    
+                    
+                        </li>
+
+                        <li class="alignable pull-right nav-list"><a href="/teaching.html">Teaching</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                    
+                        <li class="alignable pull-right nav-list"><a href="/projects.html">Projects</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/publication.html">Publications</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/group/index.html">Research Group</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a target="_blank" href="/Ayush_Pandey_CV.pdf">CV</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+                    
+                        <li class="alignable pull-right nav-list"><a href="/">About</a>
+                    
+                    
+                        /
+                    
+                        </li>
+                
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content project-page">
+                <p class="project-kicker">Hierarchical Bayesian inference</p>
+                <h1 class="project-title">Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference</h1>
+                <p class="project-subtitle">Learning behavioral compatibility across hierarchical dynamical models to accelerate Bayesian parameter inference.</p>
+
+                <div class="project-tags" aria-label="Project keywords">
+                    <span class="project-tag">Dynamical systems</span>
+                    <span class="project-tag">Bayesian inference</span>
+                    <span class="project-tag">Model reduction</span>
+                </div>
+
+                <div class="project-actions">
+                    <a class="project-action" href="https://arxiv.org/abs/2610.30683">Paper</a>
+                    <a class="project-action" href="https://github.com/ctsd-lab/hierarch-inf">Code</a>
+                    <a class="project-action secondary" href="#people">Participant</a>
+                </div>
+
+                <figure class="project-hero">
+                    <div class="project-banner">
+                        <img src="/images/hierarchical_inference_linear.png" alt="Behavioral compatibility region for the linear-system example, with baseline and GP-guided MCMC samples, the compatibility ellipse, and the true parameter">
+                    </div>
+                    <figcaption class="figure-caption">Behavioral compatibility for the illustrative linear system, with baseline and GP-guided MCMC samples overlaid. The compatibility ellipse is evaluated at the reduced-posterior mean. Panel (a) from the paper.</figcaption>
+                </figure>
+
+                <h2 id="overview">Project overview</h2>
+                <p>Bayesian parameter inference for complex nonlinear dynamical models is often limited by the cost of repeated model simulation. We present a behavioral mapping framework that uses the inferred posterior of a higher-level model to accelerate inference of a lower-level model without requiring state or parameter correspondence between them.</p>
+                <p>Building on approximate simulation relations for hierarchically related models, we define the notion of behavioral compatibility and quantify the behavioral support of detailed model parameters using the reduced model posterior. We learn a level set of behavioral support using a Gaussian process and use it to filter detailed model parameter proposals before expensive simulations during Markov Chain Monte Carlo (MCMC) inference. We derive conditions under which the behavioral support level set retains all detailed model parameters that fit the experimental data within a prescribed tolerance.</p>
+                <p>We apply this method to a hierarchy of gene-expression models fitted to cell-free experimental data. After initial setup costs, our approach speeds up MCMC by 8.02% for the phenomenological model and 15.21% for the mechanistic model.</p>
+
+                <h2 id="papers">Paper</h2>
+                <ul class="resource-list">
+                    <li>
+                        <span class="resource-title"><a href="https://arxiv.org/abs/2610.30683">Behavioral Mapping of Hierarchical Dynamical Models Accelerates Bayesian Parameter Inference</a></span><br>
+                        Jingsong Bai and Ayush Pandey. arXiv:2610.30683 (2026).
+                        <a href="https://doi.org/10.48550/arXiv.2610.30683">DOI: 10.48550/arXiv.2610.30683</a>.
+                    </li>
+                </ul>
+
+                <h2 id="code">Code</h2>
+                <ul class="resource-list">
+                    <li>
+                        <span class="resource-title">Hierarchical inference examples and methods</span><br>
+                        The <a href="https://github.com/ctsd-lab/hierarch-inf">hierarch-inf repository</a> contains the linear-system example, hierarchical inference of phenomenological and mechanistic gene-expression models, and model construction with SBML export.
+                    </li>
+                </ul>
+
+                <h2 id="people">Current participants</h2>
+                <ul class="people-list">
+                    <li>Jingsong Bai</li>
+                </ul>
+
+                <hr/>
+                <hr/>
+                <p id="last-updated">Fetching last updated date...</p>
+                <p>The page consists of copyright material from publications that are either under review or published. Other than these, the rest of the content is free-to-use and can be shared with proper attribution. You can view the <a href="/LICENSE">LICENSE</a> here. You can contribute to this page by creating a <a href="https://github.com/ayush-pandey/ayush-pandey.github.io/pulls">pull request on GitHub</a>.</p>
+                <br>
+                </div>
+        </div>
+    </body>
+</html>
